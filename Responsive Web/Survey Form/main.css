@@ -1,0 +1,84 @@
+#main {
+    background-color: aqua;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 10px;
+
+    
+}
+#form-main {
+    background-color: antiquewhite;
+    width: 75%;
+    margin: 0px auto;
+    border-radius: 4px;
+    padding: 10px;
+    
+}
+#description {
+    text-align: center;
+}
+
+.tab {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+}
+.lab {
+    display: inline-block;
+    padding: 5px auto;
+    width: 45%;
+    
+    text-align: right;
+    margin: 2px auto;
+    vertical-align: top;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 0px;
+    padding-left: 0px;
+}
+.filltab {
+   
+    display: inline-block;
+    
+    width: 40%;
+    text-align: left;
+    height: auto;
+    
+    margin: 2px auto;
+    vertical-align: top;
+}
+.input-field {
+    width: 200px;
+    max-width: 200px;
+    padding: 3px auto;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-radius: 3px;
+}
+
+#submit {
+  width: 80px;
+  height: 24px;
+  color: cadetblue;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+@media (max-width: 520px) {
+.lab {
+    width: 90%;
+    text-align: left;
+
+}
+
+
+.filltab {
+    width: 90%;
+    text-align: left
+}
+
+}

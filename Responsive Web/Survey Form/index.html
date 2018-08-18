@@ -1,0 +1,105 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BadReads</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="main">
+        <h1 id="title">BadReads Survey Form</h1>
+        <div id="form-main">
+        <p id="description">Let us know about yourself and your favourites </p>
+        <form action="http://freeCodeCamp.org" id="survey-form">
+         <div class="tab">
+            <div class="lab">
+                <label  for="name" id="name-label" ><sup>*</sup> Name :</label>
+                
+            </div>
+            <div class="filltab"><label for="name" id="name-label">
+                <input type="text" placeholder="Gopi Krishna" id="name" class="input-field" name="name" required>
+            </label>          
+            </div>
+        </div>
+        <div class="tab">
+            <div class="lab">
+                <label for="email-label" id="email-label"><sup>*</sup> Email :</label>
+                
+            </div>
+            <div class="filltab"><label for="email-label" id="email-label">
+              <input type="email" id="email" placeholder="duck@example.com" class="input-field"  name="email" required>
+            </label>
+            </div>
+        </div>
+        <div class="tab">
+            <div class="lab">
+                <label for="number-label" id="number-label"><sup>*</sup> Age :</label>
+            </div>
+            <div class="filltab"><label for="Age" id="number-label">  
+                <input type="number" id="number" name="Age" class="input-field" placeholder="19" min="1" max="3" required>
+                </label>
+            </div>
+        </div>
+        <div class="tab">
+                <div class="lab">
+                    <label for="gender">Gender :</label>
+                    
+                </div>
+                <div class="filltab">
+                    <ul>
+                      <li><input type="radio" name="gender" value="male" checked> Male<br></li>
+                      <li><input type="radio" name="gender" value="female"> Female<br></li>
+                      <li><input type="radio" name="gender" value="other"> Other </li>
+                    </ul>
+                </div>
+                <div class="tab">
+                    <div class="lab">
+                        <label for="role">Your Current Role:</label>
+                    </div>
+                <div class="filltab">
+                    <select name="role" class="input-field" id="dropdown">
+                        <option value="Student"> Student</option>
+                        <option value="Employee"> Employee</option>
+                        <option value="Other"> Other</option>
+                    </select>
+                </div>
+                </div>
+                <div class="tab">          
+                <div class="lab">
+                 <label for="genre" >Which Genre  do you like most ? :</label>
+
+                </div>
+                <div class="filltab">
+                    <ul >
+                        <li><input type="checkbox" value="Sci-fi" name="genre" checked> Sci-fi</li>
+                        <li><input type="checkbox" value="Fantasy" name="genre"> Fantasy</li>
+                        <li><input type="checkbox" value="Non-Fiction" name="genre"> Non-Fiction</li>
+                        <li><input type="checkbox" value="Dystopian" name="genre"> Dystopian</li>
+                        <li><input type="checkbox" value="Love/Life" name="genre"> Love/Life</li>
+                    </ul>
+                </div>  
+                </div>
+            </div>
+        <div class="tab">
+            <div class="lab">
+                <label for="comments">Few words about your favourite book :</label>
+            </div>
+            <div class="filltab">
+                <textarea name="comments" rows="5" columns="auto" class="input-field"></textarea>
+            </div>
+        </div> 
+       
+      <div id="form-main">
+          <input type="submit" id="submit" value="submit">
+      </div>
+       
+        </form>
+        </div>
+    </div>
+</body>
+</html>
