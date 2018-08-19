@@ -37,7 +37,7 @@
     height: 40px;
 }
 #navbar header {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'PT Sans', sans-serif;
     text-align: center;
     background-color: #b0dbec;
 }
@@ -50,7 +50,7 @@
 #main-doc {
     width: 70vw;
     margin-left: 28vw; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Muli', sans-serif;
 }
 #main-doc li {
    margin: 5px auto;
