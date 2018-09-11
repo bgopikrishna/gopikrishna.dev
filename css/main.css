@@ -4,9 +4,10 @@ body {
   margin: 0;
   font-family: "Poppins", serif;
   overflow-x: hidden;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#245fe5), color-stop(#a539c9), color-stop(#df0094), color-stop(#f60054), to(#ed0000));
-  background-image: linear-gradient(to right bottom, #245fe5, #a539c9, #df0094, #f60054, #ed0000);
-  background-repeat: no-repeat;
+  background: linear-gradient(330deg, #0853bb, #4990f3);
+  background-size: 400% 400%;
+  -webkit-animation: bodygradient 30s ease infinite;
+  animation: bodygradient 30s ease infinite;
 }
 
 body a {
@@ -136,9 +137,10 @@ body a {
 /* For(nav Only) Desktops And Laptops */
 @media (min-width: 851px) {
   body {
-    background-image: -webkit-gradient(linear, left top, right bottom, from(#245fe5), color-stop(#a539c9), color-stop(#df0094), color-stop(#f60054), to(#ed0000));
-    background-image: linear-gradient(to right bottom, #245fe5, #a539c9, #df0094, #f60054, #ed0000);
-    background-repeat: no-repeat;
+    background: linear-gradient(330deg, #0853bb, #4990f3);
+    background-size: 400% 400%;
+    -webkit-animation: bodygradient 30s ease infinite;
+    animation: bodygradient 30s ease infinite;
   }
   .container {
     width: 80%;
@@ -443,7 +445,7 @@ footer {
   padding: 5px;
   text-align: center;
   font-size: 14px;
-  font-family: 'Comfortaa', monospace;
+  font-family: "Comfortaa", monospace;
 }
 
 footer a {
@@ -451,5 +453,29 @@ footer a {
   color: #eaeaea;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+@-webkit-keyframes bodygradient {
+  0% {
+    background-position: 0% 9%;
+  }
+  50% {
+    background-position: 100% 92%;
+  }
+  100% {
+    background-position: 0% 9%;
+  }
+}
+
+@keyframes bodygradient {
+  0% {
+    background-position: 0% 9%;
+  }
+  50% {
+    background-position: 100% 92%;
+  }
+  100% {
+    background-position: 0% 9%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
