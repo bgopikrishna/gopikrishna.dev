@@ -275,13 +275,15 @@ body a {
   font-family: "Poppins", sans-serif;
   text-align: center;
   color: rgba(234, 234, 234, 0.9);
-  -webkit-transition: color 0.4s;
-  transition: color 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 #home .welcome h2:hover {
   color: #eaeaea;
   text-shadow: 10px 5px 6px rgba(153, 153, 153, 0.5);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .main section {
