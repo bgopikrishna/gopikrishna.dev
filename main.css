@@ -5,7 +5,7 @@ body {
   margin: 0;
   background: url("patterns/pattern.png") repeat;
   color: #333333;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Source Code Pro", monospace;
   min-height: 100vh;
   display: flex;
   justify-content: flex-start;
