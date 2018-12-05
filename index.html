@@ -17,18 +17,22 @@
       href="https://fonts.googleapis.com/css?family=Trade+Winds|Source+Code+Pro&effect=3d-float"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
   </head>
 
   <body>
     <div class="container">
       <header>
-        <h1 class="font-effect-3d-float" style="color: #333333">
+        <h1 class="font-effect-3d-float animated bounceInDown fast" style="color: #333333">
           Gopi Krishna
         </h1>
       </header>
-      <article id="about">
-        <p>
-          Hey, I'm  self-taught and an aspiring Front-End Web Dev and who is
+      <article id="about" class="animated bounceInLeft delay-1s">
+        <p >
+          Hey, I'm self-taught and an aspiring Front-End Web Dev and who is
           learning about web apps and related technologies.
         </p>
         <p>
@@ -57,23 +61,25 @@
           <i class="fab  fa-github"></i
         ></a>
         <a href="https://twitter.com/bgopikrishna77">
-            <i class="fab fa-twitter"></i>  
-          </a>
+          <i class="fab fa-twitter"></i>
+        </a>
       </div>
     </div>
     <div class="floated">
-      <p style="text-align: center">Website Under Construction</p>
+      <p style="text-align: center; color: #c70711; font-weight: bolder;">
+        Website Under Construction (A SPA with React)
+      </p>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
       $(".fab").hover(
         function() {
           // over
-          $(this).addClass("fa-spin");
+          $(this).addClass("animated jello");
         },
         function() {
           // out
-          $(this).removeClass("fa-spin");
+          $(this).removeClass("animated jello");
         }
       );
     </script>
