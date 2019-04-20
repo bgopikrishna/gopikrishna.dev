@@ -5,7 +5,7 @@ body {
   margin: 0;
   background: url("patterns/pattern.png") repeat;
   color: #333333;
-  font-family: "Source Code Pro", monospace;
+  font-family: 'IBM Plex Mono', monospace;
   min-height: 100vh;
   display: flex;
   justify-content: flex-start;
@@ -33,7 +33,6 @@ a {
 }
 
 header {
-    font-family: 'Trade Winds', cursive;
     font-size: 2em;
     text-align: center;
     font-weight: bolder;
