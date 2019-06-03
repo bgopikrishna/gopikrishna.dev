@@ -1,0 +1,28 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.container,
+.fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.fluid {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+}

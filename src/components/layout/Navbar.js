@@ -16,7 +16,7 @@ const Navbar = ({ title = 'GK' }) => {
   return (
     <div className={navbarStyle.navsection}>
       <div className={navbarStyle.logo}>
-        <a href="/">GK</a>
+        <Link to="/">GK</Link>
       </div>
       <nav>
         <ul className={navbarStyle.navbar}>
@@ -32,7 +32,7 @@ const Navbar = ({ title = 'GK' }) => {
           <li className={navbarStyle.navitem}>
             <Link
               className={navbarStyle.navlink}
-              to="/404"
+              to="/projects"
               activeClassName={navbarStyle.linkActive}
             >
               Projects

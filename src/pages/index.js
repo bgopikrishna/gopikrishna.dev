@@ -1,16 +1,23 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import Layout from '../components/layout';
+import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
+import IntroHeader from '../components/home/IntroHeader';
+import HomeContent from '../components/home/HomeContent';
+import SocialIconsGrid from '../components/extras/SocialIconsGrid';
 
 const IndexPage = () => (
-  <Layout>
+  <Layout containerType="container">
     <SEO title="Home" />
-    <h1>THis Heading </h1>
-    <a href="#">This is Link</a>
-    <Link to="/contact">Go to contact</Link>
+    <div className="home">
+      <IntroHeader />
+      <HomeContent />
+      <SocialIconsGrid />
+    </div>
   </Layout>
 );
 
 export default IndexPage;
+
+//dark color - #0E1621

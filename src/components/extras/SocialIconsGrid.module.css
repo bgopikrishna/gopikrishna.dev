@@ -1,0 +1,11 @@
+.socialGrid {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 20px auto;
+}
+.icon {
+  font-size: 1.5rem;
+}

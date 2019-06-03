@@ -3,11 +3,48 @@ html {
 }
 
 body {
-  background: #f5f5ed;
   padding: 0;
   margin: 0;
 }
 
 * > {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  color: #2196f3;
+}
+
+main {
+  width: 100%;
+}
+
+.home {
+  border: 1px solid #9db5b9;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  line-height: 2;
+  background: #f5f7f9;
+
+}
+
+.projects {
+  text-align: center;
+  line-height: 2;
+  padding: 2.5rem 1rem;
 }
