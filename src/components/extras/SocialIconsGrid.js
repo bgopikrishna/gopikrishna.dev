@@ -6,17 +6,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const SocialIconsGrid = () => {
   return (
     <ul className={styledSocialIcons.socialGrid}>
-      {socialLinks.map(socialLink => (
-        <li key={socialLink.profileUrl}>
-          <a
-            href={socialLink.profileUrl}
-            title={socialLink.platfrom}
-            className={styledSocialIcons.icon}
-          >
-            <FontAwesomeIcon icon={socialLink.icon} />
-          </a>
-        </li>
-      ))}
+      {socialLinks.map(socialLink => {
+        const { profileUrl, platfrom, icon } = socialLink;
+        const iconClassName = `${styledSocialIcons.icon}`;
+
+        return (
+          <li key={profileUrl}>
+            <a href={profileUrl} title={platfrom} className={iconClassName}>
+              <FontAwesomeIcon icon={icon} />
+            </a>
+          </li>
+        );
+      })}
     </ul>
   );
 };

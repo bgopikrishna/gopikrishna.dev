@@ -4,14 +4,13 @@ import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 
-const Navbar = ({ title = 'GK' }) => {
-  const [nightMode, setNightMode] = useState(false);
-  const nightModeIcon = nightMode ? (
+const Navbar = ({ toggleDarkMode, darkMode }) => {
+  const nightModeIcon = darkMode ? (
     <FontAwesomeIcon icon={faSun} />
   ) : (
     <FontAwesomeIcon icon={faMoon} />
   );
-  const nightModeIconStyle = nightMode ? navbarStyle.day : navbarStyle.night;
+  const nightModeIconStyle = darkMode ? navbarStyle.day : navbarStyle.night;
 
   return (
     <div className={navbarStyle.navsection}>
@@ -51,7 +50,7 @@ const Navbar = ({ title = 'GK' }) => {
             <button
               className={`${navbarStyle.nightModeBtn} ${nightModeIconStyle}`}
               to="/contact"
-              onClick={() => setNightMode(!nightMode)}
+              onClick={toggleDarkMode}
             >
               {nightModeIcon}
             </button>

@@ -15,6 +15,7 @@ const ProjectsPage = () => (
       </div>
       <ProjectList />
     </div>
+    <Link to="/">Back To Home</Link>
   </Layout>
 );
 

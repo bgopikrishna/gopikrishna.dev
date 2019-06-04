@@ -1,35 +1,19 @@
 .projectBox {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
-  padding: 10px;
+  padding: 1rem 2rem;
   width: 100%;
   min-height: 200px;
   border: 1px solid #9db5b9;
-  margin: 40px auto;
+  margin: 20px auto;
   flex-wrap: wrap;
-  background: #f5f7f9;
-}
-
-.projectBox_Image {
-  display: block;
-  width: 40%;
-  height: 100%;
-  margin-right: 10px;
-  align-self: center;
-
-}
-
-.projectBox_Image img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  margin: 0;
+  background: #f3f7f9;
+  border-radius: 2px;
+  text-transform: capitalize;
 }
 
 .projectBox_Content {
-  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;

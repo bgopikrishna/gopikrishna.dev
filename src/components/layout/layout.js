@@ -5,41 +5,30 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from 'react';
+import React, { useState, useEffect, createContext } from 'react';
 import PropTypes from 'prop-types';
-import { StaticQuery, graphql } from 'gatsby';
 import Navbar from './Navbar';
+import {} from 'gatsby-plugin-react-helmet';
 import layoutStyles from './layout.module.css';
 import Footer from './footer';
 
-const Layout = ({ children, containerType }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
+const Layout = ({ children, containerType }) => {
+  return (
+    <div className={layoutStyles.box}>
+      <Navbar toggleDarkMode={() => {}} darkMode={false} />
+      <div
+        className={
+          containerType === 'fluid'
+            ? layoutStyles.fluid
+            : layoutStyles.container
         }
-      }
-    `}
-    render={data => (
-      <div className={layoutStyles.box}>
-        <Navbar />
-        <div
-          className={
-            containerType === 'fluid'
-              ? layoutStyles.fluid
-              : layoutStyles.container
-          }
-        >
-          <main>{children}</main>
-        </div>
-        <Footer />
+      >
+        <main>{children}</main>
       </div>
-    )}
-  />
-);
+      <Footer />
+    </div>
+  );
+};
 
 Layout.defaultProps = {
   containerType: 'fluid',

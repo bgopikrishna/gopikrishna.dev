@@ -1,20 +1,21 @@
 import React from 'react';
 import projectBoxStyle from './projectBox.module.css';
-import Image from '../image';
 
 const ProjectBox = ({ project }) => {
-  const { imagePath, name, desc, liveDemoUrl, sourceCodeUrl } = project;
+  const { name, desc, liveDemoUrl, sourceCodeUrl, technologies } = project;
+  const technologiesUsed = technologies.join(', ');
   return (
     <div className={projectBoxStyle.projectBox}>
-      <div className={projectBoxStyle.projectBox_Image}>
-        <img src={imagePath} alt="" />
-      </div>
-
       <div className={projectBoxStyle.projectBox_Content}>
         <div className={projectBoxStyle.projectBox_header}>
-          <h2>{name}</h2>
+          <h3>{name}</h3>
         </div>
-        <div className={projectBoxStyle.projectBox_desc}>{desc}</div>
+        <div className={projectBoxStyle.projectBox_desc}>
+          <strong>Description:</strong> {desc}
+        </div>
+        <div className={projectBoxStyle.projectBox_desc}>
+          <strong> Technologies Used:</strong> {technologiesUsed}
+        </div>
         <div className={projectBoxStyle.projectBox_actionBtnsGrp}>
           <a
             href={sourceCodeUrl}

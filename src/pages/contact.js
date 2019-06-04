@@ -1,14 +1,24 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import Layout from "../components/layout/layout"
+import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
+import SocialIconsGrid from '../components/extras/SocialIconsGrid';
 
 const ContactPage = () => (
-  <Layout>
+  <Layout containerType={'container'}>
     <SEO title="Home" />
-
-    <Link to="/about">Go About</Link>
+    <div className="contact-page">
+      <h2>Contact Me</h2>
+      <div className="contact-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quae!
+        Facere amet explicabo et accusantium quos id eum esse a veniam
+        asperiores magni itaque, atque distinctio consequatur animi perferendis
+        hic!
+      </div>
+      <SocialIconsGrid />
+    </div>
+    <Link to="/">Back To Home</Link>
   </Layout>
 );
 
