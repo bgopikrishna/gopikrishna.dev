@@ -16,20 +16,17 @@ const ProjectBox = ({ project }) => {
         <div className={projectBoxStyle.projectBox_desc}>
           <strong> Technologies Used:</strong> {technologiesUsed}
         </div>
-        <div className={projectBoxStyle.projectBox_actionBtnsGrp}>
-          <a
-            href={sourceCodeUrl}
-            className={projectBoxStyle.projectBox_actionBtn}
-          >
-            Souce Code
-          </a>
-          <a
-            href={liveDemoUrl}
-            className={projectBoxStyle.projectBox_actionBtn}
-          >
-            Live Demo
-          </a>
-        </div>
+      </div>
+      <div className={projectBoxStyle.projectBox_actionBtnsGrp}>
+        <a
+          href={sourceCodeUrl}
+          className={projectBoxStyle.projectBox_actionBtn}
+        >
+          Souce Code
+        </a>
+        <a href={liveDemoUrl} className={projectBoxStyle.projectBox_actionBtn}>
+          Live Demo
+        </a>
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
 :root {
   --blue: #2196f3;
   --black: #0e1621;
-  --background-1: #f3f7f9;
-  --background-2: #f1f1f5;
+  --white: #f3f7f9;
+  --white-2: #f1f1f5;
 }
 
 html {
@@ -12,6 +12,16 @@ html {
 body {
   padding: 0;
   margin: 0;
+}
+
+body.dark {
+  background: var(--black);
+  color: var(--white);
+}
+
+body.light {
+  background: var(--white);
+  color: var(--black);
 }
 
 * > {
@@ -45,12 +55,12 @@ main {
   border: 1px solid #2196f3;
   padding: 2.5rem 1rem;
   text-align: center;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .projects {
   text-align: center;
-  line-height: 2;
+  line-height: 1.5;
   padding: 1rem 1rem;
 }
 
@@ -66,4 +76,6 @@ main {
   margin: 40px auto;
   line-height: 2;
   padding: 2.5rem 1rem;
+  text-transform: capitalize;
 }
+

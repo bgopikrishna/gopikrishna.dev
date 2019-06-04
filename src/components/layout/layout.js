@@ -5,17 +5,23 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React, { useState, useEffect, createContext } from 'react';
+import React, { useState, useMemo } from 'react';
 import PropTypes from 'prop-types';
 import Navbar from './Navbar';
 import {} from 'gatsby-plugin-react-helmet';
 import layoutStyles from './layout.module.css';
 import Footer from './footer';
+import { useDarkMode } from '../../hooks/useDarkmode';
 
 const Layout = ({ children, containerType }) => {
+  const [darkMode, setDarkMode] = useDarkMode();
+
   return (
     <div className={layoutStyles.box}>
-      <Navbar toggleDarkMode={() => {}} darkMode={false} />
+      <Navbar
+        toggleDarkMode={() => setDarkMode(!darkMode)}
+        darkMode={darkMode}
+      />
       <div
         className={
           containerType === 'fluid'

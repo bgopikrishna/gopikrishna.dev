@@ -2,9 +2,10 @@ import {
   faTwitter,
   faGithubAlt,
   faLinkedinIn,
+  faFreeCodeCamp,
 } from '@fortawesome/free-brands-svg-icons';
 
-export const introPrimaryContent = `Hey, I'm self-taught and an aspiring Front-End Web Dev and who is learning about web apps and related technologies.I'm Knowledgeable in HTML, CSS, JavaScript, SASS, jQuery, AJAX. And I'm currently tinkering with ReduxJS.`;
+export const introPrimaryContent = `I'm a self-taught Front-End Web Dev and who is learning about web apps and related technologies.I'm Knowledgeable in HTML, CSS, JavaScript, SASS, jQuery, AJAX. And I'm currently tinkering with React, Redux, Firebase.`;
 
 export const introSecondaryContent = `If you have any queries, feel free to message me on `;
 
@@ -16,11 +17,18 @@ export const socialLinks = [
     className: 'twitterIcon',
   },
   {
+    platfrom: 'Gopi Krishna on Freecodecap',
+    profileUrl: 'https://www.freecodecamp.org/bgopikrishna',
+    icon: faFreeCodeCamp,
+    className: 'fccIcon',
+  },
+  {
     platfrom: 'Gopi Krishna on Github',
     profileUrl: 'https://github.com/bgopikrishna',
     icon: faGithubAlt,
     className: 'githubIcon',
   },
+
   {
     platfrom: 'Gopi Krishna on linkedin',
     profileUrl: 'https://linkedin.com/in/bgopikrishna',

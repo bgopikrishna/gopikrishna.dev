@@ -7,9 +7,9 @@ import homeStyles from './HomeContent.module.css';
 
 const HomeContent = () => {
   return (
-    <div className={homeStyles.introContent}>
-      <div className={homeStyles.primaryContent}>{introPrimaryContent}</div>
-      <div className={homeStyles.secondaryContent}>
+    <section className={homeStyles.introContent}>
+      <p className={homeStyles.primaryContent}>{introPrimaryContent}</p>
+      <p className={homeStyles.secondaryContent}>
         {introSecondaryContent}
         <a
           href="http://twitter.com/_bgopikrishna"
@@ -18,8 +18,8 @@ const HomeContent = () => {
         >
           twitter
         </a>
-      </div>
-    </div>
+      </p>
+    </section>
   );
 };
 
