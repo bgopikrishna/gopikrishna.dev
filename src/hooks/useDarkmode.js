@@ -1,18 +1,16 @@
 import { useState, useEffect } from 'react';
 
 export const useDarkMode = () => {
-  if (typeof window !== 'undefined') {
-    const [darkMode, setDarkMode] = useState(
-      localStorage.getItem('darkMode') === 'true' ? true : false
-    );
+  const [darkMode, setDarkMode] =
+    typeof window === 'undefined'
+      ? useState(false)
+      : useState(localStorage.getItem('darkMode') === 'true' ? true : false);
 
-    useEffect(() => {
-      toggleDarkMode(darkMode);
-    }, [darkMode]);
+  useEffect(() => {
+    toggleDarkMode(darkMode);
+  }, [darkMode]);
 
-    return [darkMode, setDarkMode];
-  }
-  return;
+  return [darkMode, setDarkMode];
 };
 
 function toggleDarkMode(isItdark) {
