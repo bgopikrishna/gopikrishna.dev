@@ -5,7 +5,7 @@ import {
   faFreeCodeCamp,
 } from '@fortawesome/free-brands-svg-icons';
 
-export const introPrimaryContent = `I'm a self-taught Front-End Web Dev and who is learning about web apps and related technologies.I'm Knowledgeable in HTML, CSS, JavaScript, SASS, jQuery, AJAX. And I'm currently tinkering with React, Redux, Firebase.`;
+export const introPrimaryContent = `I'm a self-taught Front-End Web Dev and who is learning about web apps and related technologies.I'm Knowledgeable in HTML, CSS, JavaScript, SASS, jQuery, AJAX. And I'm currently tinkering  👷‍♂️️  with React, Redux, Firebase.`;
 
 export const introSecondaryContent = `If you have any queries, feel free to message me on `;
 
@@ -58,7 +58,7 @@ export const projectDetailsList = [
     liveDemoUrl: 'https://mybookshelf.netlify.com/',
     sourceCodeUrl: 'https://github.com/bgopikrishna/book-shelf',
     desc:
-      'A bookshelf app inspired from Udacity React nanodegree using Google Books API.',
+      'A bookshelf app inspired from Udacity React nanodegree project using Google Books API.',
     technologies: ['JavaScript', 'ReactJS', 'HTML5', 'Materilize CSS'],
   },
   {

@@ -64,7 +64,7 @@ main {
   padding: 1rem 1rem;
 }
 
-.projects .pageHeader {
+.pageHeader {
   margin-bottom: 20px;
 }
 
@@ -79,3 +79,11 @@ main {
   text-transform: capitalize;
 }
 
+.about {
+  margin: 20px auto;
+  padding: 1rem 1rem;
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}

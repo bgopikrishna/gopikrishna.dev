@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import navbarStyle from './Navbar.module.css';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

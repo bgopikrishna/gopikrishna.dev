@@ -11,13 +11,13 @@
   border-radius: 5px;
   text-transform: capitalize;
   opacity: 0.8;
-  transition: all 0.2ms ease-in-out;
+  transition: all 0.3ms linear;
 }
 
 .projectBox:focus,
 .projectBox:hover {
   opacity: 1;
-  transition: all 0.2ms ease-in-out;
+  transition: all 0.2ms linear;
 }
 .projectBox_Content {
   height: 100%;
