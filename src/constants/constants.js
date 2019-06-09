@@ -5,7 +5,7 @@ import {
   faFreeCodeCamp,
 } from '@fortawesome/free-brands-svg-icons';
 
-export const introPrimaryContent = `I'm a self-taught Front-End Web Dev and who is learning about web apps and related technologies.I'm Knowledgeable in HTML, CSS, JavaScript, SASS, jQuery, AJAX. And I'm currently tinkering  👷‍♂️️  with React, Redux, Firebase.`;
+export const introPrimaryContent = `I'm a self-taught Front-End Web Dev and learner at freeCodeCamp. I love JavaScript and React. I'm currently looking for internships, If you have any let me know. If I'm not coding, I'll be binge-watching or reading books (fiction) or playing FPS games. `;
 
 export const introSecondaryContent = `If you have any queries, feel free to message me on `;
 

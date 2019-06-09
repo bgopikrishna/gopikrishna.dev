@@ -18,3 +18,9 @@
   color: white;
   transition: all 0.3ms ease-in;
 }
+
+@media (max-width: 900px) {
+  .socialGrid {
+    width: 100%;
+  }
+}

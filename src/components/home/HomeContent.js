@@ -4,6 +4,7 @@ import {
   introSecondaryContent,
 } from '../../constants/constants';
 import homeStyles from './HomeContent.module.css';
+import { Link } from 'gatsby';
 
 const HomeContent = () => {
   return (
@@ -18,6 +19,7 @@ const HomeContent = () => {
         >
           twitter
         </a>
+        &nbsp;or <Link to="/contact">contact me</Link>
       </p>
     </section>
   );

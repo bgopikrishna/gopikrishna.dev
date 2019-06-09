@@ -87,3 +87,14 @@ main {
   flex-direction: column;
   text-align: justify;
 }
+
+@media (max-width: 900px) {
+  main {
+    padding: 5px;
+  }
+  .home {
+    padding: 0px;
+    border: none;
+    text-align: justify;
+  }
+}
