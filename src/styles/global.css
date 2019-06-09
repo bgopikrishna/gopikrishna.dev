@@ -97,4 +97,7 @@ main {
     border: none;
     text-align: justify;
   }
+  .projects {
+    padding: 1rem 0.5rem;
+  }
 }

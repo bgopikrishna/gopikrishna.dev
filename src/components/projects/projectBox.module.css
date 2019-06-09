@@ -43,6 +43,7 @@
 @media (max-width: 900px) {
   .projectBox {
     flex-direction: column;
+    padding: 20px;
   }
   .projectBox_Image {
     width: 100%;
