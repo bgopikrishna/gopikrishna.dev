@@ -37,21 +37,24 @@ const AboutPage = () => (
           <li>JavaScript</li>
           <li>React</li>
           <li>Redux</li>
+          <li>Firebase</li>
           <li>HTML3</li>
           <li>CSS3</li>
-          <li>Firebase</li>
           <li>Sass</li>
+          <li>BootStrap</li>
+          <li>Materialize CSS</li>
+          <li>Git</li>
         </ul>
         <p>
           You can checkout my <Link to="/projects">projects</Link> and my{' '}
           <a
-            href="https://github.com/bgopikrishna"
+            href={'/assets/resume.pdf'}
             target="_blank"
             rel="noopener noreferrer"
           >
-            github
+            resume
           </a>{' '}
-          page.
+          .
         </p>
       </section>
     </article>
