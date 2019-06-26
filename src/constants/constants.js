@@ -5,7 +5,7 @@ import {
   faFreeCodeCamp,
 } from '@fortawesome/free-brands-svg-icons';
 
-export const introPrimaryContent = `I'm a self-taught Front-End Web Dev and learner at freeCodeCamp. I love JavaScript and React. I'm currently looking for internships, If you have any let me know.`;
+export const introPrimaryContent = `I'm a self-taught Front-End Web Dev and learner at freeCodeCamp. I love JavaScript and React. I'm currently looking for internships, If you know any let me know.`;
 
 export const introSecondaryContent = `If you have any queries, feel free to message me on `;
 

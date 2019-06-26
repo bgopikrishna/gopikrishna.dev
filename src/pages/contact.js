@@ -19,7 +19,14 @@ const ContactPage = () => (
         <p>
           If you have any queries or just wanna say 'hello', reach out to me
           via&nbsp;<a href="https://twitter.com/_bgopikrishna">twitter</a> or
-          just mail to b.gopikrishna(at)hotmail.com. You can find me at &#8623;
+          just mail to{' '}
+          <a
+            href="mailto:b.gopikrishna@hotmail.com"
+            style={{ textTransform: 'lowercase' }}
+          >
+            b.gopikrishna(at)hotmail.com.
+          </a>{' '}
+          You can find me at &#8623;
         </p>
       </div>
       <SocialIconsGrid />

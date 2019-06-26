@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
-import AboutSectionContainer from '../components/about/AboutSectionContainer';
 import LinkToPages from '../components/extras/LinkToPages';
 import { Link } from 'gatsby';
 import SocialIconsGrid from '../components/extras/SocialIconsGrid';

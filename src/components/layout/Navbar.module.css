@@ -42,12 +42,14 @@
 .navlink {
   text-decoration: none;
   color: inherit;
+  opacity: 0.8;
 }
 
 .navlink:focus,
 .navlink:hover,
 .linkActive {
   color: #eeeeee;
+  opacity: 1;
 }
 
 .nightModeBtn {
@@ -66,15 +68,24 @@
 
 @media (max-width: 900px) {
   .navsection {
-    flex-direction: column;
     height: auto;
+    padding: 0.4rem;
+    justify-content: space-between;
   }
   .logo {
-    margin: auto;
+    margin: 0;
     justify-self: unset;
   }
   .navbar {
-    margin: 10px auto 0px auto;
     width: 100%;
+    background: #111;
+  }
+  nav {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    text-transform: lowercase !important;
   }
 }
