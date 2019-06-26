@@ -26,6 +26,7 @@ body.light {
 
 * > {
   box-sizing: border-box;
+  overflow-wrap: break-word;
 }
 
 h1,
@@ -49,13 +50,22 @@ a {
 
 main {
   width: 100%;
+  max-width: 960px;
+}
+main a {
+  text-decoration: none;
+}
+main a:hover,
+main a:focus {
+  text-decoration: underline;
 }
 
 .home {
-  border: 1px solid #2196f3;
+  border: 1px solid #9db5b9;
   padding: 2.5rem 1rem;
   text-align: center;
   line-height: 1.5;
+  border-radius: 5px;
 }
 
 .projects {
@@ -101,3 +111,5 @@ main {
     padding: 1rem 0.5rem;
   }
 }
+
+

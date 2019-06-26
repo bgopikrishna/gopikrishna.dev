@@ -5,7 +5,7 @@ import {
   faFreeCodeCamp,
 } from '@fortawesome/free-brands-svg-icons';
 
-export const introPrimaryContent = `I'm a self-taught Front-End Web Dev and learner at freeCodeCamp. I love JavaScript and React. I'm currently looking for internships, If you have any let me know. If I'm not coding, I'll be binge-watching or reading books (fiction) or playing FPS games. `;
+export const introPrimaryContent = `I'm a self-taught Front-End Web Dev and learner at freeCodeCamp. I love JavaScript and React. I'm currently looking for internships, If you have any let me know.`;
 
 export const introSecondaryContent = `If you have any queries, feel free to message me on `;
 
@@ -43,7 +43,7 @@ export const projectDetailsList = [
     liveDemoUrl: 'https://movie-base.netlify.com/',
     sourceCodeUrl: 'https://github.com/bgopikrishna/moviebase',
     desc:
-      'A movie lists, movie info, movie search  web app using the themoviedb API.',
+      'A movie info, movies search, movies list maker web app using the themoviedb API.',
     technologies: [
       'JavaScript',
       'ReactJS',

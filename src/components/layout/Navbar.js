@@ -14,9 +14,9 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
 
   return (
     <div className={navbarStyle.navsection}>
-      <div className={navbarStyle.logo}>
+      <header className={navbarStyle.logo}>
         <Link to="/">GK</Link>
-      </div>
+      </header>
       <nav>
         <ul className={navbarStyle.navbar}>
           <li className={navbarStyle.navitem}>
@@ -46,17 +46,15 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
               Contact
             </Link>
           </li>
-          <li className={navbarStyle.navitem}>
-            <button
-              className={`${navbarStyle.nightModeBtn} ${nightModeIconStyle}`}
-              to="/contact"
-              onClick={toggleDarkMode}
-            >
-              {nightModeIcon}
-            </button>
-          </li>
         </ul>
       </nav>
+      <button
+        className={`${navbarStyle.nightModeBtn} ${nightModeIconStyle}`}
+        to="/contact"
+        onClick={toggleDarkMode}
+      >
+        {nightModeIcon}
+      </button>
     </div>
   );
 };

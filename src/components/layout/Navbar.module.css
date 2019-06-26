@@ -4,10 +4,17 @@
   background: #111;
   color: #90dbf0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding: 5px 10px;
+  padding: 1.2rem 10%;
   height: 60px;
+  justify-self: flex-start;
+  margin-right: auto;
+}
+
+.logo {
+  justify-self: flex-start;
+  margin-right: auto;
 }
 
 .logo a {
@@ -38,7 +45,8 @@
 }
 
 .navlink:focus,
-.navlink:hover, .linkActive {
+.navlink:hover,
+.linkActive {
   color: #eeeeee;
 }
 
@@ -60,6 +68,10 @@
   .navsection {
     flex-direction: column;
     height: auto;
+  }
+  .logo {
+    margin: auto;
+    justify-self: unset;
   }
   .navbar {
     margin: 10px auto 0px auto;

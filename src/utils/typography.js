@@ -1,10 +1,10 @@
 import Typography from 'typography';
 
 const typography = new Typography({
-  baseFontSize: '19px',
-  baseLineHeight: 1.5,
+  baseFontSize: '20px',
+  baseLineHeight: 1.45,
   headerFontFamily: [
-    'Karla',
+    'Work Sans',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
@@ -16,7 +16,7 @@ const typography = new Typography({
     'sans-serif',
   ],
   bodyFontFamily: [
-    'Karla',
+    'Quattrocento Sans',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
@@ -29,7 +29,12 @@ const typography = new Typography({
   ],
   googleFonts: [
     {
-      name: 'Karla',
+      name: 'Work Sans',
+
+      styles: ['400', '700'],
+    },
+    {
+      name: 'Quattrocento Sans',
       styles: ['400', '700'],
     },
   ],

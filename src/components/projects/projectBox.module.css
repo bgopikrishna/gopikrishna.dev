@@ -11,13 +11,15 @@
   border-radius: 5px;
   text-transform: capitalize;
   opacity: 0.8;
-  transition: all 0.3ms linear;
+  transition: all 0.2s linear;
+  box-shadow: 2px 2px  #9db5b9;
 }
 
 .projectBox:focus,
 .projectBox:hover {
   opacity: 1;
-  transition: all 0.2ms linear;
+  transition: all 0.2s linear;
+  box-shadow: none;
 }
 .projectBox_Content {
   height: 100%;
@@ -38,6 +40,7 @@
   justify-content: space-between;
   max-width: 100%;
   justify-self: flex-end;
+  margin-top: 20px;
 }
 
 @media (max-width: 900px) {
