@@ -5,14 +5,14 @@
   padding: 1rem 2rem;
   width: 100%;
   min-height: 200px;
-  border: 1px solid #9db5b9;
+  border: 1px solid var(--gray);
   margin: 20px auto;
   flex-wrap: wrap;
   border-radius: 5px;
   text-transform: capitalize;
   opacity: 0.8;
   transition: all 0.2s linear;
-  box-shadow: 2px 2px  #9db5b9;
+  box-shadow: 2px 2px var(--gray);
 }
 
 .projectBox:focus,

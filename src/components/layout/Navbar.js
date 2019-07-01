@@ -2,7 +2,15 @@ import React from 'react';
 import navbarStyle from './Navbar.module.css';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import {
+  faSun,
+  faMoon,
+  faLaptopCode,
+  faUserAstronaut,
+  faPaperPlane,
+} from '@fortawesome/free-solid-svg-icons';
+import Header from './header';
+import { ROUTES } from '../../constants/constants';
 
 const Navbar = ({ toggleDarkMode, darkMode }) => {
   const nightModeIcon = darkMode ? (
@@ -14,38 +22,25 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
 
   return (
     <div className={navbarStyle.navsection}>
-      <header className={navbarStyle.logo}>
-        <Link to="/">GK</Link>
-      </header>
+      <Header />
       <nav>
         <ul className={navbarStyle.navbar}>
-          <li className={navbarStyle.navitem}>
-            <Link
-              className={navbarStyle.navlink}
-              to="/about"
-              activeClassName={navbarStyle.linkActive}
-            >
-              About
-            </Link>
-          </li>
-          <li className={navbarStyle.navitem}>
-            <Link
-              className={navbarStyle.navlink}
-              to="/projects"
-              activeClassName={navbarStyle.linkActive}
-            >
-              Projects
-            </Link>
-          </li>
-          <li className={navbarStyle.navitem}>
-            <Link
-              className={navbarStyle.navlink}
-              to="/contact"
-              activeClassName={navbarStyle.linkActive}
-            >
-              Contact
-            </Link>
-          </li>
+          {ROUTES.length !== 0 &&
+            ROUTES.map(route => (
+              <li className={navbarStyle.navitem} key={route.pathName}>
+                <Link
+                  className={navbarStyle.navlink}
+                  to={route.path}
+                  activeClassName={navbarStyle.linkActive}
+                >
+                  {' '}
+                  <span className={navbarStyle.navlinkIcon}>
+                    <FontAwesomeIcon icon={route.icon} />
+                  </span>
+                  <span>{route.pathName}</span>
+                </Link>
+              </li>
+            ))}
         </ul>
       </nav>
       <button

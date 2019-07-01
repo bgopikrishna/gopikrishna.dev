@@ -1,8 +1,12 @@
 :root {
-  --blue: #2196f3;
+  --primary: #8083ff;
   --black: #0e1621;
   --white: #f3f7f9;
   --white-2: #f1f1f5;
+  --gray: #9db5b9;
+  --nav-light: var(--white-2);
+  --nav-dark: var(--black);
+  --nav-background: var(--nav-light);
 }
 
 html {
@@ -17,11 +21,13 @@ body {
 body.dark {
   background: var(--black);
   color: var(--white);
+  --nav-background: var(--nav-dark);
 }
 
 body.light {
   background: var(--white);
   color: var(--black);
+  --nav-background: var(--nav-light);
 }
 
 * > {
@@ -45,7 +51,7 @@ h4,
 h5,
 h6,
 a {
-  color: var(--blue);
+  color: var(--primary);
 }
 
 main {
@@ -61,7 +67,8 @@ main a:focus {
 }
 
 .home {
-  border: 1px solid #9db5b9;
+  border: 1px solid var(--gray);
+  box-shadow: 2px 2px var(--gray);
   padding: 2.5rem 1rem;
   text-align: center;
   line-height: 1.5;
@@ -106,10 +113,9 @@ main a:focus {
     padding: 0px;
     border: none;
     text-align: justify;
+    box-shadow: none;
   }
   .projects {
     padding: 1rem 0.5rem;
   }
 }
-
-

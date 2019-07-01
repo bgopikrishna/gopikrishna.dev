@@ -4,6 +4,12 @@ import {
   faLinkedinIn,
   faFreeCodeCamp,
 } from '@fortawesome/free-brands-svg-icons';
+import {
+  faUserAstronaut,
+  faNewspaper,
+  faPaperPlane,
+  faLaptopCode,
+} from '@fortawesome/free-solid-svg-icons';
 
 export const introPrimaryContent = `I'm a self-taught Front-End Web Dev and learner at freeCodeCamp. I love JavaScript and React. I'm currently looking for internships, If you know any let me know.`;
 
@@ -67,5 +73,28 @@ export const projectDetailsList = [
     sourceCodeUrl: 'https://github.com/bgopikrishna/react-pomotimer',
     desc: 'A minimalistic pomodoro timer based on pomodoro technique.',
     technologies: ['JavaScript', 'ReactJS', 'HTML5', 'CSS'],
+  },
+];
+
+export const ROUTES = [
+  {
+    path: '/about',
+    icon: faUserAstronaut,
+    pathName: 'About',
+  },
+  {
+    path: '/projects',
+    icon: faLaptopCode,
+    pathName: 'Projects',
+  },
+  {
+    path: '/contact',
+    icon: faPaperPlane,
+    pathName: 'Contact',
+  },
+  {
+    path: '/blog',
+    icon: faNewspaper,
+    pathName: 'Blog',
   },
 ];

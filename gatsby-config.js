@@ -30,8 +30,8 @@ module.exports = {
         name: `Gopi Krishna`,
         short_name: `GK`,
         start_url: `/`,
-        background_color: `#2296f3`,
-        theme_color: `#2296f3`,
+        background_color: `#111`,
+        theme_color: `#8083ff`,
         display: `standalone`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
