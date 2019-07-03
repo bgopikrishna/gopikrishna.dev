@@ -9,7 +9,16 @@ import { Link } from 'gatsby';
 const HomeContent = () => {
   return (
     <section className={homeStyles.introContent}>
-      <p className={homeStyles.primaryContent}>{introPrimaryContent}</p>
+      <p className={homeStyles.primaryContent}>
+        {introPrimaryContent}{' '}
+        <a
+          href={'/assets/resume.pdf'}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          resume
+        </a>
+      </p>
       <p className={homeStyles.secondaryContent}>
         {introSecondaryContent}
         <a

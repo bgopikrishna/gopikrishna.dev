@@ -11,7 +11,7 @@ import {
   faLaptopCode,
 } from '@fortawesome/free-solid-svg-icons';
 
-export const introPrimaryContent = `I'm a self-taught Front-End Web Dev and learner at freeCodeCamp. I love JavaScript and React. I'm currently looking for internships, If you know any let me know.`;
+export const introPrimaryContent = `I'm a self-taught Front-End Web Dev and learner at freeCodeCamp. I love JavaScript and React. I'm currently looking for internships, If you know any let me know. Here's my`;
 
 export const introSecondaryContent = `If you have any queries, feel free to message me on `;
 
@@ -97,4 +97,17 @@ export const ROUTES = [
     icon: faNewspaper,
     pathName: 'Blog',
   },
+];
+
+export const mySkills = [
+  'JavaScript',
+  'React',
+  'Redux',
+  'Firebase',
+  'HTML5',
+  'CSS3',
+  'Sass',
+  'BootStrap',
+  'Materialize CSS',
+  'Git',
 ];

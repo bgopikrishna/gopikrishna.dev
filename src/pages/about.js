@@ -4,6 +4,7 @@ import SEO from '../components/seo';
 import LinkToPages from '../components/extras/LinkToPages';
 import { Link } from 'gatsby';
 import SocialIconsGrid from '../components/extras/SocialIconsGrid';
+import { mySkills } from '../constants/constants';
 
 const AboutPage = () => (
   <Layout containerType={'container'}>
@@ -12,7 +13,7 @@ const AboutPage = () => (
       <h2 className="pageHeader" style={{ textAlign: 'center' }}>
         About Me
       </h2>
-      <section className="">
+      <section className="background">
         <h3 className="pageHeader">Background</h3>
         <p>
           I am originally from Hyderabad, India. I'm currently pursuing my final
@@ -31,19 +32,15 @@ const AboutPage = () => (
           .
         </p>
       </section>
-      <section className="">
+      <section className="skills">
         <h3 className="pageHeader">knowledgeable In</h3>
         <ul>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Redux</li>
-          <li>Firebase</li>
-          <li>HTML3</li>
-          <li>CSS3</li>
-          <li>Sass</li>
-          <li>BootStrap</li>
-          <li>Materialize CSS</li>
-          <li>Git</li>
+          {mySkills.map(skill => (
+            <li key={skill}>
+              {' '}
+              <span>&#8594; &nbsp;</span> {skill}
+            </li>
+          ))}
         </ul>
         <p>
           You can checkout my <Link to="/projects">projects</Link> and my{' '}

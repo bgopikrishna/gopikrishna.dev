@@ -105,6 +105,11 @@ main a:focus {
   text-align: justify;
 }
 
+.skills ul {
+  list-style: none;
+  margin-left: 0.7rem;
+}
+
 @media (max-width: 900px) {
   main {
     padding: 5px;
