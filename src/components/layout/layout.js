@@ -12,6 +12,10 @@ import {} from 'gatsby-plugin-react-helmet';
 import layoutStyles from './layout.module.css';
 import Footer from './footer';
 import { useDarkMode } from '../../hooks/useDarkmode';
+import 'prism-theme-night-owl';
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
+
+
 
 const Layout = ({ children, containerType }) => {
   const [darkMode, setDarkMode] = useDarkMode();

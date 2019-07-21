@@ -1,6 +1,6 @@
 :root {
   --primary: #8083ff;
-  --black: #0e1621;
+  --black: #181e2a;
   --white: #f3f7f9;
   --white-2: #f1f1f5;
   --gray: #9db5b9;
@@ -21,13 +21,13 @@ body {
 body.dark {
   background: var(--black);
   color: var(--white);
-  --nav-background: var(--nav-dark);
+  --title-background: rgba(255 , 255, 255, 0.1);
 }
 
 body.light {
   background: var(--white);
   color: var(--black);
-  --nav-background: var(--nav-light);
+  --title-background: rgba(0, 0, 0, 0.1);
 }
 
 * > {
