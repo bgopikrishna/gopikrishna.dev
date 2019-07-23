@@ -53,10 +53,6 @@ li {
   transition: 0.3ms all linear;
 }
 
-.linkActive {
-  font-weight: bold;
-}
-
 .nightModeBtn {
   background: none;
   outline: none;
@@ -108,5 +104,9 @@ li {
   }
   .navlinkIcon {
     display: block;
+  }
+
+  .linkActive {
+    font-weight: bold;
   }
 }

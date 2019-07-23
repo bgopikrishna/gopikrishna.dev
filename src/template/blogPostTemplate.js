@@ -3,15 +3,14 @@ import SEO from '../components/seo';
 import Layout from '../components/layout/layout';
 import { graphql } from 'gatsby';
 import './blogPostTemplate.css';
+import SocialIconsGrid from '../components/extras/SocialIconsGrid';
 
 const blogPostTemplate = props => {
   const title = props.data.markdownRemark.frontmatter.title;
   const date = props.data.markdownRemark.frontmatter.date;
 
   const htmlData = props.data.markdownRemark.html;
-  const timeToRead =
-    '☕️' + props.data.markdownRemark.timeToRead + ' min read';
-  console.log(props);
+  const timeToRead = '☕️' + props.data.markdownRemark.timeToRead + ' min read';
 
   return (
     <Layout containerType="fluid">
@@ -20,11 +19,13 @@ const blogPostTemplate = props => {
         <header className="blog-post-header">
           <h1 className="blog-post-title">{title}</h1>
           <p style={{ fontSize: '12px', marginTop: '0.8rem' }}>
-            {date} | {timeToRead}
+            {'📅'} {date} | {timeToRead}
           </p>
         </header>
         <div dangerouslySetInnerHTML={{ __html: htmlData }}></div>
       </article>
+      <hr />
+      <SocialIconsGrid></SocialIconsGrid>
     </Layout>
   );
 };

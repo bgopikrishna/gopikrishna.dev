@@ -9,19 +9,35 @@ const Blog = ({ data }) => {
   return (
     <Layout containerType="container">
       <SEO title="Blog" />
-      <div className="blog">My Blog</div>
-      {posts &&
-        posts.map(postNode => {
-          const { frontmatter } = postNode.node;
+      <div className="blog">
+        <div className="pageHeader">
+          <h2>Blog</h2>
+        </div>
+        <div className="blog-post-list">
+          {posts &&
+            posts.map(postNode => {
+              const { frontmatter, timeToRead } = postNode.node;
 
-          const { title, path } = frontmatter;
+              const { title, path, date } = frontmatter;
 
-          return (
-            <div key={path}>
-              <Link to={path}>{title}</Link>
-            </div>
-          );
-        })}
+              return (
+                <Link key={path} to={path} className="blog-post-box">
+                  <h3>{title}</h3>
+
+                  <p
+                    style={{
+                      fontSize: '12px',
+                      marginTop: '0.8rem',
+                      color: 'var(--text-color)',
+                    }}
+                  >
+                    {'📅'} {date} |{' ☕️' + timeToRead + ' min read'}
+                  </p>
+                </Link>
+              );
+            })}
+        </div>
+      </div>
     </Layout>
   );
 };
@@ -33,9 +49,10 @@ export const query = graphql`
         node {
           frontmatter {
             title
-            date
+            date(formatString: "DD MMMM, YYYY")
             path
           }
+          timeToRead
         }
       }
     }

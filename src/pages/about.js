@@ -14,7 +14,7 @@ const AboutPage = () => (
         About Me
       </h2>
       <section className="background">
-        <h3 className="pageHeader">Background</h3>
+        <h3>Background</h3>
         <p>
           I am originally from Hyderabad, India. I'm currently pursuing my final
           year of under graduation in Electronics & Communication Engineering
@@ -33,7 +33,7 @@ const AboutPage = () => (
         </p>
       </section>
       <section className="skills">
-        <h3 className="pageHeader">knowledgeable In</h3>
+        <h3>knowledgeable In</h3>
         <ul>
           {mySkills.map(skill => (
             <li key={skill}>
