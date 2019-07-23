@@ -5,7 +5,7 @@ date: '2019-07-23'
 path: '/blog/null-vs-undefined'
 ---
 
-I always had a small confusion between `null` and `undefined` in JavaScript. My confusion got cleared, after reading **JS Grammar** by [@js_tut](https://twitter.com/js_tut). 
+I always had a small confusion between `null` and `undefined` in JavaScript. My confusion got cleared, after reading **JS Grammar** by [@js_tut](https://twitter.com/js_tut).
 
 Checkout [JS Grammer](https://twitter.com/js_tut), It's an awesome resource to learn JavaScript.
 
@@ -20,13 +20,14 @@ console.log(color); //undefined
 
 But when we assign `null` to a variable, we are explicitly assigning a "nothing" or "empty" value to it.
 
-For example, we have a _user_, whose details are unknown
+For example, we have a `userDetails` variable which stores the details of an user.
+At first, it doesn't have any data, so we are assigning `null` to it.
 
 ```js
 let userDetails = null;
 ```
 
-Later we fill the `userDetails` variable with the response from our function `getUserDetails`. The function may be a call to an API or accessing `localStorage` for details etc. Here it’s a simple function which returns an Object.
+Later we fill the `userDetails` variable with the response from our function `getUserDetails`. The function may be a call to an API or accessing `localStorage` for details etc. Here it’s just a simple function which returns an object.
 
 ```js
 function getUserDetails() {
@@ -40,7 +41,11 @@ userDetails = getUserDetails();
 console.log(userDetails); // {userName:"gk", id:"1"}
 ```
 
-#### Reference
+If the value is unknown at the time of variable definition, it's always best to use `null`.
+
+Thank you.
+
+### Reference
 
 [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined) - MDN
 | [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null) - MDN

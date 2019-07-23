@@ -2,7 +2,7 @@
   width: 100%;
   margin: 0 auto;
   max-width: 800px;
-  padding: 1rem ;
+  padding: 1rem;
   padding-top: 20px;
   margin-top: 40px;
 }
@@ -10,8 +10,8 @@
   text-align: center !important;
 }
 
-.blog-post .blog-post h2,
-.blog-post .blog-post h3,
+.blog-post h2,
+.blog-post h3,
 .blog-post h4,
 .blog-post h5,
 .blog-post h6 {
@@ -39,8 +39,10 @@ code {
   height: auto;
 }
 
+.gatsby-highlight pre {
+  margin: 1rem auto;
+}
 
-
-.gatsby-highlight pre[class*="language-"] {
- border-radius: 5px;
+.gatsby-highlight pre[class*='language-'] {
+  border-radius: 5px;
 }
