@@ -3,8 +3,8 @@ import Typography from 'typography';
 const typography = new Typography({
   baseFontSize: '20px',
   baseLineHeight: 1.6,
+  headerWeight: 'normal',
   headerFontFamily: [
-    
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
@@ -16,7 +16,6 @@ const typography = new Typography({
     'sans-serif',
   ],
   bodyFontFamily: [
-    
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',

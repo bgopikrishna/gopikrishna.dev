@@ -111,3 +111,6 @@ export const mySkills = [
   'Materialize CSS',
   'Git',
 ];
+
+
+export const siteUrl = "https://bgopikrishna.github.io"

@@ -4,13 +4,21 @@ import Layout from '../components/layout/layout';
 import { graphql } from 'gatsby';
 import './blogPostTemplate.css';
 import SocialIconsGrid from '../components/extras/SocialIconsGrid';
+import { siteUrl } from '../constants/constants';
+import { DiscussionEmbed } from 'disqus-react';
 
 const blogPostTemplate = props => {
   const title = props.data.markdownRemark.frontmatter.title;
+  const path = props.data.markdownRemark.frontmatter.path;
+
   const date = props.data.markdownRemark.frontmatter.date;
 
   const htmlData = props.data.markdownRemark.html;
   const timeToRead = '☕️' + props.data.markdownRemark.timeToRead + ' min read';
+  const disqusConfig = {
+    shortname: process.env.GATSBY_DISQUS_NAME,
+    config: { identifier: path, title },
+  };
 
   return (
     <Layout containerType="fluid">
@@ -26,6 +34,7 @@ const blogPostTemplate = props => {
       </article>
       <hr />
       <SocialIconsGrid></SocialIconsGrid>
+      <DiscussionEmbed {...disqusConfig} />
     </Layout>
   );
 };
@@ -37,6 +46,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "DD MMMM, YYYY")
+        path
       }
       timeToRead
     }
