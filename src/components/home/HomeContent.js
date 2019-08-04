@@ -10,14 +10,15 @@ const HomeContent = () => {
   return (
     <section className={homeStyles.introContent}>
       <p className={homeStyles.primaryContent}>
-        {introPrimaryContent}{' '}
+        {introPrimaryContent}
         <a
-          href={'/assets/resume.pdf'}
+          href={'https://maximl.com'}
           target="_blank"
           rel="noopener noreferrer"
         >
-          resume
+          Maximl Labs
         </a>
+        .
       </p>
       <p className={homeStyles.secondaryContent}>
         {introSecondaryContent}
@@ -29,6 +30,16 @@ const HomeContent = () => {
           twitter
         </a>
         &nbsp;or <Link to="/contact">contact me</Link>
+      </p>
+      <p>
+        Here's my{' '}
+        <a
+          href={'/assets/resume.pdf'}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          resume
+        </a>
       </p>
     </section>
   );
