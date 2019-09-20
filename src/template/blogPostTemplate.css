@@ -21,6 +21,7 @@
 
 code {
   font-size: 14px;
+  padding: 0.2rem !important;
 }
 
 .blog-post ul {

@@ -5,6 +5,7 @@ const typography = new Typography({
   baseLineHeight: 1.6,
   headerWeight: 'normal',
   headerFontFamily: [
+    'Inter var',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
@@ -16,6 +17,7 @@ const typography = new Typography({
     'sans-serif',
   ],
   bodyFontFamily: [
+    'Inter var',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',

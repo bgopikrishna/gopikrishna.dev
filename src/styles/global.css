@@ -1,12 +1,15 @@
+@import url('https://rsms.me/inter/inter.css');
+
 :root {
   --primary: #8083ff;
   --black: #181e2a;
-  --white: #f3f7f9;
+  --white: #ffffff;
   --white-2: #f1f1f5;
   --gray: #9db5b9;
   --nav-light: var(--white-2);
   --nav-dark: var(--black);
   --nav-background: var(--nav-light);
+  --background-light: rgba(0,0,0,0.025)
 }
 
 html {
@@ -23,6 +26,8 @@ body.dark {
   color: var(--white);
   --nav-background: var(--nav-dark);
   --text-color: var(--white);
+  --background-light: rgba(255,255,255,0.025)
+
 }
 
 hr {
@@ -41,14 +46,6 @@ body.light {
   overflow-wrap: break-word;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
 
 h1,
 h2,
@@ -120,7 +117,7 @@ main a:focus {
 .blog {
   display: flex;
   flex-direction: column;
-  text-align: justify;
+  text-align: center;
   margin: 20px auto;
   min-height: 80vh;
   padding: 0 1rem 1rem 1rem;

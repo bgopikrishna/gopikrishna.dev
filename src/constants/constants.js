@@ -101,6 +101,8 @@ export const ROUTES = [
 
 export const mySkills = [
   'JavaScript',
+  'TypeScript',
+  'Angular',
   'React',
   'Redux',
   'Firebase',

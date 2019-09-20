@@ -34,11 +34,15 @@
   margin-bottom: 20px;
 }
 
+.projectBox_header h3{
+  margin: 0;
+} 
+
 .projectBox_actionBtnsGrp {
   display: flex;
-  width: 220px;
+  width: 100%;
+  max-width: 250px;
   justify-content: space-between;
-  max-width: 100%;
   justify-self: flex-end;
   margin-top: 20px;
 }

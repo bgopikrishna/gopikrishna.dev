@@ -10,7 +10,7 @@ li {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 1.2rem 10%;
+  padding: 1.2rem;
   height: 60px;
   justify-self: flex-start;
   margin-right: auto;
@@ -39,6 +39,7 @@ li {
   flex-direction: column;
   align-items: center;
   transition: 0.1s all linear;
+  padding: .5em 1em;
 }
 
 .navlinkIcon {
@@ -50,7 +51,8 @@ li {
 .linkActive {
   color: var(--primary);
   opacity: 1;
-  transition: 0.3ms all linear;
+  transition: 0.1s all linear;
+  background: var(--background-light);
 }
 
 .nightModeBtn {
@@ -108,5 +110,6 @@ li {
 
   .linkActive {
     font-weight: bold;
+    background: none;
   }
 }
