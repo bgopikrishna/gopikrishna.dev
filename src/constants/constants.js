@@ -88,14 +88,14 @@ export const ROUTES = [
     pathName: 'Projects',
   },
   {
-    path: '/contact',
-    icon: faPaperPlane,
-    pathName: 'Contact',
-  },
-  {
     path: '/blog',
     icon: faNewspaper,
     pathName: 'Blog',
+  },
+  {
+    path: '/contact',
+    icon: faPaperPlane,
+    pathName: 'Contact',
   },
 ];
 
