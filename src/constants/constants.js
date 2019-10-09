@@ -45,6 +45,19 @@ export const socialLinks = [
 
 export const projectDetailsList = [
   {
+    name: 'Pomato',
+    liveDemoUrl: 'https://pomato.netlify.com/',
+    sourceCodeUrl: 'https://github.com/bgopikrishna/pomato',
+    desc: 'A Restaurant Finder App using  Angular and Zomato API',
+    technologies: [
+      'JavaScript',
+      'Angular',
+      'Tailwind CSS',
+      'HTML5',
+      'Sass',
+    ],
+  },
+  {
     name: 'Moviebase',
     liveDemoUrl: 'https://movie-base.netlify.com/',
     sourceCodeUrl: 'https://github.com/bgopikrishna/moviebase',
@@ -114,5 +127,4 @@ export const mySkills = [
   'Git',
 ];
 
-
-export const siteUrl = "https://bgopikrishna.github.io"
+export const siteUrl = 'https://bgopikrishna.github.io';

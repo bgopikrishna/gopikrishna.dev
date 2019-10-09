@@ -66,7 +66,7 @@ li {
   color: gold;
 }
 .night {
-  color: var(--black);
+  color: black;
 }
 
 @media (max-width: 900px) {
