@@ -39,7 +39,7 @@ li {
   flex-direction: column;
   align-items: center;
   transition: 0.1s all linear;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
 }
 
 .navlinkIcon {
@@ -61,7 +61,15 @@ li {
   border: none;
   color: inherit;
   cursor: pointer;
+  margin: auto 0.5rem;
 }
+.nightModeBtn:first-child {
+  margin-left: 0.25rem;
+}
+.nightModeBtn:last-child {
+  margin-right: 0.25rem;
+}
+
 .day {
   color: gold;
 }

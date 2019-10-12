@@ -2,17 +2,16 @@ import React from 'react';
 import navbarStyle from './Navbar.module.css';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faSun,
-  faMoon,
-  faLaptopCode,
-  faUserAstronaut,
-  faPaperPlane,
-} from '@fortawesome/free-solid-svg-icons';
+import { faSun, faMoon, faCircle } from '@fortawesome/free-solid-svg-icons';
 import Header from './header';
 import { ROUTES } from '../../constants/constants';
 
-const Navbar = ({ toggleDarkMode, darkMode }) => {
+const Navbar = ({
+  toggleDarkMode,
+  darkMode,
+  accentColor,
+  changeAccentColor,
+}) => {
   const nightModeIcon = darkMode ? (
     <FontAwesomeIcon icon={faSun} />
   ) : (
@@ -43,13 +42,23 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
             ))}
         </ul>
       </nav>
-      <button
-        className={`${navbarStyle.nightModeBtn} ${nightModeIconStyle}`}
-        to="/contact"
-        onClick={toggleDarkMode}
-      >
-        {nightModeIcon}
-      </button>
+      <div className="top_action">
+        <button
+          className={`${navbarStyle.nightModeBtn}`}
+          style={{ color: `var(--accent-${accentColor})` }}
+          onClick={changeAccentColor}
+          aria-label="change site accent color"
+        >
+          <FontAwesomeIcon icon={faCircle}></FontAwesomeIcon>
+        </button>
+        <button
+          className={`${navbarStyle.nightModeBtn} ${nightModeIconStyle}`}
+          onClick={toggleDarkMode}
+          aria-label="toggle darkmode"
+        >
+          {nightModeIcon}
+        </button>
+      </div>
     </div>
   );
 };

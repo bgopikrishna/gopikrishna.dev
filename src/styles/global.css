@@ -9,7 +9,14 @@
   --nav-light: var(--white-2);
   --nav-dark: var(--black);
   --nav-background: var(--nav-light);
-  --background-light: rgba(0,0,0,0.025)
+  --background-light: rgba(0, 0, 0, 0.025);
+
+  /*Accent Colors*/
+  --accent-pink: #f70961;
+  --accent-green: #03b75a;
+  --accent-blue: #00a5cf;
+  --accent-orange: #f06543;
+  --accent-purple: #8083ff;
 }
 
 html {
@@ -26,12 +33,7 @@ body.dark {
   color: var(--white);
   --nav-background: var(--nav-dark);
   --text-color: var(--white);
-  --background-light: rgba(255,255,255,0.025)
-
-}
-
-hr {
-  background: var(--text-color);
+  --background-light: rgba(255, 255, 255, 0.025);
 }
 
 body.light {
@@ -41,11 +43,32 @@ body.light {
   --text-color: var(--black);
 }
 
+body.accent-green {
+  --primary: var(--accent-green);
+}
+body.accent-pink {
+  --primary: var(--accent-pink);
+}
+body.accent-orange {
+  --primary: var(--accent-orange);
+}
+body.accent-blue {
+  --primary: var(--accent-blue);
+}
+body.accent-purple {
+  --primary: var(--accent-purple);
+}
+
+hr {
+  background: var(--text-color);
+}
+
+
+
 * > {
   box-sizing: border-box;
   overflow-wrap: break-word;
 }
-
 
 h1,
 h2,
@@ -152,9 +175,6 @@ main a:focus {
   }
 }
 
-
-
-
 /* width */
 ::-webkit-scrollbar {
   width: 0.25rem;
@@ -176,4 +196,5 @@ main a:focus {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   opacity: 1;
+
 }

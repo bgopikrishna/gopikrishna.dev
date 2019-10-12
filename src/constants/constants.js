@@ -15,6 +15,9 @@ export const introPrimaryContent = `I'm a self-taught Front-End Web Dev and lear
 
 export const introSecondaryContent = `If you have any queries, feel free to message me on `;
 
+export const accentColorsSet = ['green', 'pink', 'orange', 'blue', 'purple'];
+
+
 export const socialLinks = [
   {
     platfrom: 'Gopi Krishna on Twitter',
