@@ -4,7 +4,7 @@ import { accentColorsSet } from '../constants/constants';
 export const useAccentColor = () => {
   const localStorageAccentColor =
     typeof window === 'undefined'
-      ? false
+      ? 'purple'
       : localStorage.getItem('accentColor')
       ? JSON.parse( localStorage.getItem('accentColor'))
       : 'purple';
