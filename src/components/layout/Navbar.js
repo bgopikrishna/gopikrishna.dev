@@ -48,6 +48,7 @@ const Navbar = ({
           style={{ color: `var(--accent-${accentColor})` }}
           onClick={changeAccentColor}
           aria-label="change site accent color"
+          title="Change accent"
         >
           <FontAwesomeIcon icon={faCircle}></FontAwesomeIcon>
         </button>
@@ -55,6 +56,7 @@ const Navbar = ({
           className={`${navbarStyle.nightModeBtn} ${nightModeIconStyle}`}
           onClick={toggleDarkMode}
           aria-label="toggle darkmode"
+          title="toggle darkmode"
         >
           {nightModeIcon}
         </button>
