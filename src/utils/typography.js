@@ -5,7 +5,7 @@ const typography = new Typography({
   baseLineHeight: 1.6,
   headerWeight: 'normal',
   headerFontFamily: [
-    'Inter var',
+    'Nunito',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
@@ -17,7 +17,7 @@ const typography = new Typography({
     'sans-serif',
   ],
   bodyFontFamily: [
-    'Inter var',
+    'Nunito',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
@@ -27,6 +27,16 @@ const typography = new Typography({
     'Cantarell',
     'Helvetica Neue',
     'sans-serif',
+  ],
+  googleFonts: [
+    {
+      name: 'Nunito',
+      styles: ['400', '700'],
+    },
+    {
+      name:"Pacifico",
+      styles:["400"]
+    }
   ],
 });
 

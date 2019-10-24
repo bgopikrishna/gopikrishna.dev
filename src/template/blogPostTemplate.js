@@ -31,10 +31,8 @@ const blogPostTemplate = props => {
         </header>
         <div dangerouslySetInnerHTML={{ __html: htmlData }}></div>
       </article>
-      <hr />
-      <DiscussionEmbed {...disqusConfig} />
-      <hr />
       <SocialIconsGrid></SocialIconsGrid>
+      <DiscussionEmbed {...disqusConfig} />
     </Layout>
   );
 };

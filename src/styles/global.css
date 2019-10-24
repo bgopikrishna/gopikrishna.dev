@@ -1,4 +1,3 @@
-@import url('https://rsms.me/inter/inter.css');
 
 :root {
   --primary: #8083ff;
@@ -6,7 +5,7 @@
   --white: #ffffff;
   --white-2: #f1f1f5;
   --gray: #9db5b9;
-  --nav-light: var(--white-2);
+  --nav-light: var(--white);
   --nav-dark: var(--black);
   --nav-background: var(--nav-light);
   --background-light: rgba(0, 0, 0, 0.025);
@@ -63,8 +62,6 @@ hr {
   background: var(--text-color);
 }
 
-
-
 * > {
   box-sizing: border-box;
   overflow-wrap: break-word;
@@ -86,16 +83,19 @@ main {
 }
 main a {
   text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.1s ease-in;
 }
 main a:hover,
 main a:focus {
   text-decoration: underline;
+  opacity: 1;
 }
 
 .home {
   border: 1px solid var(--gray);
   box-shadow: 2px 2px var(--gray);
-  padding: 2.5rem 1rem;
+  padding: 1.5rem 1rem;
   text-align: center;
   line-height: 1.5;
   border-radius: 5px;
@@ -196,5 +196,29 @@ main a:focus {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   opacity: 1;
+}
 
+#disqus_thread {
+  padding: 1rem;
+  border: 1px solid var(--gray);
+  box-shadow: 2px 2px 1px var(--gray);
+  margin: 3rem 0;
+  transition: box-shadow 0.3s linear;
+}
+
+#disqus_thread:hover,
+#disqus_thread:focus {
+  box-shadow: none;
+}
+
+@media (min-width: 1367px) {
+  .home {
+    padding: 2.5rem 1rem;
+    margin-top: 3rem;
+  }
+}
+
+
+.box-shadow-2px-blur {
+  box-shadow: 0px 0px 1px var(--gray);
 }
