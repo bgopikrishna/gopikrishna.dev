@@ -3,15 +3,14 @@ import Typography from 'typography';
 const typography = new Typography({
   baseFontSize: '20px',
   baseLineHeight: 1.6,
-  headerWeight: 'normal',
+  headerWeight: 'bold',
   headerFontFamily: [
-    'Nunito',
+    'Raleway',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
     'Roboto',
     'Oxygen-Sans',
-    'Ubuntu',
     'Cantarell',
     'Helvetica Neue',
     'sans-serif',
@@ -23,7 +22,6 @@ const typography = new Typography({
     'Segoe UI',
     'Roboto',
     'Oxygen-Sans',
-    'Ubuntu',
     'Cantarell',
     'Helvetica Neue',
     'sans-serif',
@@ -34,8 +32,8 @@ const typography = new Typography({
       styles: ['400', '700'],
     },
     {
-      name:"Pacifico",
-      styles:["400"]
+      name:"Raleway",
+      styles:["400","700"]
     }
   ],
 });
