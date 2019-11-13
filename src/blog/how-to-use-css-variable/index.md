@@ -44,7 +44,7 @@ For example, lets declare a variable named `--btn-danger-color` in a class `btn`
 ```
 
 
-### Accessing with JavaScript
+### Accessing  and Modifying CSS Variables with JavaScript
 
 To access or modify CSS variables via JavaScript, we can use two methods
 
@@ -63,6 +63,8 @@ let btnDangerBg = getComputedStyle(element).getPropertyValue("--btn-danger-color
 console.log(btnDangerBg); // #FF4136 - value of the css variable defined in .btn class in CSS
 ```
 
+To get the CSS variables declared in `:root`, you can use `document.querySelector(':root');`
+
 ### Changing the CSS Variable Value
 
 To set the value of the CSS variable from JavaScript we can use `setProperty` method.
@@ -80,22 +82,25 @@ function changeColorToPurple(){
 }
 ```
 
-
-
 Don't forget to link it with HTML.
 
 ```html
 <button class="btn" onclick="changeColorToPurple()">Change Color</button>
 ```
 
+
+
 ### Demo
 
-I'm adding an embedded [repl](https://repl.it/@bgopikrishna/CssVariables) for the above code, play with it.
+I'm adding an embedded [repl](https://repl.it/@bgopikrishna/CssVariables) for the above code, So that you can play with it.
 
 <iframe height="600px" width="100%" src="https://repl.it/@bgopikrishna/CssVariables?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-Thank You.
+
+
+Thank You.    
 
 ### Reference
 
-* [CSS custom properties ](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) - MDN
-* [Every thing you need to know about css variables](https://www.freecodecamp.org/news/everything-you-need-to-know-about-css-variables-c74d922ea855/)
+[CSS custom properties ](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) - MDN  
+	
+		[Every thing you need to know about css variables](https://www.freecodecamp.org/news/everything-you-need-to-know-about-css-variables-c74d922ea855/)
