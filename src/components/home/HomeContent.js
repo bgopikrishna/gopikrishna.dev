@@ -31,18 +31,10 @@ const HomeContent = () => {
         </a>
         &nbsp;or <Link to="/contact">contact me</Link>
       </p>
-      <p>
-        Here's my{' '}
-        <a
-          href={'/assets/resume.pdf'}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          resume
-        </a>
-      </p>
     </section>
   );
 };
 
 export default HomeContent;
+
+
