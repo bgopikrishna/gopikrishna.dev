@@ -27,7 +27,8 @@ const Blog = ({ data }) => {
                   <p
                     style={{
                       fontSize: '12px',
-                      marginTop: '0.8rem',
+                      margin: '0',
+                      padding: 0,
                       color: 'var(--text-color)',
                     }}
                   >

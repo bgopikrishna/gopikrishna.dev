@@ -95,7 +95,7 @@ main a::after {
   display: block;
   content: '';
   width: auto;
-  height:  2px;
+  height: 2px;
   background: var(--primary);
   transform: scaleX(0);
   transform-origin: 100% 25%;
@@ -161,7 +161,7 @@ main a:hover::after {
   min-height: 80vh;
   padding: 0 1rem 1rem 1rem;
   line-height: 1.7;
-  max-width: 700px;
+  max-width: 100%;
 }
 
 .blog a::after {
@@ -169,14 +169,25 @@ main a:hover::after {
 }
 
 .blog .blog-post-box {
-  padding-bottom: 0.7rem;
+  padding: 1rem;
+  box-shadow: 0 0 4px var(--primary);
+  transition: all 0.3s ease-out;
+  z-index: 3;
 }
 
-.blog .blog-post-box:hover {
+.blog .blog-post-box:hover, .blog .blog-post-box:focus {
   text-decoration: none !important;
+  box-shadow: 0 0 1px var(--primary);;
+  transition: all 0.3s ease-out;
+  z-index: 0;
+  background: var(--background-light);
 }
 .blog .blog-post-list {
-  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+  padding: 1rem;
 }
 
 @media (max-width: 900px) {

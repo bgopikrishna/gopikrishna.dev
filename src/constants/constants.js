@@ -2,7 +2,7 @@ import {
   faTwitter,
   faGithubAlt,
   faLinkedinIn,
-  faFreeCodeCamp,
+  faDev,
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faUserAstronaut,
@@ -11,12 +11,11 @@ import {
   faLaptopCode,
 } from '@fortawesome/free-solid-svg-icons';
 
-export const introPrimaryContent = `I'm a self-taught Front-End Web Dev and learner at freeCodeCamp. I love JavaScript and React. I'm currently working as a Front End Developer Intern at `;
+export const introPrimaryContent = `I'm a self-taught Front-End Web Dev and learner at freeCodeCamp. I love JavaScript and React. I'm currently learning Node JS. And I'm currently working as a Front End Developer Intern at `;
 
 export const introSecondaryContent = `If you have any queries, feel free to message me on `;
 
 export const accentColorsSet = ['green', 'pink', 'orange', 'blue', 'purple'];
-
 
 export const socialLinks = [
   {
@@ -26,10 +25,10 @@ export const socialLinks = [
     className: 'twitterIcon',
   },
   {
-    platfrom: 'Gopi Krishna on Freecodecap',
-    profileUrl: 'https://www.freecodecamp.org/bgopikrishna',
-    icon: faFreeCodeCamp,
-    className: 'fccIcon',
+    platfrom: 'Gopi Krishna on Dev',
+    profileUrl: 'https://www.dev.to/bgopikrishna',
+    icon: faDev,
+    className: 'devIcon',
   },
   {
     platfrom: 'Gopi Krishna on Github',
@@ -52,13 +51,7 @@ export const projectDetailsList = [
     liveDemoUrl: 'https://pomato.netlify.com/',
     sourceCodeUrl: 'https://github.com/bgopikrishna/pomato',
     desc: 'A Restaurant Finder App using  Angular and Zomato API',
-    technologies: [
-      'JavaScript',
-      'Angular',
-      'Tailwind CSS',
-      'HTML5',
-      'Sass',
-    ],
+    technologies: ['JavaScript', 'Angular', 'Tailwind CSS', 'HTML5', 'Sass'],
   },
   {
     name: 'Moviebase',
@@ -130,4 +123,4 @@ export const mySkills = [
   'Git',
 ];
 
-export const siteUrl = 'https://bgopikrishna.github.io';
+export const siteUrl = 'https://bgopikrishna.me';
