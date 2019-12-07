@@ -31,7 +31,15 @@ const blogPostTemplate = props => {
         </header>
         <div dangerouslySetInnerHTML={{ __html: htmlData }}></div>
       </article>
-      <SocialIconsGrid></SocialIconsGrid>
+      <div className="blog-post-contact">
+        <h3>Gopi Krishna</h3>
+        <p>
+          Hello, thanks for the read! If you found this article helpful, have
+          constructive feedback, or just want to say hello, connect with me on
+          social media or drop a comment below. Thanks in advance!
+        </p>
+        <SocialIconsGrid></SocialIconsGrid>
+      </div>
       <DiscussionEmbed {...disqusConfig} />
     </Layout>
   );

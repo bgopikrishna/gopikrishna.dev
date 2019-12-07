@@ -5,7 +5,7 @@ const typography = new Typography({
   baseLineHeight: 1.6,
   headerWeight: 'bold',
   headerFontFamily: [
-    'Raleway',
+    'Space Mono',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
@@ -32,7 +32,7 @@ const typography = new Typography({
       styles: ['400', '700'],
     },
     {
-      name:"Raleway",
+      name:"Space Mono",
       styles:["400","700"]
     }
   ],
