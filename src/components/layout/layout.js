@@ -8,7 +8,6 @@
 import React, { useState, useMemo } from 'react';
 import PropTypes from 'prop-types';
 import Navbar from './Navbar';
-import {} from 'gatsby-plugin-react-helmet';
 import layoutStyles from './layout.module.css';
 import Footer from './footer';
 import { useDarkMode } from '../../hooks/useDarkmode';

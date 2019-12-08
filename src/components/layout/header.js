@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 const Header = () => {
   return (
     <header className={headerStyles.logo}>
-      <Link to="/">Gopi Krishna</Link>
+      <Link to="/">GK!</Link>
     </header>
   );
 };

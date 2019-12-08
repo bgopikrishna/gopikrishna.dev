@@ -100,7 +100,7 @@ main a::after {
   display: block;
   content: '';
   width: auto;
-  height: 2px;
+  height: 1px;
   background: var(--primary);
   transform: scaleX(0);
   transform-origin: 100% 25%;

@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: center;
   align-items: flex-start;
+  animation: slideFromBottom 1s ease;
 }
 
 .container {
@@ -35,5 +36,14 @@
   .container,
   .fluid {
     margin-top: 20px;
+  }
+}
+
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
   }
 }

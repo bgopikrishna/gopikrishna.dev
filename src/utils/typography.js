@@ -29,11 +29,11 @@ const typography = new Typography({
   googleFonts: [
     {
       name: 'Nunito',
-      styles: ['400', '700'],
+      styles: ['400'],
     },
     {
       name:"Space Mono",
-      styles:["400","700"]
+      styles:["400"]
     }
   ],
 });

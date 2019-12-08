@@ -32,7 +32,7 @@ li {
 }
 
 .navitem {
-  padding: 0 20px;
+  padding: 0 8px;
 }
 
 .navlink {
@@ -93,7 +93,6 @@ li {
     padding: 0.4rem;
     justify-content: space-around;
     position: unset;
-    box-shadow: none !important;
   }
   .logo {
     margin: 0;
