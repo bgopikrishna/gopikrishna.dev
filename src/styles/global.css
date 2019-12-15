@@ -29,6 +29,7 @@ html {
 body {
   padding: 0;
   margin: 0;
+  overflow-x:hidden;  
 }
 
 body.dark {
@@ -119,6 +120,8 @@ main a:hover::after {
   text-align: center;
   line-height: 1.5;
   border-radius: 5px;
+  animation: slideFromBottom 0.7s ease;
+
 }
 
 .projects {
@@ -126,6 +129,8 @@ main a:hover::after {
   text-align: center;
   line-height: 1.5;
   padding: 0 1rem 1rem 1rem;
+  animation: slideFromBottom 0.7s ease;
+
 }
 
 .pageHeader {
@@ -142,6 +147,8 @@ main a:hover::after {
   line-height: 2;
   padding: 2.5rem 1rem;
   text-transform: capitalize;
+  animation: slideFromBottom 0.5s ease;
+
 }
 
 .about {
@@ -150,7 +157,9 @@ main a:hover::after {
   line-height: 1.7;
   display: flex;
   flex-direction: column;
-  text-align: justify;
+  /* text-align: justify; */
+  animation: slideFromLeft 0.7s ease;
+
 }
 
 .skills ul {
@@ -167,6 +176,7 @@ main a:hover::after {
   padding: 0 1rem 1rem 1rem;
   line-height: 1.7;
   max-width: 100%;
+  animation: slideFromRight 0.7s ease;
 }
 
 .blog a::after {
@@ -177,7 +187,7 @@ main a:hover::after {
   padding: 1rem;
   box-shadow: 2px 2px var(--gray);
   border: 1px solid var(--gray);
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease;
   border-radius: 5px;
 }
 
@@ -185,7 +195,7 @@ main a:hover::after {
 .blog .blog-post-box:focus {
   text-decoration: none !important;
   box-shadow: none;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease;
   z-index: 0;
 }
 .blog .blog-post-list {
@@ -259,3 +269,34 @@ main a:hover::after {
 .box-shadow-2px-blur {
   box-shadow: 0px 0px 1px var(--gray);
 }
+
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+
+@keyframes slideFromRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  
+@keyframes slideFromLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  
