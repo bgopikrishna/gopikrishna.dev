@@ -11,7 +11,8 @@ import {
   faLaptopCode,
 } from '@fortawesome/free-solid-svg-icons';
 
-export const introPrimaryContent = `I'm a self-taught Front-End Web Dev and learner at freeCodeCamp. I love JavaScript and React. I'm currently learning Node JS. And I'm currently working as a Front End Developer Intern at `;
+export const introPrimaryContent = `I'm a self-taught Front-End Developer. I love JavaScript and React. 
+I'll be graduating in April 2020. And I'm currently working as a Front End Developer Intern at `;
 
 export const introSecondaryContent = `If you have any queries, feel free to message me on `;
 

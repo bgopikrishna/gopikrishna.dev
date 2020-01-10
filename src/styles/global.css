@@ -29,7 +29,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  overflow-x:hidden;  
+  overflow-x: hidden;
 }
 
 body.dark {
@@ -121,7 +121,6 @@ main a:hover::after {
   line-height: 1.5;
   border-radius: 5px;
   animation: slideFromBottom 0.7s ease;
-
 }
 
 .projects {
@@ -130,7 +129,6 @@ main a:hover::after {
   line-height: 1.5;
   padding: 0 1rem 1rem 1rem;
   animation: slideFromBottom 0.7s ease;
-
 }
 
 .pageHeader {
@@ -148,7 +146,6 @@ main a:hover::after {
   padding: 2.5rem 1rem;
   text-transform: capitalize;
   animation: slideFromBottom 0.5s ease;
-
 }
 
 .about {
@@ -159,7 +156,6 @@ main a:hover::after {
   flex-direction: column;
   /* text-align: justify; */
   animation: slideFromLeft 0.7s ease;
-
 }
 
 .skills ul {
@@ -279,24 +275,29 @@ main a:hover::after {
   }
 }
 
-
 @keyframes slideFromRight {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(0%);
-    }
+  from {
+    transform: translateX(100%);
   }
+  to {
+    transform: translateX(0%);
+  }
+}
 
-  
 @keyframes slideFromLeft {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(0%);
-    }
+  from {
+    transform: translateX(-100%);
   }
+  to {
+    transform: translateX(0%);
+  }
+}
 
-  
+::-moz-selection {
+  /* Code for Firefox */
+  background: yellow;
+}
+
+::selection {
+  background: yellow;
+}
