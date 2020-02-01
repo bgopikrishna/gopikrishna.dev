@@ -269,27 +269,33 @@ main a:hover::after {
 @keyframes slideFromBottom {
   from {
     transform: translateY(100%);
+    opacity: 0;
   }
   to {
     transform: translateY(0%);
+    opacity: 1;
   }
 }
 
 @keyframes slideFromRight {
   from {
     transform: translateX(100%);
+    opacity: 0;
   }
   to {
     transform: translateX(0%);
+    opacity: 1;
   }
 }
 
 @keyframes slideFromLeft {
   from {
     transform: translateX(-100%);
+    opacity: 0;
   }
   to {
     transform: translateX(0%);
+    opacity: 1;
   }
 }
 

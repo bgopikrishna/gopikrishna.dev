@@ -6,7 +6,7 @@ const IntroHeader = () => {
     <div className={introHeaderStyle.introheader}>
       <span>Hey there, I'm</span>
       <h2>Gopi Krishna Bhashakarla</h2>
-      <span>Front End Developer</span>
+      <span>JavaScript Developer</span>
     </div>
   );
 };

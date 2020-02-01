@@ -11,7 +11,7 @@ import {
   faLaptopCode,
 } from '@fortawesome/free-solid-svg-icons';
 
-export const introPrimaryContent = `I'm a self-taught Front-End Developer. I love JavaScript and React. 
+export const introPrimaryContent = `I'm a self-taught JavaScript Developer. I love JavaScript and React. 
 I'll be graduating in April 2020. And I'm currently working as a Front End Developer Intern at `;
 
 export const introSecondaryContent = `If you have any queries, feel free to message me on `;
@@ -47,13 +47,13 @@ export const socialLinks = [
 ];
 
 export const projectDetailsList = [
-//   {
-//     name: 'Pomato',
-//     liveDemoUrl: 'https://pomato.netlify.com/',
-//     sourceCodeUrl: 'https://github.com/bgopikrishna/pomato',
-//     desc: 'A Restaurant Finder App using  Angular and Zomato API',
-//     technologies: ['JavaScript', 'Angular', 'Tailwind CSS', 'HTML5', 'Sass'],
-//   },
+  //   {
+  //     name: 'Pomato',
+  //     liveDemoUrl: 'https://pomato.netlify.com/',
+  //     sourceCodeUrl: 'https://github.com/bgopikrishna/pomato',
+  //     desc: 'A Restaurant Finder App using  Angular and Zomato API',
+  //     technologies: ['JavaScript', 'Angular', 'Tailwind CSS', 'HTML5', 'Sass'],
+  //   },
   {
     name: 'Moviebase',
     liveDemoUrl: 'https://movie-base.netlify.com/',
@@ -114,6 +114,8 @@ export const mySkills = [
   'TypeScript',
   'Angular',
   'React',
+  'Node',
+  'MongoDB',
   'Redux',
   'Firebase',
   'HTML5',
@@ -125,3 +127,6 @@ export const mySkills = [
 ];
 
 export const siteUrl = 'https://bgopikrishna.me';
+
+export const resumeUrl =
+  'https://docs.google.com/document/d/14jtU-GtWVMQrHI9l-7ebtJdLIsQ0y_mb9l7hdAB7YlM/edit?usp=sharing';
