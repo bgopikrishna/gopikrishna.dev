@@ -126,6 +126,13 @@ export const mySkills = [
   'Git',
 ];
 
+export const mySkills2 = {
+  programming: ['JavaScript', 'TypeScript', 'Python(Beginner)'],
+  frontend: ['Angular', 'React JS', 'HTML5', 'CSS3', 'Sass'],
+  backend: ['Node', 'Express', 'MongoDB', 'Firebase'],
+  other: ['Redux JS', 'Jasmine JS', 'BootStrap', 'Materialize CSS', 'Git'],
+};
+
 export const siteUrl = 'https://bgopikrishna.me';
 
 export const resumeUrl =

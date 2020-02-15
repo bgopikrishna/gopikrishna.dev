@@ -5,22 +5,22 @@ const typography = new Typography({
   baseLineHeight: 1.6,
   headerWeight: 'bold',
   headerFontFamily: [
-    'Space Mono',
+    'Inconsolata',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
-    'Roboto',
+    'Work Sans',
     'Oxygen-Sans',
     'Cantarell',
     'Helvetica Neue',
     'sans-serif',
   ],
   bodyFontFamily: [
-    'Nunito',
+    'Work Sans',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
-    'Roboto',
+    'Work Sans',
     'Oxygen-Sans',
     'Cantarell',
     'Helvetica Neue',
@@ -28,11 +28,11 @@ const typography = new Typography({
   ],
   googleFonts: [
     {
-      name: 'Nunito',
-      styles: ['400'],
+      name: 'Work Sans',
+      styles: ['400','700'],
     },
     {
-      name:"Space Mono",
+      name:"Inconsolata",
       styles:["400"]
     }
   ],
