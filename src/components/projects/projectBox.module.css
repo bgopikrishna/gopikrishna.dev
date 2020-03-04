@@ -34,9 +34,9 @@
   margin-bottom: 20px;
 }
 
-.projectBox_header h3{
+.projectBox_header h3 {
   margin: 0;
-} 
+}
 
 .projectBox_actionBtnsGrp {
   display: flex;
@@ -45,6 +45,18 @@
   justify-content: space-between;
   justify-self: flex-end;
   margin-top: 20px;
+}
+
+.projectBox_actionBtn[href='#'] {
+  cursor: not-allowed;
+  opacity: 0.5;
+  color: var(--text-color, inherit);
+}
+
+.projectBox_actionBtn[href='#']::after {
+  width: 0;
+  opacity: 0.5;
+  height: 0;
 }
 
 @media (max-width: 900px) {

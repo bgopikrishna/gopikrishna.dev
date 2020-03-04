@@ -20,11 +20,12 @@ const ProjectBox = ({ project }) => {
       <div className={projectBoxStyle.projectBox_actionBtnsGrp}>
         <a
           href={sourceCodeUrl}
-          className={projectBoxStyle.projectBox_actionBtn}
-        >
+          className={projectBoxStyle.projectBox_actionBtn}>
           Souce Code
         </a>
-        <a href={liveDemoUrl} className={projectBoxStyle.projectBox_actionBtn}>
+        <a
+          href={liveDemoUrl}
+          className={projectBoxStyle.projectBox_actionBtn + ' disabled-link'}>
           Live Demo
         </a>
       </div>

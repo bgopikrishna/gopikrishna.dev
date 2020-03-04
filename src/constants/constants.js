@@ -47,13 +47,28 @@ export const socialLinks = [
 ];
 
 export const projectDetailsList = [
-  //   {
-  //     name: 'Pomato',
-  //     liveDemoUrl: 'https://pomato.netlify.com/',
-  //     sourceCodeUrl: 'https://github.com/bgopikrishna/pomato',
-  //     desc: 'A Restaurant Finder App using  Angular and Zomato API',
-  //     technologies: ['JavaScript', 'Angular', 'Tailwind CSS', 'HTML5', 'Sass'],
-  //   },
+  // {
+  //   name: 'Pomato',
+  //   liveDemoUrl: '#',
+  //   sourceCodeUrl: 'https://github.com/bgopikrishna/pomato',
+  //   desc: 'A Restaurant Finder App using  Angular and Zomato API',
+  //   technologies: ['JavaScript', 'Angular', 'Tailwind CSS', 'HTML5', 'Sass'],
+  // },
+  {
+    name: 'Pyggy [Under Development]',
+    liveDemoUrl: '#',
+    sourceCodeUrl: 'https://github.com/bgopikrishna/pygyy',
+    desc: 'A full stack goal tracker app.',
+    technologies: [
+      'JavaScript',
+      'ReactJS',
+      'Node JS',
+      'MongoDB',
+      'Express',
+      'Sass',
+      'HTML5',
+    ],
+  },
   {
     name: 'Moviebase',
     liveDemoUrl: 'https://movie-base.netlify.com/',
