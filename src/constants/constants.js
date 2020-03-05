@@ -57,7 +57,7 @@ export const projectDetailsList = [
   {
     name: 'Pyggy [Under Development]',
     liveDemoUrl: '#',
-    sourceCodeUrl: 'https://github.com/bgopikrishna/pygyy',
+    sourceCodeUrl: 'https://github.com/bgopikrishna/pyggy',
     desc: 'A full stack goal tracker app.',
     technologies: [
       'JavaScript',
