@@ -12,7 +12,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 export const introPrimaryContent = `I'm a self-taught JavaScript Developer. I love JavaScript and React. 
-I'll be graduating in April 2020. And I'm currently working as a Front End Developer Intern at `;
+I'll be graduating in April 2020.`;
 
 export const introSecondaryContent = `If you have any queries, feel free to message me on `;
 

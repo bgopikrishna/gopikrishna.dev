@@ -11,14 +11,14 @@ const HomeContent = () => {
     <section className={homeStyles.introContent}>
       <p className={homeStyles.primaryContent}>
         {introPrimaryContent}
-        <a
+        {/* <a
           href={'https://maximl.com'}
           target="_blank"
           rel="noopener noreferrer"
         >
           Maximl Labs
         </a>
-        .
+        . */}
       </p>
       <p className={homeStyles.secondaryContent}>
         {introSecondaryContent}
