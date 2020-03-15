@@ -142,7 +142,7 @@ export const mySkills = [
 ];
 
 export const mySkills2 = {
-  programming: ['JavaScript', 'TypeScript', 'Python(Beginner)'],
+  programming: ['JavaScript', 'TypeScript', 'Python'],
   frontend: ['Angular', 'React JS', 'HTML5', 'CSS3', 'Sass'],
   backend: ['Node', 'Express', 'MongoDB', 'Firebase'],
   other: ['Redux JS', 'Jasmine JS', 'BootStrap', 'Materialize CSS', 'Git'],
