@@ -9,16 +9,15 @@
   --nav-background: var(--nav-light);
   --background-light: rgba(0, 0, 0, 0.025);
   --header-font: 'Inconsolata', 'Nunito', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Work Sans, Oxygen, Ubuntu, Cantarell, 'Work Sans', 'Helvetica Neue',
-    sans-serif;
-  --body-font: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Work Sans,
-    Oxygen, Ubuntu, Cantarell, 'Work Sans', 'Helvetica Neue', sans-serif;
+    'Segoe UI', Work Sans, Oxygen, Cantarell, 'Helvetica Neue', sans-serif;
+  --body-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Work Sans,
+    Oxygen, Cantarell, 'Helvetica Neue', sans-serif;
 
   /*Accent Colors*/
   --accent-pink: #f70961;
   --accent-green: #03b75a;
   --accent-blue: #00a5cf;
-  --accent-orange: #f06543; 
+  --accent-orange: #f06543;
   --accent-purple: #8083ff;
 }
 
@@ -164,21 +163,23 @@ main a:hover::after {
 }
 
 .skills_boxes {
-    margin: 1rem auto 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    grid-gap: 2rem;
-    justify-items: center;
-    padding: 1rem  .7rem 1.5rem;
+  margin: 1rem auto 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  justify-items: center;
+  padding: 1rem 0.7rem 1.5rem;
+  grid-auto-rows: 1fr;
 }
 
 .skills__box {
-    width: 100%;
-    padding: 1rem;
-    box-shadow: 2px 2px var(--gray);
-    border: 1px solid var(--gray);
-    transition: all 0.3s ease;
-    border-radius: 5px;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 2px 2px var(--gray);
+  border: 1px solid var(--gray);
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  opacity: 0.8;
 }
 
 .blog {
@@ -206,11 +207,14 @@ main a:hover::after {
 }
 
 .blog .blog-post-box:hover,
-.blog .blog-post-box:focus, .skills__box:focus, .skills__box:hover {
+.blog .blog-post-box:focus,
+.skills__box:focus,
+.skills__box:hover {
   text-decoration: none !important;
   box-shadow: none;
   transition: all 0.3s ease;
   z-index: 0;
+  opacity: 1;
 }
 .blog .blog-post-list {
   display: grid;

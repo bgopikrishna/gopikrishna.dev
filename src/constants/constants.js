@@ -146,6 +146,8 @@ export const mySkills2 = {
   frontend: ['Angular', 'React JS', 'HTML5', 'CSS3', 'Sass'],
   backend: ['Node', 'Express', 'MongoDB', 'Firebase'],
   other: ['Redux JS', 'Jasmine JS', 'BootStrap', 'Materialize CSS', 'Git'],
+  learing: ['Advanced stuff about Node JS',  'New Patterns in React JS'],
+  planning: ['GraphQL', 'Django', 'Vue JS'],
 };
 
 export const siteUrl = 'https://bgopikrishna.me';

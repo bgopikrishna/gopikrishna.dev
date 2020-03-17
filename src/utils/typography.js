@@ -16,7 +16,7 @@ const typography = new Typography({
     'sans-serif',
   ],
   bodyFontFamily: [
-    'Work Sans',
+    'Inter',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
@@ -28,7 +28,7 @@ const typography = new Typography({
   ],
   googleFonts: [
     {
-      name: 'Work Sans',
+      name: 'Inter',
       styles: ['400','700'],
     },
     {

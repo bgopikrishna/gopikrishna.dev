@@ -52,7 +52,21 @@ const AboutPage = () => (
           </div>
           <div className="skills__box">
             <h4>Other Libraries and Tools</h4>
-                {mySkills2.other.join(', ')}
+            {mySkills2.other.join(', ')}
+            {/* {mySkills2.other.map(skill => (
+              <li>{skill}</li>
+            ))} */}
+          </div>
+          <div className="skills__box">
+            <h4>Currently learning</h4>
+            {mySkills2.learing.join(', ')}
+            {/* {mySkills2.other.map(skill => (
+              <li>{skill}</li>
+            ))} */}
+          </div>
+          <div className="skills__box">
+            <h4>Planning to learn</h4>
+            {mySkills2.planning.join(', ')}
             {/* {mySkills2.other.map(skill => (
               <li>{skill}</li>
             ))} */}
