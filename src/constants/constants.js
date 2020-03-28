@@ -136,18 +136,25 @@ export const mySkills = [
   'HTML5',
   'CSS3',
   'Sass',
-  'BootStrap',
+  'Bootstrap',
   'Materialize CSS',
   'Git',
 ];
 
 export const mySkills2 = {
   programming: ['JavaScript', 'TypeScript', 'Python'],
-  frontend: ['Angular', 'React JS', 'HTML5', 'CSS3', 'Sass'],
+  frontend: ['Angular', 'React JS', 'HTML5', 'CSS3', 'SASS'],
   backend: ['Node', 'Express', 'MongoDB', 'Firebase'],
-  other: ['Redux JS', 'Jasmine JS', 'BootStrap', 'Materialize CSS', 'Git'],
-  learing: ['Advanced stuff about Node JS',  'New Patterns in React JS'],
-  planning: ['GraphQL', 'Django', 'Vue JS'],
+  other: [
+    'Redux JS',
+    'Jasmine JS(Testing)',
+    'BootStrap',
+    'Materialize CSS',
+    'Bulma CSS',
+    'Git',
+  ],
+  learing: ['Progressibe Web Apps', 'New Patterns in React JS'],
+  planning: ['GraphQL', 'Django', 'Vue JS', 'Containers'],
 };
 
 export const siteUrl = 'https://bgopikrishna.me';

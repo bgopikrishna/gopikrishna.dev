@@ -4,7 +4,7 @@ import SEO from '../components/seo';
 import LinkToPages from '../components/extras/LinkToPages';
 import { Link } from 'gatsby';
 import SocialIconsGrid from '../components/extras/SocialIconsGrid';
-import { mySkills, resumeUrl, mySkills2 } from '../constants/constants';
+import { resumeUrl, mySkills2 } from '../constants/constants';
 
 const AboutPage = () => (
   <Layout containerType={'container'}>
