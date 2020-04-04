@@ -56,9 +56,10 @@ export const projectDetailsList = [
   // },
   {
     name: 'Pyggy [Under Development]',
-    liveDemoUrl: '#',
+    liveDemoUrl: 'https://pyggy.netlify.app/',
     sourceCodeUrl: 'https://github.com/bgopikrishna/pyggy',
-    desc: 'A full stack goal tracker app.',
+    desc:
+      'A full stack(MERN) goal tracker app using React, Node, Express, MongoDB.',
     technologies: [
       'JavaScript',
       'ReactJS',
@@ -152,6 +153,7 @@ export const mySkills2 = {
     'Materialize CSS',
     'Bulma CSS',
     'Git',
+    'Gatsby JS',
   ],
   learing: ['Progressibe Web Apps', 'New Patterns in React JS'],
   planning: ['GraphQL', 'Django', 'Vue JS', 'Containers'],
@@ -160,4 +162,4 @@ export const mySkills2 = {
 export const siteUrl = 'https://bgopikrishna.me';
 
 export const resumeUrl =
-  'https://docs.google.com/document/d/14jtU-GtWVMQrHI9l-7ebtJdLIsQ0y_mb9l7hdAB7YlM/edit?usp=sharing';
+  'https://docs.google.com/document/d/14jtU-GtWVMQrHI9l-7ebtJdLIsQ0y_mb9l7hdAB7YlM/export?format=pdf';
