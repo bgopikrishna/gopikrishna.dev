@@ -155,6 +155,7 @@ main a:hover::after {
   flex-direction: column;
   /* text-align: justify; */
   animation: slideFromLeft 0.7s ease;
+  transform-origin: bottom;
 }
 
 .skills ul {
@@ -192,6 +193,7 @@ main a:hover::after {
   line-height: 1.7;
   max-width: 100%;
   animation: slideFromRight 0.7s ease;
+  transform-origin: left;
 }
 
 .blog a::after {
@@ -222,6 +224,16 @@ main a:hover::after {
   grid-gap: 20px;
   justify-items: center;
   padding: 1rem;
+}
+.projects_other {
+  margin: 1rem auto;
+  padding: 2rem;
+}
+
+.projects_other_list {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 @media (max-width: 900px) {

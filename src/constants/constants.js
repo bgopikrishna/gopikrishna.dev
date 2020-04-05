@@ -86,6 +86,22 @@ export const projectDetailsList = [
     ],
   },
   {
+    name: 'Pomodoro Timer',
+    liveDemoUrl: 'https://pomotimer.netlify.com/',
+    sourceCodeUrl: 'https://github.com/bgopikrishna/react-pomotimer',
+    desc: 'A minimalistic pomodoro timer based on pomodoro technique.',
+    technologies: ['JavaScript', 'ReactJS', 'HTML5', 'CSS'],
+  },
+];
+
+export const miniProjects = [
+  {
+    name: 'Youtube Playlist Analyzer',
+    liveDemoUrl: 'https://yt-pl-analyzer.netlify.com/',
+    sourceCodeUrl: 'https://github.com/bgopikrishna/youtube-playlist-analyzer',
+  },
+
+  {
     name: 'MyBookShelf',
     liveDemoUrl: 'https://mybookshelf.netlify.com/',
     sourceCodeUrl: 'https://github.com/bgopikrishna/book-shelf',
@@ -94,11 +110,9 @@ export const projectDetailsList = [
     technologies: ['JavaScript', 'ReactJS', 'HTML5', 'Materilize CSS'],
   },
   {
-    name: 'Pomodoro Timer',
-    liveDemoUrl: 'https://pomotimer.netlify.com/',
-    sourceCodeUrl: 'https://github.com/bgopikrishna/react-pomotimer',
-    desc: 'A minimalistic pomodoro timer based on pomodoro technique.',
-    technologies: ['JavaScript', 'ReactJS', 'HTML5', 'CSS'],
+    name: 'React Markdown Editor',
+    liveDemoUrl: 'https://react-markdown.netlify.com/',
+    sourceCodeUrl: 'https://github.com/bgopikrishna/react-markdown',
   },
 ];
 
