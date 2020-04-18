@@ -96,6 +96,11 @@ export const projectDetailsList = [
 
 export const miniProjects = [
   {
+    name: 'Product Landing Page',
+    liveDemoUrl: 'https://yt-pl-analyzer.netlify.com/',
+    sourceCodeUrl: 'https://github.com/bgopikrishna/youtube-playlist-analyzer',
+  },
+  {
     name: 'Youtube Playlist Analyzer',
     liveDemoUrl: 'https://yt-pl-analyzer.netlify.com/',
     sourceCodeUrl: 'https://github.com/bgopikrishna/youtube-playlist-analyzer',

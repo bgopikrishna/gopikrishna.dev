@@ -1,85 +1,4 @@
-:root {
-  --primary: #8083ff;
-  --black: #181e2a;
-  --white: #ffffff;
-  --white-2: #f1f1f5;
-  --gray: #9db5b9;
-  --nav-light: var(--white);
-  --nav-dark: var(--black);
-  --nav-background: var(--nav-light);
-  --background-light: rgba(0, 0, 0, 0.025);
-  --header-font: 'Inconsolata', 'Nunito', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Work Sans, Oxygen, Cantarell, 'Helvetica Neue', sans-serif;
-  --body-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Work Sans,
-    Oxygen, Cantarell, 'Helvetica Neue', sans-serif;
-
-  /*Accent Colors*/
-  --accent-pink: #f70961;
-  --accent-green: #03b75a;
-  --accent-blue: #00a5cf;
-  --accent-orange: #f06543;
-  --accent-purple: #8083ff;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
-}
-
-body.dark {
-  background: var(--black);
-  color: var(--white);
-  --nav-background: var(--nav-dark);
-  --text-color: var(--white);
-  --background-light: rgba(255, 255, 255, 0.025);
-}
-
-body.light {
-  background: var(--white);
-  color: var(--black);
-  --nav-background: var(--nav-light);
-  --text-color: var(--black);
-}
-
-body.accent-green {
-  --primary: var(--accent-green);
-}
-body.accent-pink {
-  --primary: var(--accent-pink);
-}
-body.accent-orange {
-  --primary: var(--accent-orange);
-}
-body.accent-blue {
-  --primary: var(--accent-blue);
-}
-body.accent-purple {
-  --primary: var(--accent-purple);
-}
-
-hr {
-  background: var(--text-color);
-}
-
-* > {
-  box-sizing: border-box;
-  overflow-wrap: break-word;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a {
-  color: var(--primary);
-}
+@import './base.css';
 
 main {
   width: 100%;
@@ -112,22 +31,13 @@ main a:hover::after {
   transform-origin: 0% 50%;
 }
 
-.home {
-  border: 1px solid var(--gray);
-  box-shadow: 2px 2px var(--gray);
-  padding: 1.5rem 1rem;
-  text-align: center;
-  line-height: 1.5;
-  border-radius: 5px;
-  animation: slideFromBottom 0.7s ease;
-}
-
 .projects {
   margin: 20px auto;
   text-align: center;
   line-height: 1.5;
   padding: 0 1rem 1rem 1rem;
   animation: slideFromBottom 0.7s ease;
+  transform-origin: bottom;
 }
 
 .pageHeader {
@@ -143,8 +53,8 @@ main a:hover::after {
   margin: 40px auto;
   line-height: 2;
   padding: 2.5rem 1rem;
-  text-transform: capitalize;
   animation: slideFromBottom 0.5s ease;
+  transform-origin: bottom;
 }
 
 .about {
@@ -154,7 +64,7 @@ main a:hover::after {
   display: flex;
   flex-direction: column;
   /* text-align: justify; */
-  animation: slideFromLeft 0.7s ease;
+  animation: slideFromBottom 0.7s ease;
   transform-origin: bottom;
 }
 
@@ -192,8 +102,8 @@ main a:hover::after {
   padding: 0 1rem 1rem 1rem;
   line-height: 1.7;
   max-width: 100%;
-  animation: slideFromRight 0.7s ease;
-  transform-origin: left;
+  animation: slideFromBottom 0.7s ease;
+  transform-origin: bottom;
 }
 
 .blog a::after {
@@ -240,93 +150,13 @@ main a:hover::after {
   main {
     padding: 5px;
   }
-  .home {
-    padding: 0px;
-    border: none;
-    text-align: justify;
-    box-shadow: none;
-  }
+
   .projects {
     padding: 1rem 0.5rem;
   }
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 0.25rem;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background: transparent;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--primary);
-  border-radius: 10px;
-  opacity: 0.7;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  opacity: 1;
-}
-
-#disqus_thread {
-  padding: 1rem;
-  border: 1px solid var(--gray);
-  box-shadow: 2px 2px 1px var(--gray);
-  margin: 3rem 0;
-  transition: box-shadow 0.3s linear;
-  background: var(--white);
-  color: var(--black);
-}
-
-#disqus_thread:hover,
-#disqus_thread:focus {
-  box-shadow: none;
-}
-
-@media (min-width: 1367px) {
-  .home {
-    padding: 2.5rem 1rem;
-    margin-top: 3rem;
-  }
-}
-
-.box-shadow-2px-blur {
-  box-shadow: 0px 0px 2px var(--gray);
-}
-
 @keyframes slideFromBottom {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  to {
-    transform: translateY(0%);
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes slideFromRight {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-    transform: scaleX(0.5);
-  }
-  to {
-    transform: translateX(0%);
-    opacity: 1;
-    transform: scaleX(1);
-  }
-}
-
-@keyframes slideFromLeft {
   from {
     transform: translateX(-100%);
     opacity: 0;

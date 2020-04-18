@@ -4,6 +4,7 @@ import SEO from '../components/seo';
 import IntroHeader from '../components/home/IntroHeader';
 import HomeContent from '../components/home/HomeContent';
 import SocialIconsGrid from '../components/extras/SocialIconsGrid';
+import './Home.css';
 
 const IndexPage = () => (
   <Layout containerType="container">

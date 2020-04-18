@@ -65,7 +65,7 @@ li {
   outline: none;
   border: none;
   color: inherit;
-  cursor: pointer;
+  cursor: poInter;
   margin: auto 0.5rem;
 }
 .nightModeBtn:first-child {

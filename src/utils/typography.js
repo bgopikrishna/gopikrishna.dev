@@ -29,12 +29,12 @@ const typography = new Typography({
   googleFonts: [
     {
       name: 'Inter',
-      styles: ['400','700'],
+      styles: ['400', '700'],
     },
     {
-      name:"Inconsolata",
-      styles:["400"]
-    }
+      name: 'Inconsolata',
+      styles: ['400'],
+    },
   ],
 });
 
