@@ -21,11 +21,11 @@ function toggleDarkMode(isItdark) {
   if (typeof window !== 'undefined') {
     localStorage.setItem('darkMode', JSON.stringify(isItdark));
     if (isItdark) {
-      document.body.classList.remove('light');
-      document.body.classList.add('dark');
+      document.documentElement.classList.remove('light');
+      document.documentElement.classList.add('dark');
     } else {
-      document.body.classList.remove('dark');
-      document.body.classList.add('light');
+      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.add('light');
     }
   }
 }

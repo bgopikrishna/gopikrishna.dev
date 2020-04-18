@@ -6,9 +6,9 @@ export const useAccentColor = () => {
     typeof window === 'undefined'
       ? 'blue'
       : localStorage.getItem('accentColor')
-      ? JSON.parse( localStorage.getItem('accentColor'))
+      ? JSON.parse(localStorage.getItem('accentColor'))
       : 'blue';
-console.log("LocalStoragedAccentColor", localStorageAccentColor);
+  console.log('LocalStoragedAccentColor', localStorageAccentColor);
 
   const [accentColor, setAccentColor] = useState(localStorageAccentColor);
 
@@ -20,15 +20,17 @@ console.log("LocalStoragedAccentColor", localStorageAccentColor);
 };
 
 function changeAccentColor(color) {
-    console.log(color);
-    
-  accentColorsSet.forEach(color => document.body.classList.remove(`accent-${color}`));
+  console.log(color);
 
-  document.body.classList.add(`accent-${color}`);
+  accentColorsSet.forEach(color =>
+    document.documentElement.classList.remove(`accent-${color}`)
+  );
+
+  document.documentElement.classList.add(`accent-${color}`);
   localStorage.setItem('accentColor', JSON.stringify(color));
 
   //   if (newColor) {
-  //     document.body.classList.add(newColor);
+  //     document.documentElement.classList.add(newColor);
   //     localStorage.setItem('accentColor', JSON.stringify(newColor));
   //   }
 }
