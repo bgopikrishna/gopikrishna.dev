@@ -1,2 +1,1 @@
-Hey, My portfolio site built with `React` and `Gatsby`. 
-[bgopikrishna.github.io](https://bgopikrishna.github.io)
+Hey, This site has been moved to [bgopikrishna.me](https://bgopikrishna.me)
