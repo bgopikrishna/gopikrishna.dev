@@ -6,30 +6,32 @@ main {
 }
 main a {
   text-decoration: none;
-  opacity: 0.7;
+  opacity: 0.8;
   transition: opacity 0.1s ease-in;
   display: inline-block;
 }
 main a:hover,
 main a:focus {
+  text-decoration: underline;
   opacity: 1;
 }
 
-main a::after {
+/* main a::after {
   display: block;
   content: '';
   width: auto;
-  height: 1px;
+  height: 100%;
   background: var(--primary);
   transform: scaleX(0);
-  transform-origin: 100% 25%;
+  transform-origin: 0% -100%;
   transition: transform 0.3s ease-in-out;
+  opacity: 0.3;
 }
 
 main a:hover::after {
-  transform: scaleX(1) translateY(-5px);
+  transform: scaleX(1) translateY(-100%);
   transform-origin: 0% 50%;
-}
+} */
 
 .projects {
   margin: 20px auto;
@@ -99,7 +101,7 @@ main a:hover::after {
   text-align: center;
   margin: 20px auto;
   min-height: 80vh;
-  padding: 0 1rem 1rem 1rem;
+  /* padding: 0 1rem 1rem 1rem; */
   line-height: 1.7;
   max-width: 100%;
   animation: slideFromBottom 0.7s ease;
@@ -112,10 +114,19 @@ main a:hover::after {
 
 .blog .blog-post-box {
   padding: 1rem;
-  box-shadow: 2px 2px var(--gray);
+  /* box-shadow: 2px 2px var(--gray); */
   border: 1px solid var(--gray);
   transition: all 0.3s ease;
   border-radius: 5px;
+  color: inherit;
+  opacity: 0.9;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blog-post-box p {
+  margin-bottom: 0px;
 }
 
 .blog .blog-post-box:hover,
@@ -123,7 +134,7 @@ main a:hover::after {
 .skills__box:focus,
 .skills__box:hover {
   text-decoration: none !important;
-  box-shadow: none;
+  box-shadow: 2px 2px var(--gray);
   transition: all 0.3s ease;
   z-index: 0;
   opacity: 1;
@@ -134,6 +145,12 @@ main a:hover::after {
   grid-gap: 20px;
   justify-items: center;
   padding: 1rem;
+}
+
+.blog .blog-post-box-extras {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
 }
 .projects_other {
   margin: 1rem auto;
@@ -156,6 +173,12 @@ main a:hover::after {
   }
 }
 
+.btn {
+  text-decoration: none;
+  color: var(--white);
+  padding: 1rem 0.5rem;
+}
+
 @keyframes slideFromBottom {
   from {
     transform: translateX(-100%);
@@ -171,9 +194,11 @@ main a:hover::after {
 
 ::-moz-selection {
   /* Code for Firefox */
-  background: yellow;
+  background: var(--primary);
+  color: var(--white);
 }
 
 ::selection {
-  background: yellow;
+  background: var(--primary);
+  color: var(--white);
 }

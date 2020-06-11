@@ -18,22 +18,28 @@ const Blog = ({ data }) => {
             posts.map(postNode => {
               const { frontmatter, timeToRead } = postNode.node;
 
-              const { title, path, date } = frontmatter;
+              const { title, path, date, tags } = frontmatter;
 
               return (
                 <Link key={path} to={path} className="blog-post-box">
                   <h3>{title}</h3>
-
-                  <p
-                    style={{
-                      fontSize: '12px',
-                      margin: '0',
-                      padding: 0,
-                      color: 'var(--text-color)',
-                    }}
-                  >
-                    {'📅'} {date} |{' ☕️' + timeToRead + ' min read'}
-                  </p>
+                  <div className="blog-post-box-extras">
+                    <p>
+                      {' '}
+                      {tags.map(item => (
+                        <span key={item}>&nbsp;🏷️{item}&nbsp;</span>
+                      ))}
+                    </p>
+                    <p
+                      style={{
+                        fontSize: '12px',
+                        margin: '0',
+                        padding: 0,
+                        color: 'var(--text-color)',
+                      }}>
+                      {'📅'} {date} |{' ☕️' + timeToRead + ' min read'}
+                    </p>
+                  </div>
                 </Link>
               );
             })}
@@ -52,6 +58,7 @@ export const query = graphql`
             title
             date(formatString: "DD MMMM, YYYY")
             path
+            tags
           }
           timeToRead
         }

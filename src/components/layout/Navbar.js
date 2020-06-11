@@ -20,17 +20,17 @@ const Navbar = ({
   );
   const nightModeIconStyle = darkMode ? navbarStyle.day : navbarStyle.night;
   const navBackground = darkMode ? navbarStyle.bgDark : navbarStyle.bgLight;
-  const showBoxShadowClass = typeof window !== 'undefined'
-    ? window.location.pathname !== '/'
-      ? 'box-shadow-2px-blur'
-      : ''
-    : '';
-
-
+  const showBoxShadowClass =
+    typeof window !== 'undefined'
+      ? window.location.pathname !== '/'
+        ? 'box-shadow-2px-blur'
+        : ''
+      : '';
 
   console.log(showBoxShadowClass);
   return (
-    <div className={`${navbarStyle.navsection} ${navBackground} ${showBoxShadowClass}`}>
+    <div
+      className={`${navbarStyle.navsection} ${navBackground} ${showBoxShadowClass}`}>
       <Header />
       <nav>
         <ul className={navbarStyle.navbar}>
@@ -40,8 +40,7 @@ const Navbar = ({
                 <Link
                   className={navbarStyle.navlink}
                   to={route.path}
-                  activeClassName={navbarStyle.linkActive}
-                >
+                  activeClassName={navbarStyle.linkActive}>
                   {' '}
                   <span className={navbarStyle.navlinkIcon}>
                     <FontAwesomeIcon icon={route.icon} />
@@ -58,16 +57,14 @@ const Navbar = ({
           style={{ color: `var(--accent-${accentColor})` }}
           onClick={changeAccentColor}
           aria-label="change site accent color"
-          title="Change accent"
-        >
+          title="Change accent">
           <FontAwesomeIcon icon={faCircle}></FontAwesomeIcon>
         </button>
         <button
           className={`${navbarStyle.nightModeBtn} ${nightModeIconStyle}`}
           onClick={toggleDarkMode}
           aria-label="toggle darkmode"
-          title="toggle darkmode"
-        >
+          title="toggle darkmode">
           {nightModeIcon}
         </button>
       </div>

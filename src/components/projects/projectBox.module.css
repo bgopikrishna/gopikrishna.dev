@@ -47,6 +47,10 @@
   margin-top: 20px;
 }
 
+.projectBox_actionBtn svg {
+  margin-right: 0.5rem;
+}
+
 .projectBox_actionBtn[href='#'] {
   cursor: not-allowed;
   opacity: 0.5;

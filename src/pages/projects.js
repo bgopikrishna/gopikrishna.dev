@@ -19,8 +19,8 @@ const ProjectsPage = () => (
         <ul className="projects_other_list">
           {miniProjects.map(item => (
             <li key={item.sourceCodeUrl}>
-              {item.name} - <a href={item.liveDemoUrl}>Live</a> &{' '}
-              <a href={item.sourceCodeUrl}>Source Code</a>
+              {item.name} - <a href={item.liveDemoUrl}>Live</a> and{' '}
+              <a href={item.sourceCodeUrl}>Github</a>
             </li>
           ))}
         </ul>

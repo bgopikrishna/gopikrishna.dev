@@ -1,11 +1,11 @@
 import Typography from 'typography';
 
 const typography = new Typography({
-  baseFontSize: '20px',
+  baseFontSize: '18px',
   baseLineHeight: 1.6,
   headerWeight: 'bold',
   headerFontFamily: [
-    'Inconsolata',
+    'Inter',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
@@ -30,10 +30,6 @@ const typography = new Typography({
     {
       name: 'Inter',
       styles: ['400', '700'],
-    },
-    {
-      name: 'Inconsolata',
-      styles: ['400'],
     },
   ],
 });

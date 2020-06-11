@@ -1,5 +1,8 @@
 import React from 'react';
 import projectBoxStyle from './projectBox.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 const ProjectBox = ({ project }) => {
   const { name, desc, liveDemoUrl, sourceCodeUrl, technologies } = project;
@@ -21,12 +24,14 @@ const ProjectBox = ({ project }) => {
         <a
           href={sourceCodeUrl}
           className={projectBoxStyle.projectBox_actionBtn}>
-          Souce Code
+          <FontAwesomeIcon icon={faGithub} />
+          <span>Github</span>
         </a>
         <a
           href={liveDemoUrl}
           className={projectBoxStyle.projectBox_actionBtn + ' disabled-link'}>
-          Live Demo
+          <FontAwesomeIcon icon={faLink} />
+          <span>Live Demo</span>
         </a>
       </div>
     </div>

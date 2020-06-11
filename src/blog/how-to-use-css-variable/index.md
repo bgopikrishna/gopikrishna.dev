@@ -1,6 +1,6 @@
 ---
 title: 'Getting started with CSS variables'
-tags: ['CSS', 'beginners', 'JavaScript']
+tags: ['CSS', 'JavaScript']
 date: '2019-11-13'
 path: '/blog/css-variables'
 ---

@@ -11,7 +11,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div className="home">
       <IntroHeader />
-      <HomeContent />
+
       <SocialIconsGrid />
     </div>
   </Layout>

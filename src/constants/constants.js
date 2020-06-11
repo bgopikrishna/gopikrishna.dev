@@ -1,14 +1,14 @@
 import {
   faTwitter,
-  faGithubAlt,
+  faGithub,
   faLinkedinIn,
   faDev,
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faUserAstronaut,
   faNewspaper,
-  faPaperPlane,
   faLaptopCode,
+  faPaperPlane,
 } from '@fortawesome/free-solid-svg-icons';
 
 export const introPrimaryContent = `I'm a self-taught JavaScript Developer. I love JavaScript and React. 
@@ -34,7 +34,7 @@ export const socialLinks = [
   {
     platfrom: 'Gopi Krishna on Github',
     profileUrl: 'https://github.com/bgopikrishna',
-    icon: faGithubAlt,
+    icon: faGithub,
     className: 'githubIcon',
   },
 
@@ -97,8 +97,8 @@ export const projectDetailsList = [
 export const miniProjects = [
   {
     name: 'Product Landing Page',
-    liveDemoUrl: 'https://yt-pl-analyzer.netlify.com/',
-    sourceCodeUrl: 'https://github.com/bgopikrishna/youtube-playlist-analyzer',
+    liveDemoUrl: 'https://flyolanding.netlify.app/',
+    sourceCodeUrl: 'https://github.com/bgopikrishna/landing-page',
   },
   {
     name: 'Youtube Playlist Analyzer',
@@ -174,7 +174,7 @@ export const mySkills2 = {
     'Git',
     'Gatsby JS',
   ],
-  learing: ['Progressibe Web Apps', 'New Patterns in React JS'],
+  learing: ['Node JS and Backend Development'],
   planning: ['GraphQL', 'Django', 'Vue JS', 'Containers'],
 };
 

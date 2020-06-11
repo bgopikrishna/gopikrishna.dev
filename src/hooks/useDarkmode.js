@@ -1,12 +1,7 @@
 import { useState, useEffect } from 'react';
 
 export const useDarkMode = () => {
-  const localStoragedDarkMode =
-    typeof window === 'undefined'
-      ? false
-      : localStorage.getItem('darkMode') === 'true'
-      ? true
-      : false;
+  const localStoragedDarkMode = getDarkModeStatus();
 
   const [darkMode, setDarkMode] = useState(localStoragedDarkMode);
 
@@ -19,7 +14,7 @@ export const useDarkMode = () => {
 
 function toggleDarkMode(isItdark) {
   if (typeof window !== 'undefined') {
-    localStorage.setItem('darkMode', JSON.stringify(isItdark));
+    localStorage.setItem('darkMode', isItdark);
     if (isItdark) {
       document.documentElement.classList.remove('light');
       document.documentElement.classList.add('dark');
@@ -28,4 +23,20 @@ function toggleDarkMode(isItdark) {
       document.documentElement.classList.add('light');
     }
   }
+}
+
+function getDarkModeStatus() {
+  const isBrowser = typeof window !== 'undefined';
+  if (isBrowser) {
+    if (localStorage.getItem('darkMode') === null) {
+      const darkModeMediaQuery = window.matchMedia(
+        '(prefers-color-scheme: dark)'
+      );
+      return darkModeMediaQuery.matches;
+    } else {
+      return JSON.parse(localStorage.getItem('darkMode'));
+    }
+  }
+
+  return false;
 }

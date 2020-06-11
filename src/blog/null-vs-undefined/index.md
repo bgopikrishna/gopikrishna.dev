@@ -1,13 +1,11 @@
 ---
 title: 'Null vs Undefined in JavaScript in 1 min'
-tags: ['JavaScript', 'beginners']
+tags: ['JavaScript']
 date: '2019-07-23'
 path: '/blog/null-vs-undefined'
 ---
 
-I always had a small confusion between `null` and `undefined` in JavaScript. My confusion got cleared, after reading **JS Grammar** by [@js_tut](https://twitter.com/js_tut).
-
-Checkout [JS Grammer](https://twitter.com/js_tut), It's an awesome resource to learn JavaScript.
+I always had a small confusion between `null` and `undefined` in JavaScript.
 
 Now, Let's dive into the topic.
 

@@ -8,14 +8,12 @@ const Footer = () => {
         opacity: '0.7',
         fontSize: '0.7rem',
         margin: '10px auto',
-      }}
-    >
+      }}>
       © 2019 Coded By{' '}
       <a
-        href="https://twitter.com/_bgopikrishna"
+        href="https://linkedin.com/in/bgopikrishna"
         target="_blank"
-        rel="noopener noreferrer"
-      >
+        rel="noopener noreferrer">
         Gopi Krishna
       </a>
     </footer>

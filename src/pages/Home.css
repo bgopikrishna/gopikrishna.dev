@@ -1,12 +1,17 @@
 .home {
-  border: 1px solid var(--gray);
-  box-shadow: 2px 2px var(--gray);
+  /* border: 1px solid var(--gray);
+  box-shadow: 2px 2px var(--gray); */
   padding: 1.5rem 1rem;
   text-align: center;
   line-height: 1.5;
   border-radius: 5px;
   animation: slideFromBottom 0.7s ease;
   transform-origin: bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 70vh;
 }
 
 @media (max-width: 900px) {

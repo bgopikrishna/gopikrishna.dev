@@ -2,12 +2,13 @@ import { useState, useEffect } from 'react';
 import { accentColorsSet } from '../constants/constants';
 
 export const useAccentColor = () => {
-  const localStorageAccentColor =
-    typeof window === 'undefined'
-      ? 'blue'
-      : localStorage.getItem('accentColor')
-      ? JSON.parse(localStorage.getItem('accentColor'))
-      : 'blue';
+  const isBrowser = typeof window !== 'undefined';
+
+  const localStorageAccentColor = !isBrowser
+    ? 'purple'
+    : localStorage.getItem('accentColor')
+    ? JSON.parse(localStorage.getItem('accentColor'))
+    : 'purple';
   console.log('LocalStoragedAccentColor', localStorageAccentColor);
 
   const [accentColor, setAccentColor] = useState(localStorageAccentColor);
