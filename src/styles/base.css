@@ -3,7 +3,7 @@
   --black: #121212;
   --darker: #121212;
   --white: #ffffff;
-  --white-2: #dbdbdd;
+  --white-2: #efefef;
   --gray: #9db5b9;
   --body-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Work Sans,
     Oxygen, Cantarell, 'Helvetica Neue', sans-serif;
@@ -31,12 +31,14 @@ html.dark {
   background: var(--black);
   color: var(--white-2);
   --background-dark: var(--darker);
+  --nav-bg: var(--black);
 }
 
 html.light {
   background: var(--white);
   color: var(--black);
   --background-dark: var(--white-2);
+  --nav-bg: var(--white);
 }
 
 html.accent-green {

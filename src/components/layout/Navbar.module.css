@@ -13,7 +13,7 @@
   /* font-family: 'Space Mono', 'Nunito', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Work Sans, Oxygen, Cantarell, 'Work Sans', 'Helvetica Neue',
     sans-serif; */
-  background: var(--background-dark);
+  background: var(--nav-bg);
 }
 
 .navsection ul,
@@ -73,12 +73,6 @@ li {
 }
 .nightModeBtn:last-child {
   margin-right: 0.25rem;
-}
-.bgLight {
-  background: var(--white);
-}
-.bgDark {
-  background: var(--black);
 }
 
 .day {

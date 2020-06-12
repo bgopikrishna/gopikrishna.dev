@@ -1,10 +1,9 @@
 import React from 'react';
 import SEO from '../components/seo';
 import Layout from '../components/layout/layout';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import './blogPostTemplate.css';
 import SocialIconsGrid from '../components/extras/SocialIconsGrid';
-import { DiscussionEmbed } from 'disqus-react';
 import { createTwitterIntent } from '../utils/misc';
 import LinkToPages from '../components/extras/LinkToPages';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -18,7 +17,8 @@ const blogPostTemplate = props => {
   const date = props.data.markdownRemark.frontmatter.date;
 
   const htmlData = props.data.markdownRemark.html;
-  const timeToRead = '☕️' + props.data.markdownRemark.timeToRead + ' min read';
+  const timeToRead =
+    ' 🕒 ' + props.data.markdownRemark.timeToRead + ' min read';
   // const disqusConfig = {
   //   shortname: 'bgopikrishna',
   //   config: { identifier: slug, title },
@@ -34,7 +34,13 @@ const blogPostTemplate = props => {
           <h1 className="blog-post-title">{title}</h1>
           <small>
             {tags.map(item => (
-              <span key={item}>&nbsp;🏷️{item}&nbsp;</span>
+              <span key={item}>
+                &nbsp;
+                <span role="img" aria-labelledby="Tag">
+                  🏷️
+                </span>
+                {item}&nbsp;
+              </span>
             ))}
           </small>
           <p style={{ fontSize: '12px', marginTop: '0.8rem' }}>

@@ -27,17 +27,20 @@ const Blog = ({ data }) => {
                     <p>
                       {' '}
                       {tags.map(item => (
-                        <span key={item}>&nbsp;🏷️{item}&nbsp;</span>
+                        <span key={item}>
+                          &nbsp;
+                          <span role="img" aria-labelledby="Tag">
+                            🏷️
+                          </span>
+                          {item}&nbsp;
+                        </span>
                       ))}
                     </p>
-                    <p
-                      style={{
-                        fontSize: '12px',
-                        margin: '0',
-                        padding: 0,
-                        color: 'var(--text-color)',
-                      }}>
-                      {'📅'} {date} |{' ☕️' + timeToRead + ' min read'}
+                    <p>
+                      <span role="img" aria-labelledby="Date">
+                        📅
+                      </span>{' '}
+                      {date} |{' 🕒 ' + timeToRead + ' min read'}
                     </p>
                   </div>
                 </Link>
