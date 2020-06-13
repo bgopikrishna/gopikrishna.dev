@@ -10,6 +10,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-netlify-cms`,
 
     {
       resolve: `gatsby-source-filesystem`,
@@ -81,7 +82,7 @@ module.exports = {
       resolve: 'gatsby-plugin-remove-console',
       options: {
         exclude: ['error', 'warn'], // <- will be removed all console calls except these
-      }
-    }
+      },
+    },
   ],
 };

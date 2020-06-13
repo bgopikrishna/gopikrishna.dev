@@ -28,7 +28,7 @@ const blogPostTemplate = props => {
 
   return (
     <Layout containerType="fluid">
-      <SEO title={title} />
+      <SEO title={title} description />
       <article className="blog-post">
         <header className="blog-post-header">
           <h1 className="blog-post-title">{title}</h1>
