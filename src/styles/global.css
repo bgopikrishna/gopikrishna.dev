@@ -171,6 +171,12 @@ main a:hover::after {
   .projects {
     padding: 1rem 0.5rem;
   }
+  .blog-post-box-extras {
+    flex-direction: column;
+  }
+  .blog-post-box-extras p:first-child {
+    margin-bottom: 1rem;
+  }
 }
 
 .btn {
