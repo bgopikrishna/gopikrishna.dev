@@ -1,1 +1,1 @@
-Hey, This site has been moved to [bgopikrishna.me](https://gopikrishna.dev)
+Hey, This site has been moved to [https://gopikrishna.dev](https://gopikrishna.dev)
