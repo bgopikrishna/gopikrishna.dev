@@ -24,9 +24,9 @@ Here ,
 * Cluster manager doesn't execute any application code.
 * Cluster manager distributes the incoming requests to worker processes. 
 * All the network requests (Like API calls) are handled by the workers.
-* All the workers are independent processes, they can be killed re-spawned without effecting other workers.
+* All the workers are independent processes, they can be killed re-spawned without affecting other workers.
 
-## Using Cluster Module
+## Using the Cluster Module
 
 As an example let's create a simple express app which calculates Fibonacci number.
 
@@ -48,7 +48,7 @@ $ npm install express
 
 #### Without Cluster Module
 
-Let create two files, First one `without-cluster.js` which doesn't use cluster module.
+Let create two files, First one `without-cluster.js` which doesn't use the cluster module.
 
 ```javascript
 //without-cluster.js
@@ -158,7 +158,7 @@ As I'm using Ubuntu(WSL 2), I can install it by running
 $ sudo apt-get install apache2-utils
 ```
 
-#### Benchmarking for app which doesn't use cluster module
+#### Benchmarking for the app which doesn't use cluster module
 
 First, we'll check for the app which doesn't use cluster module.
 
@@ -176,7 +176,7 @@ $ ab -n 100 -c 10 localhost:5000/ #Dont forget the trailing slash
 
 Let's break down the above command.
 
-* `-n`: Total number requests to be made.
+* `-n`: Total number of requests to be made.
 * `-c`: Maximum number of requests to run concurrently.
 
 After running the above command I'm getting the following results on my machine. Note, it might be different on your machine. Results will be based on your processor, programs running on your machine etc.
@@ -185,9 +185,9 @@ Sorry for my poor editing skills 😁
 
 ![without-cluster.js results](/assets/inkedwith-out-cluster_li.jpg)
 
-#### Benchmarking for app which uses cluster module
+### Benchmarking for the app which uses cluster module
 
-Now let's test for the app which uses cluster module. Start the app by running
+Now let's test for the app which uses the cluster module. Start the app by running
 
 ```bash
 $ node with-cluster.js
@@ -203,9 +203,9 @@ After running the apache bench tool again, I'm getting the following results.
 
 ![with cluster results](/assets/inkedwith-cluster_li.jpg)
 
-#### Comparison
+### Comparison
 
-Now lets compare both results (which are taken for this sample app on my machine)
+Now let's compare both results (which are taken for this sample app on my machine)
 
 |                                                                            | **With Out Cluster Module** | **With Cluster Module** |
 | -------------------------------------------------------------------------- | --------------------------- | ----------------------- |
@@ -218,7 +218,7 @@ Here we're talking only a few properties from the results. You can clearly see, 
 
 Similarly, you can compare other properties as well. 
 
-*Note: Generally,  For clustering we can use process managers like [pm2](https://pm2.keymetrics.io/) which provides some extra features over cluster module.*
+*Note: Generally,  For clustering we can use process managers like [pm2](https://pm2.keymetrics.io/) which provides some extra features over the cluster module.*
 
 Thank You.
 
