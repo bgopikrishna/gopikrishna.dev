@@ -158,7 +158,7 @@ As I'm using Ubuntu(WSL 2), I can install it by running
 $ sudo apt-get install apache2-utils
 ```
 
-#### Benchmarking for the app which doesn't use cluster module
+### Benchmarking for the app which doesn't use cluster module
 
 First, we'll check for the app which doesn't use cluster module.
 
