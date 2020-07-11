@@ -55,7 +55,7 @@ const blogPostTemplate = props => {
 
       <div className="blog-post-share">
         <a href={twitterShareUrl} target="_blank" rel="noopener noreferrer">
-          <span>Share this article</span>
+          <span>Share</span>
           <span>
             <FontAwesomeIcon icon={faTwitter} />
           </span>

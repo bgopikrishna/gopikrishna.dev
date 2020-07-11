@@ -1,36 +1,30 @@
 import Typography from 'typography';
 
 const typography = new Typography({
-  baseFontSize: '16px',
+  baseFontSize: '18px',
   baseLineHeight: 1.6,
-  headerWeight: 'bold',
+  headerWeight: 900,
   headerFontFamily: [
-    'Inter',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
     'Work Sans',
     'Oxygen-Sans',
     'Cantarell',
+    'Arial',
     'Helvetica Neue',
     'sans-serif',
   ],
   bodyFontFamily: [
-    'Inter',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
     'Work Sans',
     'Oxygen-Sans',
     'Cantarell',
+    'Arial',
     'Helvetica Neue',
     'sans-serif',
-  ],
-  googleFonts: [
-    {
-      name: 'Inter',
-      styles: ['400', '700'],
-    },
   ],
 });
 

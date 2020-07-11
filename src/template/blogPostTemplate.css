@@ -57,6 +57,16 @@
   display: inline-block;
 }
 
+.blog-post blockquote {
+  margin: 2rem auto;
+  border-radius: 5px;
+  opacity: 0.8;
+  font-size: 1.25rem;
+  border-left: 5px groove;
+  padding: 2rem;
+  font-style: italic;
+}
+
 /* code {
   font-size: 14px;
   padding: 0.2rem !important;
