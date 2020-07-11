@@ -7,10 +7,10 @@ tags:
   - javascript
 ---
 # Node JS Cluster Module (Draft)
+
 As we know Node JS is single threaded. So to take advantage of multi-threaded/multi-core  processors, we'll use cluster module. 
 
 According to Node JS docs 
-
 
 > A single instance of Node.js runs in a single thread. To take advantage of multi-core systems, the user will sometimes want to launch a cluster of Node.js processes to handle the load. The cluster module allows easy creation of child processes that all share server ports.
 
@@ -24,11 +24,7 @@ A[Cluster Manager] --> B[Worker process]
 				A --> E[Worker Process]
 ```
 
-
-
 The cluster manager is the parent process, which manages the worker processes. The cluster manager is responsible for managing these instances. It doesn't execute any application code and isn't responsible for handling network requests.
-
-
 
 ## Using Cluster Module
 
@@ -73,7 +69,6 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => console.log(`App listening on port ${port}!`));
-
 ```
 
 If you look at the above code, it's simple express app which calculates the Fibonacci number and sends the result. To keep this post simple I'm not going to explain about Fibonacci number.
@@ -115,16 +110,15 @@ if (cluster.isMaster) {
         console.log(`App listening on port ${port} ${process.pid}!`)
     );
 }
-
 ```
-
-
 
 If you look at the above code, it's the  same app which calculates the Fibonacci number but uses cluster module. We're just wrapping out code inside a `if else` block.
 
-So when we run `node with-cluster.js` , 
+So when we run `node with-cluster.j`
 
+![](/assets/with-out-cluster.png)
 
+`s` , 
 
 ```mermaid
 graph TB
@@ -133,19 +127,10 @@ b --> c[worker #1]
 b --> d[worker #2]
 b --> e[worker #3]
 b --> f[worker #4]
-
 ```
 
-
-
-
-
-
-
-
-
 ### Notes
-- Cluster manager isn’t responsible for handling network requests
-- Cluster manager doesn’t execute code
-- Cluster manager is responsible for managing the instances
 
+* Cluster manager isn’t responsible for handling network requests
+* Cluster manager doesn’t execute code
+* Cluster manager is responsible for managing the instances
