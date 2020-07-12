@@ -18,6 +18,8 @@ export const introSecondaryContent = `If you have any queries, feel free to mess
 
 export const accentColorsSet = ['green', 'pink', 'orange', 'blue', 'purple'];
 
+export const SITE_URL = 'https://gopikrishna.dev';
+
 export const socialLinks = [
   {
     platfrom: 'Gopi Krishna on Twitter',
