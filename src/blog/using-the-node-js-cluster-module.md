@@ -1,14 +1,14 @@
 ---
 path: /blog/Using-the-Node-JS-Cluster-Module
 date: 2020-07-11T16:32:00.062Z
-title: Using the Node JS Cluster Module
+title: "Using the Node JS Cluster Module - Exploring Node JS Modules #1"
 tags:
-  - Nodejs
+  - Node
   - JavaScript
 ---
 ## Introduction
 
-As we know Node JS is single-threaded. Usually, most of the processors we use are capable of having multiple threads and multiple cores. So to take advantage of these multi-threaded/multi-core processors, we'll use the cluster module. 
+As we know Node JS is single-threaded. Usually, most of the processors we use are of having multiple threads and multiple cores. So to take advantage of these multi-threaded/multi-core processors, we'll use the cluster module. 
 
 According to Node JS docs 
 
@@ -16,9 +16,9 @@ According to Node JS docs
 
 In a nutshell with the help of cluster module, we can spin up multiple instances of a Node JS process which are called worker processes to handle the incoming requests.
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggVEJcbmFbSW5jb21pbmcgcmVxdWVzdHNdIC0tPiBiW1wiQ2x1c3RlciBNYW5hZ2VyIChNYXN0ZXIgcHJvY2VzcylcIl1cbmIgLS0-IGNbXCJ3b3JrZXIgIzEgKENoaWxkIHByb2Nlc3MpXCJdXG5iIC0tPiBkW1wid29ya2VyICMyIChDaGlsZCBwcm9jZXNzKVwiXVxuYiAtLT4gZVtcIndvcmtlciAjMyAoQ2hpbGQgcHJvY2VzcylcIl1cbmIgLS0-IGZbXCJ3b3JrZXIgIzQgKENoaWxkIHByb2Nlc3MpXCJdIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjpmYWxzZX0)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVEJcbmFbSW5jb21pbmcgcmVxdWVzdHNdIC0tPiBiW1wiQ2x1c3RlciBNYW5hZ2VyIChNYXN0ZXIgcHJvY2VzcylcIl1cbmIgLS0-IGNbXCJ3b3JrZXIgIzEgKENoaWxkIHByb2Nlc3MpXCJdXG5iIC0tPiBkW1wid29ya2VyICMyIChDaGlsZCBwcm9jZXNzKVwiXVxuYiAtLT4gZVtcIndvcmtlciAjMyAoQ2hpbGQgcHJvY2VzcylcIl1cbmIgLS0-IGZbXCJ3b3JrZXIgIzQgKENoaWxkIHByb2Nlc3MpXCJdIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjpmYWxzZX0)
+![](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggVEJcbmFbSW5jb21pbmcgcmVxdWVzdHNdIC0tPiBiW1wiQ2x1c3RlciBNYW5hZ2VyIChNYXN0ZXIgcHJvY2VzcylcIl1cbmIgLS0-IGNbXCJ3b3JrZXIgIzEgKENoaWxkIHByb2Nlc3MpXCJdXG5iIC0tPiBkW1wid29ya2VyICMyIChDaGlsZCBwcm9jZXNzKVwiXVxuYiAtLT4gZVtcIndvcmtlciAjMyAoQ2hpbGQgcHJvY2VzcylcIl1cbmIgLS0-IGZbXCJ3b3JrZXIgIzQgKENoaWxkIHByb2Nlc3MpXCJdIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjpmYWxzZX0)
 
-Here ,
+Here,
 
 * The cluster manager is the parent process, which manages the workers. 
 * Cluster manager doesn't execute any application code.
@@ -134,7 +134,7 @@ If you look at the above code, it's the same app which calculates the Fibonacci 
 
 First, we're checking if it's a cluster manager(master process) or not by using the `cluster.isMaster` property. If it's a cluster manager, we're going spin up workers(child process) using `cluster.fork()` method. 
 
-The number of workers created will be equal to how many times you called `cluster.fork` method. Ideally, for better performance, the number of workers should be created needs to be equal to the number of [logical cores](https://unix.stackexchange.com/questions/88283/so-what-are-logical-cpu-cores-as-opposed-to-physical-cpu-cores) of the processor (Mine has 8 logical cores, you can check that in your task manager or using `os` module  by `os.cpus().length` ).
+The number of workers created will be equal to how many times you called `cluster.fork` method. Ideally, for better performance, the number of workers should be created needs to be equal to the number of [logical cores](https://unix.stackexchange.com/questions/88283/so-what-are-logical-cpu-cores-as-opposed-to-physical-cpu-cores) of the processor (Mine has 8 logical cores, you can check that in your task manager or using `os` module by `os.cpus().length` ).
 
 To start the app just run (Don't forget to kill the previous one)
 
