@@ -1,14 +1,14 @@
 ---
 path: /blog/Using-the-Node-JS-Cluster-Module
 date: 2020-07-11T16:32:00.062Z
-title: Using the Node JS Cluster Module
+title: "Using the Node JS Cluster Module - Exploring Node JS Modules #1"
 tags:
-  - Nodejs
+  - Node
   - JavaScript
 ---
 ## Introduction
 
-As we know Node JS is single-threaded. Usually, most of the processors we use are capable of having multiple threads and multiple cores. So to take advantage of these multi-threaded/multi-core processors, we'll use the cluster module. 
+As we know Node JS is single-threaded. Usually, most of the processors we use are of having multiple threads and multiple cores. So to take advantage of these multi-threaded/multi-core processors, we'll use the cluster module. 
 
 According to Node JS docs 
 
@@ -16,17 +16,17 @@ According to Node JS docs
 
 In a nutshell with the help of cluster module, we can spin up multiple instances of a Node JS process which are called worker processes to handle the incoming requests.
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggVEJcbmFbSW5jb21pbmcgcmVxdWVzdHNdIC0tPiBiW1wiQ2x1c3RlciBNYW5hZ2VyIChNYXN0ZXIgcHJvY2VzcylcIl1cbmIgLS0-IGNbXCJ3b3JrZXIgIzEgKENoaWxkIHByb2Nlc3MpXCJdXG5iIC0tPiBkW1wid29ya2VyICMyIChDaGlsZCBwcm9jZXNzKVwiXVxuYiAtLT4gZVtcIndvcmtlciAjMyAoQ2hpbGQgcHJvY2VzcylcIl1cbmIgLS0-IGZbXCJ3b3JrZXIgIzQgKENoaWxkIHByb2Nlc3MpXCJdIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjpmYWxzZX0)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVEJcbmFbSW5jb21pbmcgcmVxdWVzdHNdIC0tPiBiW1wiQ2x1c3RlciBNYW5hZ2VyIChNYXN0ZXIgcHJvY2VzcylcIl1cbmIgLS0-IGNbXCJ3b3JrZXIgIzEgKENoaWxkIHByb2Nlc3MpXCJdXG5iIC0tPiBkW1wid29ya2VyICMyIChDaGlsZCBwcm9jZXNzKVwiXVxuYiAtLT4gZVtcIndvcmtlciAjMyAoQ2hpbGQgcHJvY2VzcylcIl1cbmIgLS0-IGZbXCJ3b3JrZXIgIzQgKENoaWxkIHByb2Nlc3MpXCJdIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjpmYWxzZX0)
+![](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggVEJcbmFbSW5jb21pbmcgcmVxdWVzdHNdIC0tPiBiW1wiQ2x1c3RlciBNYW5hZ2VyIChNYXN0ZXIgcHJvY2VzcylcIl1cbmIgLS0-IGNbXCJ3b3JrZXIgIzEgKENoaWxkIHByb2Nlc3MpXCJdXG5iIC0tPiBkW1wid29ya2VyICMyIChDaGlsZCBwcm9jZXNzKVwiXVxuYiAtLT4gZVtcIndvcmtlciAjMyAoQ2hpbGQgcHJvY2VzcylcIl1cbmIgLS0-IGZbXCJ3b3JrZXIgIzQgKENoaWxkIHByb2Nlc3MpXCJdIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjpmYWxzZX0)
 
-Here ,
+Here,
 
 * The cluster manager is the parent process, which manages the workers. 
 * Cluster manager doesn't execute any application code.
 * Cluster manager distributes the incoming requests to worker processes. 
 * All the network requests (Like API calls) are handled by the workers.
-* All the workers are independent processes, they can be killed re-spawned without effecting other workers.
+* All the workers are independent processes, they can be killed re-spawned without affecting other workers.
 
-## Using Cluster Module
+## Using the Cluster Module
 
 As an example let's create a simple express app which calculates Fibonacci number.
 
@@ -48,7 +48,7 @@ $ npm install express
 
 #### Without Cluster Module
 
-Let create two files, First one `without-cluster.js` which doesn't use cluster module.
+Let create two files, First one `without-cluster.js` which doesn't use the cluster module.
 
 ```javascript
 //without-cluster.js
@@ -134,7 +134,7 @@ If you look at the above code, it's the same app which calculates the Fibonacci 
 
 First, we're checking if it's a cluster manager(master process) or not by using the `cluster.isMaster` property. If it's a cluster manager, we're going spin up workers(child process) using `cluster.fork()` method. 
 
-The number of workers created will be equal to how many times you called `cluster.fork` method. Ideally, for better performance, the number of workers should be created needs to be equal to the number of [logical cores](https://unix.stackexchange.com/questions/88283/so-what-are-logical-cpu-cores-as-opposed-to-physical-cpu-cores) of the processor (Mine has 8 logical cores, you can check that in your task manager or using `os` module  by `os.cpus().length` ).
+The number of workers created will be equal to how many times you called `cluster.fork` method. Ideally, for better performance, the number of workers should be created needs to be equal to the number of [logical cores](https://unix.stackexchange.com/questions/88283/so-what-are-logical-cpu-cores-as-opposed-to-physical-cpu-cores) of the processor (Mine has 8 logical cores, you can check that in your task manager or using `os` module by `os.cpus().length` ).
 
 To start the app just run (Don't forget to kill the previous one)
 
@@ -158,7 +158,7 @@ As I'm using Ubuntu(WSL 2), I can install it by running
 $ sudo apt-get install apache2-utils
 ```
 
-#### Benchmarking for app which doesn't use cluster module
+### Benchmarking for the app which doesn't use cluster module
 
 First, we'll check for the app which doesn't use cluster module.
 
@@ -176,7 +176,7 @@ $ ab -n 100 -c 10 localhost:5000/ #Dont forget the trailing slash
 
 Let's break down the above command.
 
-* `-n`: Total number requests to be made.
+* `-n`: Total number of requests to be made.
 * `-c`: Maximum number of requests to run concurrently.
 
 After running the above command I'm getting the following results on my machine. Note, it might be different on your machine. Results will be based on your processor, programs running on your machine etc.
@@ -185,9 +185,9 @@ Sorry for my poor editing skills 😁
 
 ![without-cluster.js results](/assets/inkedwith-out-cluster_li.jpg)
 
-#### Benchmarking for app which uses cluster module
+### Benchmarking for the app which uses cluster module
 
-Now let's test for the app which uses cluster module. Start the app by running
+Now let's test for the app which uses the cluster module. Start the app by running
 
 ```bash
 $ node with-cluster.js
@@ -203,9 +203,9 @@ After running the apache bench tool again, I'm getting the following results.
 
 ![with cluster results](/assets/inkedwith-cluster_li.jpg)
 
-#### Comparison
+### Comparison
 
-Now lets compare both results (which are taken for this sample app on my machine)
+Now let's compare both results (which are taken for this sample app on my machine)
 
 |                                                                            | **With Out Cluster Module** | **With Cluster Module** |
 | -------------------------------------------------------------------------- | --------------------------- | ----------------------- |
@@ -218,7 +218,7 @@ Here we're talking only a few properties from the results. You can clearly see, 
 
 Similarly, you can compare other properties as well. 
 
-*Note: Generally,  For clustering we can use process managers like [pm2](https://pm2.keymetrics.io/) which provides some extra features over cluster module.*
+*Note: Generally,  For clustering we can use process managers like [pm2](https://pm2.keymetrics.io/) which provides some extra features over the cluster module.*
 
 Thank You.
 
