@@ -1,18 +1,18 @@
 import React from 'react';
 import introHeaderStyle from './introHeader.module.css';
 import { Link } from 'gatsby';
+import Emoji from '../extras/Emoji';
 
 const IntroHeader = () => {
   return (
     <div className={introHeaderStyle.introheader}>
-      <h2>Hey, I'm Gopi Krishna</h2>
+      <h2>Hey, I'm Gopi Krishna.</h2>
       <p>
         Developer at{' '}
         <a href="http://insider.in" target="_blank" rel="noopener noreferrer">
           Paytm insider
         </a>
-        . I love JavaScript and React. I'll be graduating in July 2020
-        (Hopefully).
+        . I <Emoji emoji="💖" label="love"/> JavaScript and React.
       </p>
       <br />
       <p>

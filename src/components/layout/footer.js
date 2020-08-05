@@ -9,7 +9,7 @@ const Footer = () => {
         fontSize: '0.7rem',
         margin: '10px auto',
       }}>
-      © 2019 Coded By{' '}
+      © 2020 Coded By{' '}
       <a
         href="https://linkedin.com/in/bgopikrishna"
         target="_blank"

@@ -5,13 +5,14 @@ import SEO from '../components/seo';
 import ProjectList from '../components/projects/projectList';
 import LinkToPages from '../components/extras/LinkToPages';
 import { miniProjects } from '../constants/constants';
+import './projects.css';
 
 const ProjectsPage = () => (
   <Layout containerType="container">
     <SEO title="Projects" />
     <div className="projects">
       <div className="pageHeader">
-        <h2>My Projects</h2>
+        <h2 className="title-2">Side Projects.</h2>
       </div>
       <ProjectList />
       <div className="projects_other">

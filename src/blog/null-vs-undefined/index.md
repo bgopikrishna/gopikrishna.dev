@@ -3,6 +3,7 @@ title: 'Null vs Undefined in JavaScript in 1 min'
 tags: ['JavaScript']
 date: '2019-07-23'
 path: '/blog/null-vs-undefined'
+description: 'I always had a small confusion between null and undefined in JavaScript.'
 ---
 
 I always had a small confusion between `null` and `undefined` in JavaScript.

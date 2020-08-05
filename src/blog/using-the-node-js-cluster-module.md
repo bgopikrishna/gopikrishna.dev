@@ -5,6 +5,7 @@ title: "Using the Node JS Cluster Module - Exploring Node JS Modules #1"
 tags:
   - Node
   - JavaScript
+description: "Usually, most of the processors we use are of having multiple threads and multiple cores. So to take advantage of these multi-threaded/multi-core processors, we'll use the cluster module."   
 ---
 ## Introduction
 

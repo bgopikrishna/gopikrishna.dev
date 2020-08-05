@@ -19,16 +19,10 @@ const Navbar = ({
     <FontAwesomeIcon icon={faMoon} />
   );
   const nightModeIconStyle = darkMode ? navbarStyle.day : navbarStyle.night;
-  const showBoxShadowClass =
-    typeof window !== 'undefined'
-      ? window.location.pathname !== '/'
-        ? 'box-shadow-2px-blur'
-        : ''
-      : '';
+ 
 
-  console.log(showBoxShadowClass);
   return (
-    <div className={`${navbarStyle.navsection}  ${showBoxShadowClass}`}>
+    <div className={`${navbarStyle.navsection}`}>
       <Header />
       <nav>
         <ul className={navbarStyle.navbar}>

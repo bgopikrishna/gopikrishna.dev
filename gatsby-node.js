@@ -17,8 +17,8 @@ exports.createPages = ({ graphql, actions }) => {
                 node {
                   frontmatter {
                     path
+                    title
                   }
-                  
                 }
               }
             }
@@ -27,13 +27,16 @@ exports.createPages = ({ graphql, actions }) => {
       ).then(result => {
         console.log('I Ran');
 
-        result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+        const posts = result.data.allMarkdownRemark.edges;
+        posts.forEach(({ node }, index) => {
           const path = node.frontmatter.path;
           createPage({
             path,
             component: blogPostTemplate,
             context: {
               pathSlug: path,
+              prev: index === 0 ? null : posts[index - 1],
+              next: index === posts.length - 1 ? null : posts[index + 1],
             },
           });
 
@@ -42,4 +45,13 @@ exports.createPages = ({ graphql, actions }) => {
       })
     );
   });
+};
+
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage } = actions;
+
+  if (page.path.match(/^\/tags/)) {
+    page.matchPath = "/tags/:tag"
+    createPage(page);
+  }
 };

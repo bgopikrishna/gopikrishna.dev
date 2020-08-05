@@ -2,16 +2,21 @@ import React from 'react';
 import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
 import { graphql, Link } from 'gatsby';
+import './blog.css';
 
-const Tags = ({ data }) => {
-  const posts = data.allMarkdownRemark.edges;
+const Tags = ({ data, tag }) => {
+  const posts = data.allMarkdownRemark.edges.filter(item =>
+    item.node.frontmatter.tags
+      .map(item => item.toLowerCase())
+      .includes(tag.toLowerCase())
+  );
 
   return (
     <Layout containerType="container">
       <SEO title="Blog" />
       <div className="blog">
         <div className="pageHeader">
-          <h2>Blog</h2>
+          <h2 className="title-2">Tag: {tag}</h2>
         </div>
         <div className="blog-post-list">
           {posts &&
@@ -21,23 +26,8 @@ const Tags = ({ data }) => {
               const { title, path, date, tags } = frontmatter;
 
               return (
-                <Link key={path} to={path} className="blog-post-box">
+                <Link key={path} to={path}>
                   <h3>{title}</h3>
-                  <p>
-                    {' '}
-                    {tags.map(item => (
-                      <>&nbsp;#{item}&nbsp;</>
-                    ))}
-                  </p>
-                  <p
-                    style={{
-                      fontSize: '12px',
-                      margin: '0',
-                      padding: 0,
-                      color: 'var(--text-color)',
-                    }}>
-                    {'📅'} {date} |{' ☕️' + timeToRead + ' min read'}
-                  </p>
                 </Link>
               );
             })}

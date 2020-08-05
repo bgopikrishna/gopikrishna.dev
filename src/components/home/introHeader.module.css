@@ -12,5 +12,6 @@
 
 .introheader h2 {
   margin: 0;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 }

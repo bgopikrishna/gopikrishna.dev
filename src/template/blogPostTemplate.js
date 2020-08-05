@@ -1,56 +1,53 @@
 import React from 'react';
 import SEO from '../components/seo';
 import Layout from '../components/layout/layout';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import './blogPostTemplate.css';
 import SocialIconsGrid from '../components/extras/SocialIconsGrid';
 import { createTwitterIntent } from '../utils/misc';
 import LinkToPages from '../components/extras/LinkToPages';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import Emoji from '../components/extras/Emoji';
 
 const blogPostTemplate = props => {
-  const title = props.data.markdownRemark.frontmatter.title;
-  const tags = props.data.markdownRemark.frontmatter.tags;
-  // const slug = props.data.markdownRemark.frontmatter.path;
+  const {
+    date,
+    title,
+    tags,
+    description,
+  } = props.data.markdownRemark.frontmatter;
 
-  const date = props.data.markdownRemark.frontmatter.date;
+  const { html, timeToRead } = props.data.markdownRemark;
+  const { pageContext } = props;
 
-  const htmlData = props.data.markdownRemark.html;
-  const timeToRead =
-    ' 🕒 ' + props.data.markdownRemark.timeToRead + ' min read';
-  // const disqusConfig = {
-  //   shortname: 'bgopikrishna',
-  //   config: { identifier: slug, title },
-  // };
+  const { next, prev } = pageContext;
 
   const twitterShareUrl = createTwitterIntent(title, [], props.path);
 
   return (
     <Layout containerType="fluid">
-      <SEO title={title} description />
+      <SEO title={title} description={description} />
+
       <article className="blog-post">
         <header className="blog-post-header">
-          <h1 className="blog-post-title">{title}</h1>
-          <small>
-            {tags.map(item => (
-              <span key={item}>
-                &nbsp;
-                <span role="img" aria-labelledby="Tag">
-                  🏷️
-                </span>
-                {item}&nbsp;
-              </span>
+          <h1 className="blog-post-title title-2">{title}</h1>
+          <p>
+            {tags.map(tag => (
+              <Link key={tag} className={`tag ${tag.toLowerCase()}`} to={`tags/${tag}`}>
+                {tag}
+              </Link>
             ))}
-          </small>
-          <p style={{ fontSize: '12px', marginTop: '0.8rem' }}>
-            {'📅'} {date} | {timeToRead} |{' '}
+          </p>
+          <p style={{ fontSize: '0.75rem', marginTop: '0.8rem' }}>
+            <Emoji lable="date emoji" emoji="📅" /> {date} |{' '}
+            <Emoji label="clock" emoji="🕕" /> {timeToRead} min | &nbsp;&nbsp;
             <a href={twitterShareUrl} target="_blank" rel="noopener noreferrer">
               Share
             </a>
           </p>
         </header>
-        <div dangerouslySetInnerHTML={{ __html: htmlData }}></div>
+        <div dangerouslySetInnerHTML={{ __html: html }}></div>
       </article>
 
       <div className="blog-post-share">
@@ -61,17 +58,31 @@ const blogPostTemplate = props => {
           </span>
         </a>
       </div>
+      <div className="blog-post-more-articles">
+        {prev && (
+          <LinkToPages
+            to={prev.node.frontmatter.path}
+            arrowIconDirection="left">
+            {prev.node.frontmatter.title}
+          </LinkToPages>
+        )}
+        {next && (
+          <LinkToPages
+            to={next.node.frontmatter.path}
+            arrowIconDirection="right">
+            {next.node.frontmatter.title}
+          </LinkToPages>
+        )}
+      </div>
       <div className="blog-post-contact">
         <h3>Gopi Krishna</h3>
         <p>
           Hello, thanks for the read! If you found this article helpful, have
           constructive feedback, or just want to say hello, connect with me on
-          social media or shoot me an email. Thanks in advance!
+          twitter or shoot me an email. Thanks in advance!
         </p>
         <SocialIconsGrid></SocialIconsGrid>
       </div>
-
-      <LinkToPages />
     </Layout>
   );
 };

@@ -4,23 +4,18 @@ import SEO from '../components/seo';
 import LinkToPages from '../components/extras/LinkToPages';
 import { Link } from 'gatsby';
 import SocialIconsGrid from '../components/extras/SocialIconsGrid';
-import { resumeUrl, mySkills2 } from '../constants/constants';
+import { resumeUrl, mySkills2, aboutMe } from '../constants/constants';
 
 const AboutPage = () => (
   <Layout containerType={'container'}>
     <SEO title="About Me" />
     <article className="about">
-      <h2 className="pageHeader" style={{ textAlign: 'center' }}>
-        About Me
+      <h2 className="title-2" style={{ textAlign: 'center' }}>
+        About Me.
       </h2>
       <section className="background">
         <h3>Background</h3>
-        <p>
-          I am originally from Hyderabad, India. I'm currently pursuing my final
-          year of under graduation in Electronics & Communication Engineering
-          from Bharath University, Chennai. I'm doing web development from past
-          one year and I'm on my way to becoming a Full Stack Engineer.
-        </p>
+        <p>{aboutMe}</p>
       </section>
       <section className="skills">
         <h3>knowledgeable In</h3>

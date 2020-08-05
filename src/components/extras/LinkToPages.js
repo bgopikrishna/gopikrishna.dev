@@ -7,8 +7,10 @@ const LinkToPages = ({ to, arrowIconDirection, children }) => {
   const icon = arrowIconDirection === 'left' ? faArrowLeft : faArrowRight;
 
   return (
-    <Link to={to}>
-      <FontAwesomeIcon icon={icon} /> {children}
+    <Link to={to} className={arrowIconDirection}>
+      {arrowIconDirection === 'left' && <FontAwesomeIcon icon={icon} />}
+      {children}
+      {arrowIconDirection === 'right' && <FontAwesomeIcon icon={icon} />}
     </Link>
   );
 };

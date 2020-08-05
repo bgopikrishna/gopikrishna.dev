@@ -3,6 +3,7 @@ title: 'How to use Local Storage in JavaScript?'
 tags: ['JavaScript']
 date: '2019-08-04'
 path: '/blog/localstorage-in-javascript'
+description: "Local storage allows us to store the data in the user's browser. The data stored will not be deleted even after the browser is closed."
 ---
 
 Local storage allows us to store the data in the user's browser. The data stored will not be deleted even after the browser is closed.

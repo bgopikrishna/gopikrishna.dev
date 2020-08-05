@@ -3,6 +3,7 @@ title: 'Getting started with CSS variables'
 tags: ['CSS', 'JavaScript']
 date: '2019-11-13'
 path: '/blog/css-variables'
+description: 'If you have used SASS or other CSS preprocessors, you might have already used Variables. CSS variables (also referred as custom properties) are native implementation of them in the browser.'
 ---
 
 If you have used SASS or other CSS preprocessors, you might have already used Variables. CSS variables (also referred as custom properties) are native implementation of them in the browser.

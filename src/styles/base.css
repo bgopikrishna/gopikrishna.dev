@@ -1,18 +1,17 @@
 :root {
   --primary: #8083ff;
-  --black: #121212;
-  --darker: #121212;
+  --black: #131217;
+  --black-ter: #242033;
+  -er: #121212;
   --white: #ffffff;
-  --white-2: #efefef;
+  --white-ter: #B3B6B9;
   --gray: #9db5b9;
-  --body-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Work Sans,
-    Oxygen, Cantarell, 'Helvetica Neue', sans-serif;
 
   /*Accent Colors*/
   --accent-pink: #f70961;
   --accent-green: #03b75a;
   --accent-blue: #00a5cf;
-  --accent-orange: #f06543;
+  --accent-orange: #F49820;
   --accent-purple: #8083ff;
 }
 
@@ -29,15 +28,15 @@ body {
 
 html.dark {
   background: var(--black);
-  color: var(--white-2);
-  --background-dark: var(--darker);
+  color: var(--white-ter);
+  --background: var(--black);
   --nav-bg: var(--black);
 }
 
 html.light {
   background: var(--white);
-  color: var(--black);
-  --background-dark: var(--white-2);
+  color: var(--black-ter);
+  --background: var(--white-ter);
   --nav-bg: var(--white);
 }
 
@@ -99,21 +98,3 @@ a {
   opacity: 1;
 }
 
-/* #disqus_thread {
-  padding: 1rem;
-  border: 1px solid var(--gray);
-  box-shadow: 2px 2px 1px var(--gray);
-  margin: 3rem 0;
-  transition: box-shadow 0.3s linear;
-  background: var(--white);
-  color: var(--black);
-}
-
-#disqus_thread:hover,
-#disqus_thread:focus {
-  box-shadow: none;
-} */
-
-.box-shadow-2px-blur {
-  box-shadow: 0px 0px 2px var(--gray);
-}

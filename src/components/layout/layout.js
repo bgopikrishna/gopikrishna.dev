@@ -18,7 +18,7 @@ import { accentColorsSet } from '../../constants/constants';
 
 
 
-const Layout = ({ children, containerType }) => {
+const Layout = ({ children, containerType,maxWidth }) => {
   const [darkMode, setDarkMode] = useDarkMode();
   const [accentColor, setColor] = useAccentColor();
   const nextAccentColor = removeItemAndShuffleArray(accentColorsSet, accentColor)[0]
@@ -38,7 +38,7 @@ const Layout = ({ children, containerType }) => {
             : layoutStyles.container
         }
       >
-        <main>{children}</main>
+        <main style={{maxWidth: maxWidth}}>{children}</main>
       </div>
       <Footer />
     </div>
@@ -47,6 +47,7 @@ const Layout = ({ children, containerType }) => {
 
 Layout.defaultProps = {
   containerType: 'fluid',
+  maxWidth: '960px'
 };
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

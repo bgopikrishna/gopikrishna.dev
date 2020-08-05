@@ -2,30 +2,27 @@ import Typography from 'typography';
 
 const typography = new Typography({
   baseFontSize: '18px',
-  baseLineHeight: 1.6,
+  baseLineHeight: 1.8,
   headerWeight: 900,
   headerFontFamily: [
-    '-apple-system',
-    'BlinkMacSystemFont',
-    'Segoe UI',
-    'Work Sans',
-    'Oxygen-Sans',
-    'Cantarell',
+    'Work Sans', 
     'Arial',
     'Helvetica Neue',
     'sans-serif',
   ],
   bodyFontFamily: [
-    '-apple-system',
-    'BlinkMacSystemFont',
-    'Segoe UI',
-    'Work Sans',
-    'Oxygen-Sans',
-    'Cantarell',
+   'Work Sans',
     'Arial',
     'Helvetica Neue',
     'sans-serif',
   ],
+
+  googleFonts: [
+    {
+      name:'Work Sans',
+      styles:['400', '700','900']
+    }
+  ]
 });
 
 export const { scale, rhythm, options } = typography;

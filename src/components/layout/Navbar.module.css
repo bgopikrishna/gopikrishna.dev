@@ -7,7 +7,7 @@
   height: auto;
   justify-self: flex-start;
   margin-right: auto;
-  position: fixed;
+  /* position: fixed; */
   z-index: 2;
   padding: 0.1rem 1rem;
   /* font-family: 'Space Mono', 'Nunito', -apple-system, BlinkMacSystemFont,
@@ -107,7 +107,7 @@ li {
     z-index: 3;
     text-align: center;
     height: 60px;
-    background: var(--background-dark);
+    background: inherit;
   }
 
   .navitem {

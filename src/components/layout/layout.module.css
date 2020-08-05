@@ -17,12 +17,15 @@
 .container {
   width: 80%;
   margin: 20px auto;
-  margin-top: calc(60px + 0.5rem);
 }
 
 .fluid {
   width: 100%;
-  margin-top: calc(60px + 0.5rem);
+}
+
+
+main {
+  width: 100%;
 }
 
 @media (max-width: 900px) {

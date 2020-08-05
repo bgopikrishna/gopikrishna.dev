@@ -168,8 +168,8 @@ export const mySkills2 = {
   frontend: ['Angular', 'React JS', 'HTML5', 'CSS3', 'SASS'],
   backend: ['Node', 'Express', 'MongoDB', 'Firebase'],
   other: [
+    'Webpack JS',
     'Redux JS',
-    'Jasmine JS(Testing)',
     'BootStrap',
     'Materialize CSS',
     'Bulma CSS',
@@ -177,10 +177,12 @@ export const mySkills2 = {
     'Gatsby JS',
   ],
   learing: ['Node JS and Backend Development'],
-  planning: ['GraphQL', 'Django', 'Vue JS', 'Containers'],
+  planning: ['GraphQL', 'Django', 'Vue JS', 'Containers & Devops stuff'],
 };
 
-export const siteUrl = 'https://bgopikrishna.me';
+export const siteUrl = 'https://gopikrishna.dev';
 
 export const resumeUrl =
   'https://docs.google.com/document/d/14jtU-GtWVMQrHI9l-7ebtJdLIsQ0y_mb9l7hdAB7YlM/export?format=pdf';
+
+export const aboutMe = `I am originally from Hyderabad, India. I'm currently working as a software developer at Paytm Insider. Thinking about what to add on this section 😅.`;

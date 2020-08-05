@@ -4,16 +4,15 @@ import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
 import SocialIconsGrid from '../components/extras/SocialIconsGrid';
 import LinkToPages from '../components/extras/LinkToPages';
+import Emoji from '../components/extras/Emoji';
 
 const ContactPage = () => (
   <Layout containerType={'container'}>
     <SEO title="Contact" />
     <section className="contact-page">
-      <h2>
-        Don't be a stranger, Just say hello &nbsp;
-        <span role="img" aria-label="wink emoji">
-          🤨
-        </span>
+      <h2 className="title-2">
+        Don't be a stranger, Just say hello
+        <Emoji label="wink" emoji="😉"/>
       </h2>
       <div className="contact-content">
         <p>
@@ -22,7 +21,6 @@ const ContactPage = () => (
           just mail to{' '}
           <a
             href="mailto:b.gopikrishna@hotmail.com"
-            style={{ textTransform: 'lowercase' }}
           >
             b.gopikrishna(at)hotmail.com.
           </a>{' '}
