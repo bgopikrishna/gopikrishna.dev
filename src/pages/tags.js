@@ -5,10 +5,11 @@ import { graphql, Link } from 'gatsby';
 import './blog.css';
 
 const Tags = ({ data, tag }) => {
+  const filterTag = tag || '' 
   const posts = data.allMarkdownRemark.edges.filter(item =>
     item.node.frontmatter.tags
       .map(item => item.toLowerCase())
-      .includes(tag.toLowerCase())
+      .includes(filterTag.toLowerCase())
   );
 
   return (
@@ -16,7 +17,7 @@ const Tags = ({ data, tag }) => {
       <SEO title="Blog" />
       <div className="blog">
         <div className="pageHeader">
-          <h2 className="title-2">Tag: {tag}</h2>
+          <h2 className="title-2">Articles tagged as <Link to={`tags/${tag}`}>{tag}</Link></h2>
         </div>
         <div className="blog-post-list">
           {posts &&
