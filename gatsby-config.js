@@ -7,6 +7,7 @@ module.exports = {
     title: `Gopi Krishna`,
     description: `Gopi Krishna, Javascript Developer.`,
     author: `@_bgopikrishna`,
+    siteUrl:`https://gopikrishna.dev`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,6 +29,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
 
     {
       resolve: `gatsby-plugin-manifest`,
