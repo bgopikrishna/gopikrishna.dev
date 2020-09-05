@@ -24,7 +24,7 @@
 }
 
  .blog-post-box {
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 2rem 0;
   /* box-shadow: 2px 2px var(--gray); */
   transition: all 0.3s ease;
   color: inherit;
@@ -33,12 +33,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-bottom: 1px solid var(--primary);
   max-width: 80%;
+  margin-bottom: 2rem;
+}
+
+.blog-post-box h2 {
+  margin-bottom: 0.5rem;
 }
 
 .blog-post-description {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .blog-post-box  a {

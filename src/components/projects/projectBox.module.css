@@ -3,16 +3,16 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   width: 100%;
   min-height: 200px;
-  border: 1px solid var(--gray);
+  /* border: 1px solid var(--gray); */
   margin: 20px auto;
   border-radius: 5px;
   text-transform: capitalize;
   opacity: 0.8;
   transition: all 0.2s linear;
-  box-shadow: 2px 2px var(--gray);
+  /* box-shadow: 2px 2px var(--gray); */
 }
 
 .projectBox:focus,

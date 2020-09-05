@@ -1,11 +1,11 @@
 require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
+  path: `.env`,
 });
 
 module.exports = {
   siteMetadata: {
     title: `Gopi Krishna`,
-    description: `Gopi Krishna, Javascript Developer.`,
+    description: `Full Stack Developer at Paytm insider. I  💖  JavaScript and React.`,
     author: `@_bgopikrishna`,
     siteUrl:`https://gopikrishna.dev`
   },
@@ -51,8 +51,6 @@ module.exports = {
       },
     },
 
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
 
     {

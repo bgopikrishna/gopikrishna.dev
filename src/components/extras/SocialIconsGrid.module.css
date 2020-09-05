@@ -13,9 +13,7 @@
   font-size: 1rem;
   height: 2rem;
   width: 2rem;
-  background: var(--primary);
   border-radius: 50%;
-  color: white;
   transition: all 0.3ms ease-in;
 }
 

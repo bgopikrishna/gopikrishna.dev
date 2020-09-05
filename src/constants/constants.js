@@ -148,7 +148,6 @@ export const ROUTES = [
 
 export const mySkills = [
   'JavaScript',
-  'TypeScript',
   'Angular',
   'React',
   'Node',
@@ -164,7 +163,7 @@ export const mySkills = [
 ];
 
 export const mySkills2 = {
-  programming: ['JavaScript', 'TypeScript', 'Python'],
+  programming: ['JavaScript', 'TypeScript'],
   frontend: ['Angular', 'React JS', 'HTML5', 'CSS3', 'SASS'],
   backend: ['Node', 'Express', 'MongoDB', 'Firebase'],
   other: [
