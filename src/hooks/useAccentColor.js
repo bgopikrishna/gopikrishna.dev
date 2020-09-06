@@ -6,7 +6,7 @@ export const useAccentColor = () => {
 
   let localStorageAccentColor = 'blue';
 
-  if (!isBrowser) {
+  if (isBrowser) {
     localStorageAccentColor = localStorage.getItem('accentColor') || 'blue';
   }
   console.log('LocalStoragedAccentColor', localStorageAccentColor);
