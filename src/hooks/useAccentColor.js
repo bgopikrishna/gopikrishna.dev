@@ -7,7 +7,7 @@ export const useAccentColor = () => {
   let localStorageAccentColor = 'blue';
 
   if (isBrowser) {
-    localStorageAccentColor = localStorage.getItem('accentColor') || 'blue';
+    localStorageAccentColor = JSON.parse(localStorage.getItem('accentColor')) || 'blue';
   }
   console.log('LocalStoragedAccentColor', localStorageAccentColor);
 
@@ -21,7 +21,6 @@ export const useAccentColor = () => {
 };
 
 function changeAccentColor(color) {
-  console.log(color);
 
   accentColorsSet.forEach(color =>
     document.documentElement.classList.remove(`accent-${color}`)
