@@ -45,6 +45,7 @@ li {
   align-items: center;
   transition: 0.1s all ease-in;
   padding: 0.25rem 1rem;
+  border-radius: 10px;
 }
 
 .navlinkIcon {
@@ -54,7 +55,6 @@ li {
 .navlink:focus,
 .navlink:hover,
 .linkActive {
-  color: var(--primary);
   opacity: 1;
   transition: 0.1s all ease;
   background: rgba(0, 0, 0, 0.07);

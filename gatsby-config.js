@@ -32,7 +32,7 @@ module.exports = {
       options: {
         name: `Gopi Krishna`,
         short_name: `GK`,
-        start_url: `/`,
+        start_url: `/blog`,
         background_color: `#111`,
         theme_color: `#8083ff`,
         display: `standalone`,

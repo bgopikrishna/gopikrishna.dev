@@ -58,7 +58,7 @@ main a:focus {
   width: 100%;
   padding: 1rem;
   transition: all 0.3s ease-in;
-  border-radius: 5px;
+  border-radius: 10px;
   opacity: 0.8;
 }
 

@@ -29,9 +29,7 @@ export function BlogPostBox({
         </p>
         <p>
           <Emoji label="date" emoji="📅" />
-          {date} |
-          <Emoji label="clock" emoji="⌚" />
-          {timeToRead + ' min read'}
+          {date}
         </p>
       </div>
     </div>
