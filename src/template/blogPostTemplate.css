@@ -32,7 +32,7 @@
   color: white;
   background: var(--primary);
   padding: 0.5rem 0.75rem;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .blog-post-share svg {
   margin-left: 0.75rem;
@@ -44,7 +44,7 @@
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 10px;
   opacity: 0.7;
   transition: all 0.3s linear;
   margin: 2rem auto;
@@ -72,7 +72,7 @@
 
 .blog-post blockquote {
   margin: 2rem auto;
-  border-radius: 5px;
+  border-radius: 10px;
   opacity: 0.8;
   font-size: 1.25rem;
   border-left: 5px groove;
@@ -122,5 +122,5 @@ code {
 }
 
 .gatsby-highlight pre[class*='language-'] {
-  border-radius: 5px;
+  border-radius: 10px;
 } 

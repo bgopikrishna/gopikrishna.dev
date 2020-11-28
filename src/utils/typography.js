@@ -5,13 +5,13 @@ const typography = new Typography({
   baseLineHeight: 1.8,
   headerWeight: 900,
   headerFontFamily: [
-    'Work Sans', 
+    'Inter', 
     'Arial',
     'Helvetica Neue',
     'sans-serif',
   ],
   bodyFontFamily: [
-   'Work Sans',
+   'Inter',
     'Arial',
     'Helvetica Neue',
     'sans-serif',
@@ -19,7 +19,7 @@ const typography = new Typography({
 
   googleFonts: [
     {
-      name:'Work Sans',
+      name:'Inter',
       styles:['400', '700','900']
     }
   ]

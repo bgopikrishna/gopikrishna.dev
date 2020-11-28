@@ -1,7 +1,6 @@
 .logo {
   justify-self: flex-start;
   margin-right: auto;
-  color: var(--primary);
   font-weight: 700;
 }
 .logo a {

@@ -6,20 +6,13 @@ import { faSun, faMoon, faCircle } from '@fortawesome/free-solid-svg-icons';
 import Header from './header';
 import { ROUTES } from '../../constants/constants';
 
-const Navbar = ({
-  toggleDarkMode,
-  darkMode,
-  accentColor,
-  changeAccentColor,
-  ...props
-}) => {
+const Navbar = ({ toggleDarkMode, darkMode }) => {
   const nightModeIcon = darkMode ? (
     <FontAwesomeIcon icon={faSun} />
   ) : (
     <FontAwesomeIcon icon={faMoon} />
   );
   const nightModeIconStyle = darkMode ? navbarStyle.day : navbarStyle.night;
- 
 
   return (
     <div className={`${navbarStyle.navsection}`}>
@@ -44,14 +37,6 @@ const Navbar = ({
         </ul>
       </nav>
       <div className="top_action">
-        <button
-          className={`${navbarStyle.nightModeBtn}`}
-          style={{ color: `var(--accent-${accentColor})` }}
-          onClick={changeAccentColor}
-          aria-label="change site accent color"
-          title="Change accent">
-          <FontAwesomeIcon icon={faCircle}></FontAwesomeIcon>
-        </button>
         <button
           className={`${navbarStyle.nightModeBtn} ${nightModeIconStyle}`}
           onClick={toggleDarkMode}

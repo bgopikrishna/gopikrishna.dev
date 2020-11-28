@@ -40,10 +40,10 @@ const blogPostTemplate = props => {
             ))}
           </p>
           <p style={{ fontSize: '0.75rem', marginTop: '0.8rem' }}>
-            <Emoji lable="date emoji" emoji="📅" /> {date} |{' '}
-            <Emoji label="clock" emoji="🕕" /> {timeToRead} min | &nbsp;&nbsp;
+            <Emoji lable="date published" emoji="📅" /> {date} |{' '}
+            <Emoji label="time to read" emoji="🕕" /> {timeToRead} min | &nbsp;&nbsp;
             <a href={twitterShareUrl} target="_blank" rel="noopener noreferrer">
-              Share
+              Share &nbsp; <FontAwesomeIcon icon={faTwitter}/>
             </a>
           </p>
         </header>
