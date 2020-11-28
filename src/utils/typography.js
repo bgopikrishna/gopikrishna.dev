@@ -4,25 +4,8 @@ const typography = new Typography({
   baseFontSize: '18px',
   baseLineHeight: 1.8,
   headerWeight: 900,
-  headerFontFamily: [
-    'Inter', 
-    'Arial',
-    'Helvetica Neue',
-    'sans-serif',
-  ],
-  bodyFontFamily: [
-   'Inter',
-    'Arial',
-    'Helvetica Neue',
-    'sans-serif',
-  ],
-
-  googleFonts: [
-    {
-      name:'Inter',
-      styles:['400', '700','900']
-    }
-  ]
+  headerFontFamily: ['Arial Black','Arial', 'Helvetica Neue', 'sans-serif'],
+  bodyFontFamily: ['Arial', 'Helvetica Neue', 'sans-serif'],
 });
 
 export const { scale, rhythm, options } = typography;
