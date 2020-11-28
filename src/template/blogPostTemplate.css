@@ -19,6 +19,12 @@
   margin-top: 40px;
   background: inherit;
 }
+
+.blog-post a {
+  color: var(--accent-blue, '#8083ff');
+  text-decoration: none;
+}
+
 .blog-post-header {
   text-align: center !important;
 }

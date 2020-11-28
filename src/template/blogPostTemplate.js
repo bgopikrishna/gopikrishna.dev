@@ -15,7 +15,6 @@ const blogPostTemplate = props => {
     date,
     title,
     tags,
-    description,
   } = props.data.markdownRemark.frontmatter;
 
   const { html, timeToRead } = props.data.markdownRemark;
@@ -27,11 +26,11 @@ const blogPostTemplate = props => {
 
   return (
     <Layout containerType="fluid">
-      <SEO title={title} description={description} />
+      <SEO postNode={props.data.markdownRemark} postSEO/>
 
       <article className="blog-post">
         <header className="blog-post-header">
-          <h1 className="blog-post-title title-2">{title}</h1>
+          <h1 className="blog-post-title ">{title}</h1>
           <p>
             {tags.map(tag => (
               <Link key={tag} className={`tag ${tag.toLowerCase()}`} to={`tags/${tag}`}>
@@ -98,6 +97,7 @@ export const query = graphql`
         tags
       }
       timeToRead
+      excerpt
     }
   }
 `;

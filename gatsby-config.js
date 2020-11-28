@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Gopi Krishna`,
-    description: `Full Stack Developer at Paytm insider. I  💖  JavaScript and React.`,
+    description: `Developer at Paytm insider. I  💖  JavaScript and React.`,
     author: `@_bgopikrishna`,
-    siteUrl:`https://gopikrishna.dev`
+    siteUrl:`https://gopikrishna.dev`,
+    email:"b.gopikrishna@outlook.in",
+    authorName: "Gopi Krishna"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

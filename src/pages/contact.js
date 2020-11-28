@@ -22,7 +22,7 @@ const ContactPage = () => (
           <a
             href="mailto:b.gopikrishna@hotmail.com"
           >
-            b.gopikrishna(at)hotmail.com.
+            b.gopikrishna@outlook.in.
           </a>{' '}
           You can find me at &#8623;
         </p>

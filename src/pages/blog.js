@@ -18,7 +18,7 @@ const Blog = ({ data }) => {
         <div className="blog-post-list">
           {posts &&
             posts.map(postNode => {
-              const { frontmatter, timeToRead } = postNode.node;
+              const { frontmatter, timeToRead, excerpt } = postNode.node;
 
               const { title, path, date, tags, description } = frontmatter;
 
@@ -27,7 +27,7 @@ const Blog = ({ data }) => {
                   key={path}
                   path={path}
                   title={title}
-                  description={description}
+                  description={description || excerpt}
                   tags={tags}
                   date={date}
                   timeToRead={timeToRead}
@@ -53,6 +53,7 @@ export const query = graphql`
             description
           }
           timeToRead
+          excerpt
         }
       }
     }

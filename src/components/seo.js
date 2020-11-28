@@ -1,88 +1,93 @@
+import React from 'react';
+import Helmet from 'react-helmet';
+
+import config from '../utils/config';
+
 /**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
+ * Taken reference from https://github.com/taniarascia/taniarascia.com
  */
+export default function SEO({ postNode, postSEO, customDescription }) {
+  let title;
+  let description;
+  let image = config.siteLogo;
+  let postURL;
 
-import React from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+  if (postSEO) {
+    const postMeta = postNode.frontmatter;
+    title = postMeta.title;
+    description = postNode.frontmatter.description || postNode.excerpt;
 
-function SEO({ description, lang="en", meta, title }) {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-          }
-        }
+   
+
+    postURL = `${config.siteUrl}${postMeta.postPath}`;
+  } else {
+    title = config.siteTitle;
+    description = customDescription || config.description;
+  }
+
+  image = `${config.siteUrl}${image}`;
+  const schemaOrgJSONLD = [
+    {
+      '@context': 'http://schema.org',
+      '@type': 'WebSite',
+      url: config.siteUrl,
+      name: title,
+      alternateName: title,
+    },
+  ];
+
+  if (postSEO) {
+    schemaOrgJSONLD.push(
+      {
+        '@context': 'http://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            item: {
+              '@id': postURL,
+              name: title,
+              image,
+            },
+          },
+        ],
+      },
+      {
+        '@context': 'http://schema.org',
+        '@type': 'BlogPosting',
+        url: config.siteUrl,
+        name: title,
+        alternateName: title,
+        headline: title,
+        image: {
+          '@type': 'ImageObject',
+          url: image,
+        },
+        description,
       }
-    `
-  )
-
-  const metaDescription = description || site.siteMetadata.description
-
+    );
+  }
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
-    />
-  )
-}
+    <Helmet>
+      <meta name="description" content={description} />
+      <meta name="image" content={image} />
 
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-}
+      <script type="application/ld+json">
+        {JSON.stringify(schemaOrgJSONLD)}
+      </script>
 
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
-}
+      <meta property="og:url" content={postSEO ? postURL : config.siteUrl} />
+      {postSEO && <meta property="og:type" content="article" />}
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:image" content={image} />
 
-export default SEO
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:creator" content={config.userTwitter} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={image} />
+    </Helmet>
+  );
+}
