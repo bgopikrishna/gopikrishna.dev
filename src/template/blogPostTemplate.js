@@ -41,9 +41,7 @@ const blogPostTemplate = props => {
           <p style={{ fontSize: '0.75rem', marginTop: '0.8rem' }}>
             <Emoji lable="date published" emoji="📅" /> {date} |{' '}
             <Emoji label="time to read" emoji="🕕" /> {timeToRead} min | &nbsp;&nbsp;
-            <a href={twitterShareUrl} target="_blank" rel="noopener noreferrer">
-              Share &nbsp; <FontAwesomeIcon icon={faTwitter}/>
-            </a>
+           
           </p>
         </header>
         <div dangerouslySetInnerHTML={{ __html: html }}></div>
