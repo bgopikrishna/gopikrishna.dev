@@ -4,6 +4,8 @@ tags: ['JavaScript']
 date: '2019-07-23'
 path: '/blog/null-vs-undefined'
 description: 'I always had a small confusion between null and undefined in JavaScript.'
+cover: /assets/null-vs-undefined-cover.jpg
+coverImageCredits: '<span>Photo by <a href="https://unsplash.com/@casparrubin?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Caspar Camille Rubin</a> on <a href="https://unsplash.com/s/photos/javascript?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>'
 ---
 
 I always had a small confusion between `null` and `undefined` in JavaScript.

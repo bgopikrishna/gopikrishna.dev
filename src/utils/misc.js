@@ -10,3 +10,10 @@ export const createTwitterIntent = (title, hashtags, url) => {
 
   return `https://twitter.com/intent/tweet?via=bgopikrishna&text=${title} ${blogUrl}${url}&hashtags=${hashtags}&url=${blogUrl}${url}`;
 };
+
+export const toKebabCase = str =>
+  str &&
+  str
+    .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
+    .map(x => x.toLowerCase())
+    .join('-');

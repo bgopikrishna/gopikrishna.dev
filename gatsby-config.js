@@ -3,9 +3,9 @@ module.exports = {
     title: `Gopi Krishna`,
     description: `Developer at Paytm insider. I  💖  JavaScript and React.`,
     author: `@_bgopikrishna`,
-    siteUrl:`https://gopikrishna.dev`,
-    email:"b.gopikrishna@outlook.in",
-    authorName: "Gopi Krishna"
+    siteUrl: `https://gopikrishna.dev`,
+    email: 'b.gopikrishna@outlook.in',
+    authorName: 'Gopi Krishna',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,8 +21,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `images`,
+        path: `${__dirname}/static/assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `blog`,
-        path: `${__dirname}/src/blog`,
+        path: `${__dirname}/content`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -54,7 +61,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-174474466-1",
+        trackingId: 'UA-174474466-1',
       },
     },
 
@@ -62,6 +69,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-autolink-headers`,
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
@@ -72,6 +80,8 @@ module.exports = {
               noInlineHighlight: false,
             },
           },
+          `gatsby-remark-images-anywhere`,
+
         ],
       },
     },
