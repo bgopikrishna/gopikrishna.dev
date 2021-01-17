@@ -5,7 +5,9 @@ title: "Using the Node JS Cluster Module - Exploring Node JS Modules #1"
 tags:
   - Node
   - JavaScript
-description: "Usually, most of the processors we use are of having multiple threads and multiple cores. So to take advantage of these multi-threaded/multi-core processors, we'll use the cluster module."   
+description: "Usually, most of the processors we use are of having multiple threads and multiple cores. So to take advantage of these multi-threaded/multi-core processors, we'll use the cluster module."
+cover: /assets/cluster-cover.jpg
+coverImageCredits: '<span>Photo by <a href="https://unsplash.com/@ianjbattaglia?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ian Battaglia</a> on <a href="https://unsplash.com/s/photos/server-network?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>'     
 ---
 ## Introduction
 
@@ -219,7 +221,7 @@ Here we're talking only a few properties from the results. You can clearly see, 
 
 Similarly, you can compare other properties as well. 
 
-*Note: Generally,  For clustering we can use process managers like [pm2](https://pm2.keymetrics.io/) which provides some extra features over the cluster module.*
+> Note: Generally,  For clustering we can use process managers like [pm2](https://pm2.keymetrics.io/) which provides some extra features over the cluster module.
 
 Thank You.
 

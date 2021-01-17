@@ -1,22 +1,22 @@
 :root {
-  --primary: #00a5cf;
+  --primary: #8f0ca0  ;
   --black: #131217;
   --black-ter: #242033;
-  -er: #121212;
   --white: #ffffff;
-  --white-ter: #B3B6B9;
+  --white-ter: #e0e0e0;
   --gray: #9db5b9;
-
-  /*Accent Colors*/
+  --white-text: #cfcfcf;
+  /* Accent Colors
   --accent-pink: #f70961;
   --accent-green: #03b75a;
   --accent-blue: #00a5cf;
   --accent-orange: #F49820;
-  --accent-purple: #8083ff;
+  --accent-purple: #8083ff; */
 }
 
 html {
   scroll-behavior: smooth;
+
 }
 
 body {
@@ -28,18 +28,21 @@ body {
 
 html.dark {
   background: var(--black);
-  color: var(--white-ter);
+  color: var(--white-text);
+  --text-color: var(--white-text);
+
   --background: var(--black);
-  --nav-bg: var(--black);
+  --nav-bg: var(--black-ter);
 }
 
 html.light {
   background: var(--white);
   color: var(--black-ter);
-  --background: var(--white-ter);
-  --nav-bg: var(--white);
+  --text-color: var(--black-ter);
+  --background: var(--white);
+  --nav-bg: var(--white-ter);
 }
-
+/* 
 html.accent-green {
   --primary: var(--accent-green);
 }
@@ -54,10 +57,13 @@ html.accent-blue {
 }
 html.accent-purple {
   --primary: var(--accent-purple);
-}
+} */
 
 hr {
   background: var(--text-color);
+  opacity: 0.75;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 * > {
@@ -91,5 +97,17 @@ a {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   opacity: 1;
+}
+
+
+::-moz-selection {
+  /* Code for Firefox */
+  background: #ffff00;
+  color: var(--black);
+}
+
+::selection {
+  background: #ffff00;
+  color: var(--black);
 }
 

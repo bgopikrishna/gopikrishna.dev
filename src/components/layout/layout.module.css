@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: space-between;
   min-height: 90vh;
+  max-width: 960px;
+  margin: auto;
 }
 
 .container,
@@ -15,7 +17,6 @@
 }
 
 .container {
-  width: 80%;
   margin: 20px auto;
 }
 
@@ -31,6 +32,7 @@ main {
 @media (max-width: 900px) {
   .box {
     padding-bottom: 60px;
+    width: 100%;
   }
   .container {
     width: 100%;

@@ -127,22 +127,22 @@ export const ROUTES = [
   {
     path: '/about',
     icon: faUserAstronaut,
-    pathName: 'About',
+    pathName: 'about',
   },
   {
     path: '/projects',
     icon: faLaptopCode,
-    pathName: 'Projects',
+    pathName: 'projects',
   },
   {
     path: '/blog',
     icon: faNewspaper,
-    pathName: 'Blog',
+    pathName: 'blog',
   },
   {
     path: '/contact',
     icon: faPaperPlane,
-    pathName: 'Contact',
+    pathName: 'contact',
   },
 ];
 

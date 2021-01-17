@@ -20,7 +20,7 @@ const Blog = ({ data }) => {
             posts.map(postNode => {
               const { frontmatter, timeToRead, excerpt } = postNode.node;
 
-              const { title, path, date, tags, description } = frontmatter;
+              const { title, path, date, tags, description, cover } = frontmatter;
 
               return (
                 <BlogPostBox
@@ -31,6 +31,7 @@ const Blog = ({ data }) => {
                   tags={tags}
                   date={date}
                   timeToRead={timeToRead}
+                  cover={cover}
                 />
               );
             })}
@@ -42,7 +43,9 @@ const Blog = ({ data }) => {
 
 export const query = graphql`
   query BlogPostList {
-    allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: frontmatter___date }
+    ) {
       edges {
         node {
           frontmatter {
@@ -51,6 +54,8 @@ export const query = graphql`
             path
             tags
             description
+            cover
+            coverImageCredits
           }
           timeToRead
           excerpt

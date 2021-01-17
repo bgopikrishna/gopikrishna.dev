@@ -11,21 +11,22 @@ export default function SEO({ postNode, postSEO, customDescription }) {
   let description;
   let image = config.siteLogo;
   let postURL;
+  image = `${config.siteUrl}${image}`;
+
 
   if (postSEO) {
     const postMeta = postNode.frontmatter;
     title = postMeta.title;
     description = postNode.frontmatter.description || postNode.excerpt;
-
+    image = postMeta.cover || image
    
 
-    postURL = `${config.siteUrl}${postMeta.postPath}`;
+    postURL = `${config.siteUrl}${postMeta.path}`;
   } else {
     title = config.siteTitle;
     description = customDescription || config.description;
   }
 
-  image = `${config.siteUrl}${image}`;
   const schemaOrgJSONLD = [
     {
       '@context': 'http://schema.org',

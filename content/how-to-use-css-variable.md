@@ -4,6 +4,9 @@ tags: ['CSS', 'JavaScript']
 date: '2019-11-13'
 path: '/blog/css-variables'
 description: 'If you have used SASS or other CSS preprocessors, you might have already used Variables. CSS variables (also referred as custom properties) are native implementation of them in the browser.'
+cover: /assets/css-variables-cover.jpg
+coverImageCredits: '<span>Photo by <a href="https://unsplash.com/@pankajpatel?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Pankaj Patel</a> on <a href="https://unsplash.com/s/photos/css-variable?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>'     
+
 ---
 
 If you have used SASS or other CSS preprocessors, you might have already used Variables. CSS variables (also referred as custom properties) are native implementation of them in the browser.

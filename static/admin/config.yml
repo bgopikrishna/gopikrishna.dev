@@ -1,25 +1,24 @@
 backend:
   name: github
-  repo: bgopikrishna/bgopikrishna.github.io
+  repo: bgopikrishna/gopikrishna.dev
   branch: development
-
+logo_url: https://gopikrishna.dev/icons/icon-256x256.png
 media_folder: static/assets
 public_folder: /assets
+publish_mode: editorial_workflow
 
 collections:
   - name: blog
     label: Blog
-    folder: 'src/blog/'
+    folder: content
     create: true
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
-      - label: 'Tags'
-        name: 'tags'
-        widget: 'list'
-        allow_add: true
-        default: []
-      - { name: Description, label: description }
+      - { name: date, label: Date, widget: datetime }
+      - { name: tags, label: Tags, widget: list, allow_add: true, default: [] }
+      - { name: description, label: Description }
+      - { name: cover, label: Featured Image, widget: image, default: '' }
+      - { name: coverImageCredits, label: Cover Image Credits, default: '' }
+      - { name: path, label: Path }
       - { name: body, label: Body, widget: markdown }
-     
+

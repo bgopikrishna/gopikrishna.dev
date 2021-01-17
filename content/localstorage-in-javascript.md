@@ -4,6 +4,9 @@ tags: ['JavaScript']
 date: '2019-08-04'
 path: '/blog/localstorage-in-javascript'
 description: "Local storage allows us to store the data in the user's browser. The data stored will not be deleted even after the browser is closed."
+cover: /assets/localstorage-cover.jpg
+coverImageCredits: '<span>Photo by <a href="https://unsplash.com/@tracycodes?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tracy Adams</a> on <a href="https://unsplash.com/s/photos/localstorage-javascript?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>'      
+
 ---
 
 Local storage allows us to store the data in the user's browser. The data stored will not be deleted even after the browser is closed.

@@ -15,6 +15,10 @@ exports.createPages = ({ graphql, actions }) => {
             ) {
               edges {
                 node {
+                  headings {
+                    value
+                    depth
+                  }
                   frontmatter {
                     path
                     title
@@ -51,7 +55,7 @@ exports.onCreatePage = async ({ page, actions }) => {
   const { createPage } = actions;
 
   if (page.path.match(/^\/tags/)) {
-    page.matchPath = "/tags/:tag"
+    page.matchPath = '/tags/:tag';
     createPage(page);
   }
 };

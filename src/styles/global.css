@@ -98,24 +98,27 @@ main a:focus {
   }
 }
 
-::-moz-selection {
-  /* Code for Firefox */
-  background: var(--primary);
-  color: var(--white);
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
 
-::selection {
-  background: var(--primary);
-  color: var(--white);
-}
 
 /*
  Common Utils classes
 */
 
 .title-2 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 .tag {
@@ -152,4 +155,8 @@ main a:focus {
 .tag.react {
   color: white;
   background-color: #58D4F6;
+}
+.tag.webpack {
+  color: white;
+  background: #1C78C0;
 }
