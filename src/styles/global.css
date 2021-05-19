@@ -1,4 +1,6 @@
 @import './base.css';
+@import './prism.css';
+
 
 main a {
   opacity: 0.8;
