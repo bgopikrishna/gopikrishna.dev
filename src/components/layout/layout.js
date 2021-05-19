@@ -11,7 +11,6 @@ import Navbar from './Navbar';
 import layoutStyles from './layout.module.css';
 import Footer from './footer';
 import { useDarkMode } from '../../hooks/useDarkmode';
-import 'prism-theme-night-owl';
 
 
 

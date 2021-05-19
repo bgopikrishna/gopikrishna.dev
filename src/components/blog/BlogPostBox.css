@@ -70,3 +70,10 @@
     margin-bottom: 1rem;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  
+  .blog-post-box {
+    margin: 0 3rem;
+  }
+}

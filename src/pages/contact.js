@@ -17,7 +17,7 @@ const ContactPage = () => (
       <div className="contact-content">
         <p>
           If you have any queries or just wanna say 'hello', reach out to me
-          via&nbsp;<a href="https://twitter.com/_bgopikrishna">twitter</a> or
+          via&nbsp;<a href="https://linkedin.com/in/bgopikrishna">linkedin</a> or
           just mail to{' '}
           <a
             href="mailto:b.gopikrishna@hotmail.com"
