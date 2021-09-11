@@ -5,7 +5,7 @@ import { graphql, Link } from 'gatsby';
 import './blog.css';
 import { BlogPostBox } from '../components/blog/BlogPostBox';
 
-const Tags = ({ data, tag }) => {
+const Tags = ({ data, tag = '' }) => {
   const filterTag = tag || '';
   const posts = data.allMarkdownRemark.edges.filter(item =>
     item.node.frontmatter.tags
