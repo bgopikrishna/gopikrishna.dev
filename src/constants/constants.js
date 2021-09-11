@@ -162,7 +162,7 @@ export const mySkills = [
   'Git',
 ];
 
-export const mySkills2 = {
+export const mySkillsV2 = {
   programming: ['JavaScript', 'TypeScript'],
   frontend: ['Angular', 'React JS', 'HTML5', 'CSS3', 'SASS'],
   backend: ['Node', 'Express', 'MongoDB', 'Firebase'],
@@ -184,4 +184,4 @@ export const siteUrl = 'https://gopikrishna.dev';
 export const resumeUrl =
   'https://docs.google.com/document/d/14jtU-GtWVMQrHI9l-7ebtJdLIsQ0y_mb9l7hdAB7YlM/export?format=pdf';
 
-export const aboutMe = `I am originally from Hyderabad, India. I'm currently working as a software developer at Paytm Insider. Thinking about what to add on this section 😅.`;
+export const aboutMe = `I am originally from Hyderabad, India. I'm currently working as an SDE at ElevateHQ. Thinking about what to add on this section 😅.`;

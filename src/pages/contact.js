@@ -17,12 +17,13 @@ const ContactPage = () => (
       <div className="contact-content">
         <p>
           If you have any queries or just wanna say 'hello', reach out to me
-          via&nbsp;<a href="https://linkedin.com/in/bgopikrishna">linkedin</a> or
+          via&nbsp;<a href="https://linkedin.com/in/bgopikrishna"><strong>LinkedIn</strong></a> or
+
           just mail to{' '}
           <a
             href="mailto:b.gopikrishna@hotmail.com"
           >
-            b.gopikrishna@outlook.in.
+            <strong>b.gopikrishna@outlook.in</strong>.
           </a>{' '}
           You can find me at &#8623;
         </p>

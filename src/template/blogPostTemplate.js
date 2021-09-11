@@ -58,7 +58,9 @@ const blogPostTemplate = props => {
             className="blog-post-coverimage-credits"
             dangerouslySetInnerHTML={{ __html: coverImageCredits }}></small>
         </header>
-        <div dangerouslySetInnerHTML={{ __html: html }} className="blog-post-content"></div>
+        <div
+          dangerouslySetInnerHTML={{ __html: html }}
+          className="blog-post-content"></div>
         <hr />
       </article>
 
@@ -87,7 +89,7 @@ const blogPostTemplate = props => {
             <li>
               {' '}
               <Link to={prev.node.frontmatter.path}>
-                {prev.node.frontmatter.title}
+                ➡ {prev.node.frontmatter.title}
               </Link>
             </li>
           )}
@@ -95,7 +97,7 @@ const blogPostTemplate = props => {
             <li>
               {' '}
               <Link to={next.node.frontmatter.path}>
-                {next.node.frontmatter.title}
+                ➡ {next.node.frontmatter.title}
               </Link>
             </li>
           )}

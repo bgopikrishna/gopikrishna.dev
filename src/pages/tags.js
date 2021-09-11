@@ -3,9 +3,10 @@ import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
 import { graphql, Link } from 'gatsby';
 import './blog.css';
+import { BlogPostBox } from '../components/blog/BlogPostBox';
 
 const Tags = ({ data, tag }) => {
-  const filterTag = tag || '' 
+  const filterTag = tag || '';
   const posts = data.allMarkdownRemark.edges.filter(item =>
     item.node.frontmatter.tags
       .map(item => item.toLowerCase())
@@ -17,19 +18,38 @@ const Tags = ({ data, tag }) => {
       <SEO title="Blog" />
       <div className="blog">
         <div className="pageHeader">
-          <h2 className="title-2">Articles tagged as <Link to={`tags/${tag}`}>{tag}</Link></h2>
+          <h2 className="title-2">
+            Articles tagged as{' '}
+            <Link to={`tags/${tag}`} className={`tag ${tag.toLowerCase()}`}>
+              {tag}
+            </Link>
+          </h2>
         </div>
         <div className="blog-post-list">
           {posts &&
             posts.map(postNode => {
-              const { frontmatter, timeToRead } = postNode.node;
+              const { frontmatter, timeToRead, excerpt } = postNode.node;
 
-              const { title, path, date, tags } = frontmatter;
+              const {
+                title,
+                path,
+                date,
+                tags,
+                description,
+                cover,
+              } = frontmatter;
 
               return (
-                <Link key={path} to={path}>
-                  <h3>{title}</h3>
-                </Link>
+                <BlogPostBox
+                  key={path}
+                  path={path}
+                  title={title}
+                  description={description || excerpt}
+                  tags={tags}
+                  date={date}
+                  timeToRead={timeToRead}
+                  cover={cover}
+                />
               );
             })}
         </div>
@@ -48,8 +68,11 @@ export const query = graphql`
             date(formatString: "DD MMMM, YYYY")
             path
             tags
+            description
+            cover
           }
           timeToRead
+          excerpt
         }
       }
     }
