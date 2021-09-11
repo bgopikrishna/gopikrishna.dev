@@ -18,6 +18,7 @@ const ContactPage = () => (
         <p>
           If you have any queries or just wanna say 'hello', reach out to me
           via&nbsp;<a href="https://linkedin.com/in/bgopikrishna"><strong>LinkedIn</strong></a> or
+
           just mail to{' '}
           <a
             href="mailto:b.gopikrishna@hotmail.com"
