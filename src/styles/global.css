@@ -123,6 +123,11 @@ main a:focus {
   margin-top: 2rem;
 }
 
+.title-2 .tag {
+  font-size: 1.25rem;
+  box-sizing: content-box;
+}
+
 .tag {
     align-items: center;
     background-color: #f5f5f5;

@@ -4,7 +4,7 @@ import SEO from '../components/seo';
 import LinkToPages from '../components/extras/LinkToPages';
 import { Link } from 'gatsby';
 import SocialIconsGrid from '../components/extras/SocialIconsGrid';
-import { resumeUrl, mySkills2, aboutMe } from '../constants/constants';
+import { resumeUrl, mySkillsV2, aboutMe } from '../constants/constants';
 
 const AboutPage = () => (
   <Layout containerType={'container'}>
@@ -23,46 +23,46 @@ const AboutPage = () => (
         <div className="skills_boxes">
           <div className="skills__box">
             <h4>Programming</h4>
-            {mySkills2.programming.join(', ')}
+            {mySkillsV2.programming.join(', ')}
 
-            {/* {mySkills2.programming.map(skill => (
+            {/* {mySkillsV2.programming.map(skill => (
               <li>{skill}</li>
             ))} */}
           </div>
           <div className="skills__box">
             <h4>Frontend</h4>
-            {mySkills2.frontend.join(', ')}
+            {mySkillsV2.frontend.join(', ')}
 
-            {/* {mySkills2.frontend.map(skill => (
+            {/* {mySkillsV2.frontend.map(skill => (
               <li>{skill}</li>
             ))} */}
           </div>
           <div className="skills__box">
             <h4>Backend</h4>
-            {mySkills2.backend.join(', ')}
+            {mySkillsV2.backend.join(', ')}
 
-            {/* {mySkills2.backend.map(skill => (
+            {/* {mySkillsV2.backend.map(skill => (
               <li>{skill}</li>
             ))} */}
           </div>
           <div className="skills__box">
             <h4>Other Libraries and Tools</h4>
-            {mySkills2.other.join(', ')}
-            {/* {mySkills2.other.map(skill => (
+            {mySkillsV2.other.join(', ')}
+            {/* {mySkillsV2.other.map(skill => (
               <li>{skill}</li>
             ))} */}
           </div>
           <div className="skills__box">
             <h4>Currently learning</h4>
-            {mySkills2.learing.join(', ')}
-            {/* {mySkills2.other.map(skill => (
+            {mySkillsV2.learing.join(', ')}
+            {/* {mySkillsV2.other.map(skill => (
               <li>{skill}</li>
             ))} */}
           </div>
           <div className="skills__box">
             <h4>Planning to learn</h4>
-            {mySkills2.planning.join(', ')}
-            {/* {mySkills2.other.map(skill => (
+            {mySkillsV2.planning.join(', ')}
+            {/* {mySkillsV2.other.map(skill => (
               <li>{skill}</li>
             ))} */}
           </div>

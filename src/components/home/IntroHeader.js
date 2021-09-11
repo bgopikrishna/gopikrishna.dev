@@ -8,11 +8,11 @@ const IntroHeader = () => {
     <div className={introHeaderStyle.introheader}>
       <h2>Hey, I'm Gopi Krishna.</h2>
       <p>
-        Developer at{' '}
-        <a href="http://insider.in" target="_blank" rel="noopener noreferrer">
-          Paytm insider
+        Currently Building{' '}
+        <a href="https://elevate.so/" target="_blank" rel="noopener noreferrer">
+          Elevate
         </a>
-        . I <Emoji emoji="💖" label="love"/> JavaScript and React.
+        . I <Emoji emoji="💖" label="love" /> JavaScript and React.
       </p>
       <br />
       <p>
