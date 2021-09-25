@@ -1,7 +1,7 @@
 import GA from './GoogleAnalytics'
 import Plausible from './Plausible'
 import SimpleAnalytics from './SimpleAnalytics'
-import siteMetadata from '@/data/siteMetadata'
+import siteMetadata from '@/config/siteMetadata'
 
 const isProduction = process.env.NODE_ENV === 'production'
 

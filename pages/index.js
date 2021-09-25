@@ -1,6 +1,6 @@
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
-import siteMetadata from '@/data/siteMetadata'
+import siteMetadata from '@/config/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 
 import NewsletterForm from '@/components/NewsletterForm'
