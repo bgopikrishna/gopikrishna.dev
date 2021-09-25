@@ -23,7 +23,7 @@ export default function Footer() {
         </div>
         <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
           Made with{' '}
-          <span role="img" aria-label="love">
+          <span role="img" aria-label="love" className="animate-pulse">
             💖
           </span>{' '}
           from{' '}

@@ -8,6 +8,7 @@
       "@/config/*": ["config/*"],
       "@/layouts/*": ["layouts/*"],
       "@/lib/*": ["lib/*"],
+      "@/utils/*": ["utils/*"],
       "@/css/*": ["css/*"]
     }
   }

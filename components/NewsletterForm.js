@@ -1,8 +1,13 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+/* eslint-disable no-unreachable */
 import { useRef, useState } from 'react'
 
 import siteMetadata from '@/config/siteMetadata'
 
-const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
+const NewsletterForm = ({
+  title = 'A newsletter which is all about Javascript and Web Development.',
+}) => {
+  return null
   const inputEl = useRef(null)
   const [error, setError] = useState(false)
   const [message, setMessage] = useState('')
@@ -31,11 +36,13 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
     inputEl.current.value = ''
     setError(false)
     setSubscribed(true)
-    setMessage('Successfully! 🎉 You are now subscribed.')
+    setMessage(
+      'Successfully! 🎉 You are now subscribed. A confrimation mail has been sent to your email address'
+    )
   }
 
   return (
-    <div>
+    <div className="my-6">
       <div className="pb-1 text-lg font-semibold text-gray-800 dark:text-gray-100">{title}</div>
       <form className="flex flex-col sm:flex-row" onSubmit={subscribe}>
         <div>

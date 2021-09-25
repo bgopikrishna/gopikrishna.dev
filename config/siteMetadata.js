@@ -6,6 +6,7 @@ const siteMetadata = {
   language: 'en-us',
   siteUrl: 'https://gopikrishna.dev',
   siteRepo: 'https://github.com/bgopikrishna/gopikrishna.dev',
+  contentRepo: 'https://github.com/bgopikrishna/content',
   siteLogo: 'https://avatars1.githubusercontent.com/bgopikrishna',
   image: 'https://avatars1.githubusercontent.com/bgopikrishna',
   socialBanner: '/static/images/twitter-card.png',
@@ -13,7 +14,7 @@ const siteMetadata = {
   github: 'https://github.com/bgopikrishna',
   twitter: 'https://twitter.com/_bgopikrishna',
   linkedin: 'https://www.linkedin.com/in/bgopikrishna',
-  locale: 'en-US',
+  locale: 'en-IN',
   analytics: {
     // supports plausible, simpleAnalytics or googleAnalytics
     plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
@@ -37,9 +38,9 @@ const siteMetadata = {
       label: 'discussion', // label (optional): Comment 💬
       // theme example: github-light, github-dark, preferred-color-scheme
       // github-dark-orange, icy-dark, dark-blue, photon-dark, boxy-light
-      theme: 'preferred-color-scheme',
+      theme: 'boxy-light',
       // theme when dark mode
-      darkTheme: '',
+      darkTheme: 'dark-blue',
     },
   },
 }

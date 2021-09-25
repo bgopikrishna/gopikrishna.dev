@@ -7,17 +7,15 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/config/siteMetadata'
 import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
-
-const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
-const discussUrl = (slug) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `${siteMetadata.siteUrl}/blog/${slug}`
-  )}`
+import NewsletterForm from '@/components/NewsletterForm'
+import { createLinkedInShareUrl, createTwitterIntent, editUrl } from '@/lib/utils/misc'
+import { useRouter } from 'next/router'
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
   const { slug, fileName, date, title, tags, cover } = frontMatter
+  const { pathname } = useRouter()
 
   return (
     <SectionContainer>
@@ -96,26 +94,25 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 </ul>
               </dd>
             </dl>
-            {/* <div className="py-2 rounded shawdow-md xl:col-span-4 h-60 relative">
-              <Image
-                src={cover}
-                layout="responsive"
-                alt="title"
-                width="100%"
-                height="30vh"
-                className="rounded"
-                objectFit="cover"
-              />
-            </div> */}
+
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
               <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div>
               <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={discussUrl(slug)} rel="nofollow">
-                  {'Discuss on Twitter'}
+                <Link href={createTwitterIntent(title, tags, pathname)} rel="nofollow">
+                  Share on Twitter
                 </Link>
                 {` • `}
-                <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
+                <Link href={createLinkedInShareUrl(pathname)} rel="nofollow">
+                  Share on LinkedIn
+                </Link>
+                {` • `}
+                <Link href={editUrl(fileName)}>Edit on GitHub</Link>
               </div>
+              {/* {siteMetadata.newsletter.provider !== '' && (
+                <div className="flex items-center justify-center pt-4">
+                  <NewsletterForm />
+                </div>
+              )} */}
               <Comments frontMatter={frontMatter} />
             </div>
             <footer>
