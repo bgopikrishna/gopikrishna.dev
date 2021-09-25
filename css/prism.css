@@ -17,6 +17,8 @@
 /* Code block styles */
 .code-highlight {
   @apply float-left min-w-full;
+  font-family: 'Fira Code', 'SF Mono', 'JetBrains Mono', 'Cascaida Code', 'Ubuntu Mono',
+    'Roboto Mono', monospace !important;
 }
 
 .code-line {

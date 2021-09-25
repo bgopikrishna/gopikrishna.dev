@@ -1,0 +1,33 @@
+/* width */
+::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  opacity: 1;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  background: #ffff00;
+  color: gray;
+}
+
+::selection {
+  background: #ffff00;
+  color: rgb(13, 7, 19);
+}

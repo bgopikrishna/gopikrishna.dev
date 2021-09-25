@@ -16,9 +16,6 @@ module.exports = {
         13: '3.25rem',
         14: '3.5rem',
       },
-      fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
-      },
       colors: {
         primary: colors.violet,
         gray: colors.trueGray,
@@ -30,7 +27,7 @@ module.exports = {
             a: {
               color: theme('colors.primary.400'),
               '&:hover': {
-                color: theme('colors.primary.600'),
+                color: theme('colors.primary.500'),
               },
               code: { color: theme('colors.primary.400') },
             },

@@ -1,16 +1,16 @@
 ---
 name: Gopi Krishna
-avatar: /static/images/avatar.png
-occupation: SDE at Elevate
+avatar: https://avatars1.githubusercontent.com/bgopikrishna
+occupation: SDE at ElevateHQ
 email: address@yoursite.com
 twitter: https://twitter.com/_bgopikrishna
 linkedin: https://www.linkedin.com/bgopikrishna
 github: https://github.com/bgopikrishna
 ---
 
-I am originally from Hyderabad, India. I'm currently working as an SDE at [ElevateHQ](https://Elevate.so). Thinking about what to add on this section 😅.
+Hey, I'm **Gopi Krishna** currently working as an SDE at [ElevateHQ](https://Elevate.so). Either I'll be building something or watching cricket or reading a novel.
 
-## knowledgeable In
+## Knowledgeable In
  
 **Programming** - JavaScript, TypeScript
 
@@ -22,8 +22,12 @@ I am originally from Hyderabad, India. I'm currently working as an SDE at [Eleva
 
 **Currently learning** - Micro-services with Node
 
+## You can reach out to me via
 
-
+* **Email** - [b.gopikrishna@outlook.in](b.gopikrishna@outlook.in)
+* **LinkedIn** - [bgopikrishna](https://twitter.com/_bgopikrishna)
+* **GitHub** - [bgopikrishna](https://github.com/bgopikrishna)
+* **Twitter** - [_bgopikrishna](https://www.linkedin.com/in/bgopikrishna)
 
 
 
