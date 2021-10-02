@@ -5,7 +5,7 @@ import SocialIcon from '@/components/social-icons'
 export default function Footer() {
   return (
     <footer>
-      <div className="flex items-center justify-between mt-16 mb-8">
+      <div className="flex flex-col xl:flex-row items-center justify-between mt-16 mb-8">
         <div className="flex space-x-4 flex-1 justify-start">
           <SocialIcon kind="twitter" href={siteMetadata.twitter} size="6" />
           <SocialIcon kind="github" href={siteMetadata.github} size="6" />
@@ -15,7 +15,7 @@ export default function Footer() {
           <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="6" />
         </div>
 
-        <div className="text-sm text-center justify-center text-gray-500 dark:text-gray-400 flex-1">
+        <div className="text-sm text-center xl:my-0 my-4 justify-center text-gray-500 dark:text-gray-400 flex-1">
           Made with{' '}
           <span role="img" aria-label="love" className="animate-pulse">
             💖
