@@ -17,10 +17,10 @@ const CustomLink = ({ className, href, ...rest }) => {
   }
 
   if (isAnchorLink) {
-    return <a href={href} {...rest} />
+    return <a href={href} {...rest} className={className} />
   }
 
-  return <a target="_blank" rel="noopener noreferrer" href={href} {...rest} />
+  return <a target="_blank" rel="noopener noreferrer" href={href} className={className} {...rest} />
 }
 
 export default CustomLink

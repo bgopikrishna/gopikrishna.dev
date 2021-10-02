@@ -1,6 +1,6 @@
 const siteMetadata = {
-  title: 'Gopi Krishna Blog',
-  author: 'bgopikrishna',
+  title: "Gopi Krishna's Blog",
+  author: '_bgopikrishna',
   headerTitle: 'GOPI KRISHNA',
   description: "Gopi Krishna's Digital Space",
   language: 'en-us',
