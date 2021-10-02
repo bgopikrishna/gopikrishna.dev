@@ -5,8 +5,8 @@ import SocialIcon from '@/components/social-icons'
 export default function Footer() {
   return (
     <footer>
-      <div className="flex flex-col xl:flex-row items-center justify-between mt-16 mb-8">
-        <div className="flex space-x-4 flex-1 justify-start">
+      <div className="flex flex-col items-center justify-between mt-16 mb-8 xl:flex-row-reverse">
+        <div className="flex space-x-4 flex-1 justify-start xl:justify-end">
           <SocialIcon kind="twitter" href={siteMetadata.twitter} size="6" />
           <SocialIcon kind="github" href={siteMetadata.github} size="6" />
           <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size="6" />
@@ -25,15 +25,15 @@ export default function Footer() {
             🇮🇳
           </span>
         </div>
-        <div className="flex justify-center space-x-2 text-sm text-gray-500 dark:text-gray-400 flex-1">
+        <div className="flex justify-center space-x-1 text-sm text-gray-500 dark:text-gray-400 flex-1">
           {/* <div>{siteMetadata.author}</div>
           <div>{` • `}</div> */}
           <div>
-            <Link href="https://netlify.com">Netlify</Link>
+            <Link href="https://vercel.com">Hosted on Vercel</Link>
           </div>
           <div>{` • `}</div>
           <div>
-            <Link href="https://netlify.com">Next JS</Link>
+            <Link href="https://nextjs.org">Next JS</Link>
           </div>
           <div>{` • `}</div>
           <div>

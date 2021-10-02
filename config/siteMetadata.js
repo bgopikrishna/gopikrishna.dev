@@ -14,6 +14,7 @@ const siteMetadata = {
   github: 'https://github.com/bgopikrishna',
   twitter: 'https://twitter.com/_bgopikrishna',
   linkedin: 'https://www.linkedin.com/in/bgopikrishna',
+  newsletterUrl: 'https://www.getrevue.co/profile/bgopikrishna',
   locale: 'en-IN',
   analytics: {
     // supports plausible, simpleAnalytics or googleAnalytics
