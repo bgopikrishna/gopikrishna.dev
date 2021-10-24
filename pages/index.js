@@ -8,7 +8,8 @@ import BlogPostCard from '@/components/BlogPostCard'
 import Hero from './hero.svg'
 import Image from '@/components/Image'
 import CustomLink from '@/components/Link'
-const MAX_DISPLAY = 2
+
+const MAX_ARTICLES_DISPLAY = process.env.NEXT_MAX_ARTICLES_DISPLAY || 2
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
@@ -54,12 +55,12 @@ export default function Home({ posts }) {
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
-          {posts.slice(0, MAX_DISPLAY).map((frontMatter) => (
+          {posts.slice(0, MAX_ARTICLES_DISPLAY).map((frontMatter) => (
             <BlogPostCard frontMatter={frontMatter} key={frontMatter.slug} />
           ))}
         </ul>
       </div>
-      {posts.length > MAX_DISPLAY && (
+      {posts.length > MAX_ARTICLES_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6 mt-24">
           <Link
             href="/blog"

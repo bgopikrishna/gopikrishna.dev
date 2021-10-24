@@ -16,6 +16,7 @@ const BlogPostCard = ({ frontMatter }) => {
           width="100%"
           height="100%"
           className="rounded"
+          objectFit="cover"
         />
       </div>
       <article className="py-2 xl:col-span-3 space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline h-full">

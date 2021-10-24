@@ -42,4 +42,16 @@ module.exports = withBundleAnalyzer({
   images: {
     domains: ['avatars1.githubusercontent.com'],
   },
+  redirects: [
+    {
+      source: '/blog/css-variables',
+      destination: '/blog/how-to-use-css-variable',
+      permanent: true,
+    },
+    {
+      source: '/blog/Using-the-Node-JS-Cluster-Module',
+      destination: '/blog/using-the-node-js-cluster-module',
+      permanent: true,
+    },
+  ],
 })

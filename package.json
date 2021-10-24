@@ -3,7 +3,7 @@
   "version": "1.1.2",
   "private": true,
   "scripts": {
-    "start": "next-remote-watch ./data",
+    "start": "cp -r ./content/uploads ./public/uploads  && next-remote-watch ./content",
     "dev": "next dev",
     "build": "cp -r ./content/uploads ./public/uploads && next build && node ./scripts/generate-sitemap",
     "serve": "next start",
