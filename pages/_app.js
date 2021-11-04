@@ -1,11 +1,9 @@
 import '@/css/tailwind.css'
 import '@/css/prism.css'
 import '@/css/base.css'
-
 import { ThemeProvider } from 'next-themes'
 import Head from 'next/head'
 import Script from 'next/script'
-
 import Analytics from '@/components/analytics'
 import LayoutWrapper from '@/components/LayoutWrapper'
 
