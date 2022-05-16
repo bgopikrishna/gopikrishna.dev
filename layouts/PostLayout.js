@@ -98,11 +98,14 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
               <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div>
               <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={createTwitterIntent(title, tags, pathname)} rel="nofollow">
+                <Link
+                  href={createTwitterIntent(title, tags, window?.location.pathname)}
+                  rel="nofollow"
+                >
                   Share on Twitter
                 </Link>
                 {` • `}
-                <Link href={createLinkedInShareUrl(pathname)} rel="nofollow">
+                <Link href={createLinkedInShareUrl(window?.location.pathname)} rel="nofollow">
                   Share on LinkedIn
                 </Link>
                 {` • `}

@@ -16,11 +16,11 @@ export default function Footer() {
         </div>
 
         <div className="text-sm text-center my-4 justify-center text-gray-500 dark:text-gray-400 flex-1">
-          Made with{' '}
+          Made with
           <span role="img" aria-label="love" className="animate-pulse">
-            💖
-          </span>{' '}
-          from{' '}
+            &nbsp;💖&nbsp;
+          </span>
+          &nbsp;from&nbsp;
           <span role="img" aria-label="india">
             🇮🇳
           </span>
@@ -29,11 +29,15 @@ export default function Footer() {
           {/* <div>{siteMetadata.author}</div>
           <div>{` • `}</div> */}
           <div>
-            <Link href="https://vercel.com">Vercel</Link>
+            <Link href="https://vercel.com" title="Hosted on vercel">
+              Vercel
+            </Link>
           </div>
           <div>{` • `}</div>
           <div>
-            <Link href="https://nextjs.org">Next JS</Link>
+            <Link href="https://nextjs.org" title="Created with Next JS">
+              Next JS
+            </Link>
           </div>
           <div>{` • `}</div>
           <div>
@@ -44,9 +48,9 @@ export default function Footer() {
             <Link href="/feed.xml">RSS</Link>
           </div>
           <div>{` • `}</div>
-          <div>
+          {/* <div>
             <Link href="https://www.getrevue.co/profile/bgopikrishna">Newsletter</Link>
-          </div>
+          </div> */}
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
         </div>
