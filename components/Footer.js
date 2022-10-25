@@ -7,11 +7,7 @@ export default function Footer() {
     <footer>
       <div className="flex flex-col items-center justify-between mt-16 mb-8">
         <div className="flex space-x-4 flex-1 justify-start">
-          <SocialIcon kind="twitter" href={siteMetadata.twitter} size="6" />
           <SocialIcon kind="github" href={siteMetadata.github} size="6" />
-          <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size="6" />
-          <SocialIcon kind="facebook" href={siteMetadata.facebook} size="6" />
-          <SocialIcon kind="youtube" href={siteMetadata.youtube} size="6" />
           <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="6" />
         </div>
 
@@ -30,7 +26,7 @@ export default function Footer() {
           <div>{` • `}</div> */}
           <div>
             <Link href="https://vercel.com" title="Hosted on vercel">
-              Vercel
+              Deployed on Vercel
             </Link>
           </div>
           <div>{` • `}</div>
@@ -47,10 +43,6 @@ export default function Footer() {
           <div>
             <Link href="/feed.xml">RSS</Link>
           </div>
-          <div>{` • `}</div>
-          {/* <div>
-            <Link href="https://www.getrevue.co/profile/bgopikrishna">Newsletter</Link>
-          </div> */}
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
         </div>

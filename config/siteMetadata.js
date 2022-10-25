@@ -1,6 +1,7 @@
 const siteMetadata = {
   title: "Gopi Krishna's Blog",
-  author: '_bgopikrishna',
+  shortTitle: 'GK',
+  author: 'bgopikrishna',
   headerTitle: 'GOPI KRISHNA',
   description: "Gopi Krishna's Digital Space",
   language: 'en-us',
@@ -12,7 +13,6 @@ const siteMetadata = {
   socialBanner: '/static/images/twitter-card.png',
   email: 'b.gopikrishna@outlook.in',
   github: 'https://github.com/bgopikrishna',
-  twitter: 'https://twitter.com/_bgopikrishna',
   linkedin: 'https://www.linkedin.com/in/bgopikrishna',
   newsletterUrl: 'https://www.getrevue.co/profile/bgopikrishna',
   locale: 'en-IN',
