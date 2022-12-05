@@ -7,7 +7,7 @@ const BlogPostCard = ({ frontMatter }) => {
   const { slug, date, title, description, tags, cover } = frontMatter
   return (
     <li key={slug} className="py-4 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
-      <div className="hidden xl:block mr-8 py-2 rounded shawdow-md">
+      {/* <div className="hidden xl:block mr-8 py-2 rounded shawdow-md">
         {' '}
         <Image
           src={cover}
@@ -18,7 +18,7 @@ const BlogPostCard = ({ frontMatter }) => {
           className="rounded"
           objectFit="cover"
         />
-      </div>
+      </div> */}
       <article className="py-2 xl:col-span-3 space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline h-full">
         <dl>
           <dt className="sr-only">Published on</dt>
