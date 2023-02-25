@@ -18,8 +18,9 @@ input:-webkit-autofill:focus {
 }
 
 .active {
-  text-decoration: underline;
-  text-decoration-style: dashed;
-  text-decoration-thickness: 2px;
-  text-underline-position: 10px;
+  text-decoration: none;
+  background: rgba(102, 106, 220, var(--tw-text-opacity));
+  text-decoration: none;
+  border-radius: 8px;
+  color: white;
 }
