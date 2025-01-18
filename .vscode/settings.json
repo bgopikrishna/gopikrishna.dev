@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.suggest.preview": true,
+  "workbench.view.alwaysShowHeaderActions": true,
+  "javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  }
+}
