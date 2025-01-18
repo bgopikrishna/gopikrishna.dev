@@ -7,7 +7,7 @@ tags:
 description: Error boundaries are the react components that help us to catch errors
   in the render phase. By using Error Boundaries we can also show a fallback UI if
   something goes wrong (Like an uncaught error).
-cover: "/uploads/screenshot-2022-10-25-at-11-41-22-am.png"
+cover: "/assets/screenshot-2022-10-25-at-11-41-22-am.png"
 coverImageCredits: ''
 
 ---
@@ -38,7 +38,7 @@ We will build a simple application that shows a list of superheroes and their po
 
 It looks something like this. You will find the completed application at the end of this article.
 
-![React Application](/uploads/screenshot-2022-04-13-at-9-56-28-am.png)
+![React Application](/assets/screenshot-2022-04-13-at-9-56-28-am.png)
 
 Enough talk, Let's get our hands dirty.
 
@@ -191,7 +191,7 @@ Now let's see that in action. Wrap the `HeroDetails` with an `ErrorBoundary`
 
 Now on selecting `Bambasto` again. Instead of the application getting crashed, we can see the fallback UI.
 
-![Error boundary with fallback UI](/uploads/screenshot-2022-04-14-at-10-56-27-pm.png)
+![Error boundary with fallback UI](/assets/screenshot-2022-04-14-at-10-56-27-pm.png)
 
 ## Limitations
 

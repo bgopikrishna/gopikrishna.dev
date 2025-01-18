@@ -9,7 +9,7 @@ description: Webpack is a module bundler for JavaScript applications. In plain E
   webpack creates a dependency graph of all files (using imports/require statements,
   plugins, loaders, etc.). Using this dependency graph, webpack outputs the bundled
   code.
-cover: "/uploads/getting-started-with-weba.png"
+cover: "/assets/getting-started-with-weba.png"
 coverImageCredits: ''
 
 ---
@@ -27,7 +27,7 @@ The first part of this article covers basic webpack concepts. In the second part
 
 Webpack is a module bundler for JavaScript applications. In plain English, webpack creates a dependency graph of all files (using imports/require statements, plugins, loaders, etc.). Using the dependency graph generated, webpack outputs the bundled code.
 
-![Webpack key steps illustation - webpack for beginners](/uploads/webpackbundle.png "Webpack illustration")
+![Webpack key steps illustation - webpack for beginners](/assets/webpackbundle.png "Webpack illustration")
 
 Webpack treats every file or asset as a module. Out of the box, webpack only supports JavaScript files (ES Modules, CommonJS modules, AMD Modules).
 
@@ -129,7 +129,7 @@ To keep things simple, let's have a look at [HtmlWebpackPlugin.](https://webpack
 
 HtmlWebpackPlugin will create an HTML template and add the script tags, which point to bundled JS.
 
-![](/uploads/htmlwebpack-plugin.png)
+![](/assets/htmlwebpack-plugin.png)
 
 You can install it with npm.
 
@@ -321,7 +321,7 @@ build
 
 Open the `build/index.html` file in your browser and open the console. You will see this message.
 
-![hello world using webpack](/uploads/screenshot-2022-07-07-at-9-42-24-pm.png)
+![hello world using webpack](/assets/screenshot-2022-07-07-at-9-42-24-pm.png)
 
 #### Adding a webpack dev server for faster development
 
@@ -496,7 +496,7 @@ console.log('Hello from webpack')
 
 If you reload the application, it should look something like this with styles applied.
 
-![Styling with css loader and style-loader in webpack](/uploads/screenshot-2022-10-10-at-10-34-28-pm.png)
+![Styling with css loader and style-loader in webpack](/assets/screenshot-2022-10-10-at-10-34-28-pm.png)
 
 #### Final app
 
@@ -536,7 +536,7 @@ We have a form with an event listener of the type `submit`. Whenever the user su
 
 It looks something like this.
 
-![Age calculator application using webpack 5 tutorial](/uploads/screenshot-2022-10-10-at-10-17-04-pm.png)
+![Age calculator application using webpack 5 tutorial](/assets/screenshot-2022-10-10-at-10-17-04-pm.png)
 
 #### Using third-party libraries and modules
 
@@ -593,7 +593,7 @@ export function calcAge(dob) {
 
 The result will look something like this now.
 
-![Age calculator application using webpack 5 and date-fns library tutorial](/uploads/screenshot-2022-10-10-at-10-34-28-pm.png)
+![Age calculator application using webpack 5 and date-fns library tutorial](/assets/screenshot-2022-10-10-at-10-34-28-pm.png)
 
 ## Conclusion
 

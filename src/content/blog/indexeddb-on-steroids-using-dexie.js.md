@@ -7,7 +7,7 @@ tags:
 description: Dexie.js provides a straightforward and simplified process of creating
   databases, storing data, updating data and database migrations, etc., over the top
   of indexDB.
-cover: "/uploads/stencil-facebook-cover.png"
+cover: "/assets/stencil-facebook-cover.png"
 coverImageCredits: ''
 
 ---
@@ -67,7 +67,7 @@ Let's create an `index.html` file with the following contents.
 
 Now open the html file using an HTTP server of your choice. I'm using the [Live Server](https://github.com/ritwickdey/vscode-live-server) VS Code extension. You will see something like this.
 
-![HTML boiler plate](/uploads/dexiejs-boilerplate-html.png)
+![HTML boiler plate](/assets/dexiejs-boilerplate-html.png)
 
 For styling, we are using [Bulma](https://bulma.io/) CSS. Todos will be added by typing in the input box. Nothing works now, as we still need to add the javascript.
 
@@ -243,7 +243,7 @@ On submitting the form, we pass the todo to the `createTodo` function.
 
 Now if you add the todos, the new todos will be inserted into the `todo` table. You can check them in the dev tools.
 
-![IndexedDB using dexie js in developer tools](/uploads/screenshot-2023-01-31-at-10-17-54-pm.png)
+![IndexedDB using dexie js in developer tools](/assets/screenshot-2023-01-31-at-10-17-54-pm.png)
 
 ### Showing created todos on the UI
 
