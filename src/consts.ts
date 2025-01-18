@@ -3,14 +3,15 @@ import type { Site, Metadata, Socials } from '@types';
 export const SITE: Site = {
   NAME: 'Gopi Krishna',
   EMAIL: 'hi@gopikrishna.dev',
-  NUM_POSTS_ON_HOMEPAGE: 3,
+  NUM_POSTS_ON_HOMEPAGE: 2,
   NUM_WORKS_ON_HOMEPAGE: 2,
   NUM_PROJECTS_ON_HOMEPAGE: 3,
 };
 
 export const HOME: Metadata = {
   TITLE: 'Home',
-  DESCRIPTION: 'Astro Nano is a minimal and lightweight blog and portfolio.',
+  DESCRIPTION:
+    'Senior Frontend Engineer with expertise in JavaScript, React, Next.js, and Webpack, specializing in building scalable, high-performance web applications.',
 };
 
 export const BLOG: Metadata = {
