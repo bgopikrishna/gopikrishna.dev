@@ -1,11 +1,11 @@
-
 ---
 draft: true
 date: 2025-27-25T10:30:00+05:30
 title: How I Use AI in My Day-to-Day Work
 tags:
-- AI
+    - AI
 description: I’ve been using AI tools daily in my workflow, and over time I figured out a pattern that works for me. It’s not about letting AI do everything, but about using it to save time and stay focused on the important parts.
+
 ---
 
 # How I Use AI in My Day-to-Day Work
